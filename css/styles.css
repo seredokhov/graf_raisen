@@ -2,18 +2,27 @@
 @font-face {
 	font-family: Proxima Nova Regular;
 	src: url(../fonts/Mark Simonson - Proxima Nova Regular.otf);
+}
+@font-face {
 	font-family: Proxima Nova Semibold;
 	src: url(../fonts/Mark Simonson - Proxima Nova Semibold.otf);
+}
+@font-face {
 	font-family: Proxima Nova Extrabold;
 	src: url(../fonts/Mark Simonson - Proxima Nova Extrabold.otf);
+}
+@font-face {
 	font-family: Proxima Nova Black;
 	src: url(../fonts/Mark Simonson - Proxima Nova Black.otf);
+}
+@font-face {
 	font-family: Proxima Nova Bold;
 	src: url(../fonts/Mark Simonson - Proxima Nova Bold.otf);
+}
+@font-face {
 	font-family: Proxima Nova Light;
 	src: url(../fonts/Mark Simonson - Proxima Nova Light.otf);
 }
-
 /*============================================ 
 	Основные стили
 ============================================*/
