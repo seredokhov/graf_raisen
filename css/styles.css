@@ -23,6 +23,7 @@
 	font-family: Proxima Nova Light;
 	src: url("../fonts/Mark Simonson - Proxima Nova Light.otf");
 }
+
 /*============================================ 
 	Основные стили
 ============================================*/
@@ -31,6 +32,10 @@ body{
 	font-family: 'Proxima Nova Regular';
 	background-color: #fafafa;
 	color: #1e1e1e;
+	-moz-user-select: none;
+	-khtml-user-select: none;
+	user-select: none;
+	cursor: default;
 }
 div.container {
 }
@@ -48,7 +53,9 @@ div.container {
 h1,
 aside header,
 .more_info h3,
-.excurs_form h3 {
+.excurs_form h3,
+.about h2,
+.about h3 {
 	font-family: 'Proxima Nova Extrabold';
 	text-transform: uppercase;
 	color: #4b4b4b;
@@ -101,6 +108,10 @@ select {
 	border: 1px solid;
 	border-image: linear-gradient(to bottom, #97d81f, #5a9f01) 1 100%;
 	text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.8);
+}
+.btn_FAQ {
+	width: 240px;
+	min-height: 50px;
 }
 
 
@@ -887,8 +898,51 @@ aside.left_bar ul li {
 	background: none;
 	border-left: 5px solid #69b334;
 }
+.about {
+	color: #8c8c8c;
+	font-size: 13px;
+}
+.about span,
+.about ul li span {
+	font-family: 'Proxima Nova Black';
+}
+.about h2 {
+	font-size: 26px;
+	text-transform: none;
+	margin-top: 90px;
+}
+.about h3 {
+	font-size: 20px;
+}
+.about ul {
+	padding: 0;
+}
+.about ul li {
+	list-style: none;
+	line-height: 24px;
 
-
+}
+.about ul li:not(:first-child):before {
+	content: " ";
+	position: relative;
+	top: 4px;
+	width: 18px;
+	height: 20px;
+	display: inline-block;
+	margin-right: 5px;
+	background: url(../images/thumbs-up.png);
+}
+.FAQ_form {
+	max-width: 600px;
+	margin: 0px -15px;
+}
+.FAQ_form input {
+	margin: 20px auto;
+}
+.FAQ_form textarea {
+	resize: none;
+	height: 110px;
+}
 
 /*   Bookin_tour */
 
@@ -898,8 +952,6 @@ aside.left_bar ul li {
 }
 .excursion {
 	width: 370px;
-
-	/*min-height: 625px; *//*  Поменять значение в зависимости от высоты блока  */
 }
 .booking_content {
 	border: 1px solid #c5c5c5;
@@ -1229,6 +1281,9 @@ label.large_letter {
 	}
 	footer .input-group {
 		width: 100%;
+	}
+	.about {
+		margin-top: 30px;
 	}
 }
 @media (max-width: 768px) {
