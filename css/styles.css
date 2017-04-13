@@ -839,7 +839,7 @@ ul.foot:after {
 	background: #fafafa;
 	}
 .section {
-	margin-bottom: 30px;
+	padding-bottom: 30px;
 }
 .section h1{
 	font-size: 27px;
@@ -854,12 +854,16 @@ aside.left_bar {
 	background: #fff;
 
 }
-aside.left_bar header > a{
+aside.left_bar header {
 	font-size: 18px;
 	padding: 35px 30px 25px 30px;
 	display: block;
 	text-decoration: none;
 	color: #4b4b4b;
+}
+aside.left_bar header a {
+	color: #4b4b4b;
+	text-decoration: none;
 }
 aside.left_bar header + hr {
 	background: #e1e1e1;
@@ -896,6 +900,11 @@ aside.left_bar ul li {
 .list-group-item.active:hover,
 .list-group-item.active:focus {
 	background: none;
+	border-left: 5px solid transparent;
+}
+.list-group-item:hover,
+.list-group-item.active:hover {
+	background: none;
 	border-left: 5px solid #69b334;
 }
 .about {
@@ -919,10 +928,12 @@ aside.left_bar ul li {
 }
 .about ul li {
 	list-style: none;
-	line-height: 24px;
 
 }
-.about ul li:not(:first-child):before {
+.about ul.FAQ li {
+	line-height: 24px;
+}
+.about ul.FAQ li:not(:first-child):before {
 	content: " ";
 	position: relative;
 	top: 4px;
@@ -942,6 +953,45 @@ aside.left_bar ul li {
 .FAQ_form textarea {
 	resize: none;
 	height: 110px;
+}
+.vac_block {
+	padding: 15px 0;
+}
+.section_bg {
+	background: #fff;
+}
+.person {
+	padding: 5px;
+	border: 1px solid #e1e1e1;
+}
+.gen_dir {
+	min-height: 275px;
+}
+.gen_dir > .name_block {
+	position: absolute;
+	bottom: 0;
+	left: 15px;
+}
+span.name {
+	color: #4b4b4b;
+	font-size: 20px;
+	font-family: 'Proxima Nova Bold';
+}
+span.post {
+	font-size: 16px;
+	color: #898989;
+	font-family: 'Proxima Nova Regular';
+}
+.person_second img {
+	margin: 10px auto;
+}
+.person_second span {
+	display: block;
+	text-align: center;
+}
+.section_bg .about h2,
+.section_bg + section .about h2 {
+	margin-top: 15px;
 }
 
 /*   Bookin_tour */
