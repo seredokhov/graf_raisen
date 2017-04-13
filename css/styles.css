@@ -839,7 +839,7 @@ ul.foot:after {
 	background: #fafafa;
 	}
 .section {
-	padding-bottom: 30px;
+	padding-bottom: 20px;
 }
 .section h1{
 	font-size: 27px;
@@ -880,7 +880,7 @@ aside.left_bar ul li {
 }
 aside.left_bar ul li a {
 	color: #8c8c8c;
-	font-size: 16px;
+	font-size: 17px;
 	text-decoration: none;
 	display: block;
 	padding: 10px 20px;
@@ -993,7 +993,47 @@ span.post {
 .section_bg + section .about h2 {
 	margin-top: 15px;
 }
-
+.transfers > span {
+	color: #a2a2a2;
+	font-size: 21px;
+	font-family: 'Proxima Nova Semibold';
+	margin-right: 30px;
+}
+.about {
+	font-size: 15px;
+}
+.transfer {
+	margin-bottom: 30px;
+}
+.transfer > h1 {
+	font-size: 36px;
+	margin-bottom: 20px;
+}
+.transfers {
+	margin-bottom: 30px;
+}
+.transfers ul,
+.transfers ul > li {
+	display: inline-block;
+}
+.transfers ul > li {
+	margin: 0 15px;
+}
+.transfers ul > li a {
+	color: #4b4b4b;
+	font-size: 16px;
+	font-family: 'Proxima Nova Semibold';
+	text-decoration: none;
+	padding: 0 10px;
+}
+.transfers ul > li a:hover {
+	color: #9cce4f;
+	border-bottom: 6px solid #89c61c;
+}
+.transfer_form {
+	background: #f6f6f6;
+	border: 1px solid #cfcfcf;
+}
 /*   Bookin_tour */
 
 .excursion_column {
