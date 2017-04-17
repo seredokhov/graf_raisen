@@ -23,6 +23,10 @@
 	font-family: Proxima Nova Light;
 	src: url("../fonts/Mark Simonson - Proxima Nova Light.otf");
 }
+@font-face {
+	font-family: Proxima Nova Thin;
+	src: url("../fonts/Mark Simonson - Proxima Nova Thin.otf");
+}
 
 /*============================================ 
 	Основные стили
@@ -850,7 +854,7 @@ ul.foot:after {
 }
 aside.left_bar {
 	width: 270px;
-	height: 384px;
+	min-height: 384px;
 	border: 1px solid #e1e1e1;
 	background: #fff;
 
@@ -896,6 +900,15 @@ aside.left_bar ul li a:hover {
 }
 aside.left_bar ul li {	
 	border-left: 5px solid transparent;
+}
+aside.left_bar ul + a {
+	padding-bottom: 10px;
+	display: block;
+	text-align: center;
+	font-size: 12px;
+	color: #8c8c8c;
+	text-decoration: underline;
+	font-family: 'Proxima Nova Thin';
 }
 .list-group-item.active,
 .list-group-item.active:hover,
@@ -1079,7 +1092,34 @@ label.repeat {
 	resize: none;
 	min-height: 85px;
 }
+.pay_way {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	margin: 15px 0;
+}
+.e_pay {
+	justify-content: flex-start;
+}
+.card {
+	margin-bottom: 5px;
+	margin-top: 5px;
+	display: inline-block;
+	width: 113px;
+	height: 80px;
+	box-sizing: border-box;
+	border: 1px solid #e1e1e1;
+	text-align: center;
+	line-height: 80px;
+	background: #fff;
+}
+.e_pay .card {
+	margin-right: 15px;
+}
+.card img {
 
+}
 
 /*   Bookin_tour */
 
@@ -1440,6 +1480,9 @@ label.large_letter {
 	.navbar-header > a {
 		float: left;
 		display: block;
+	}
+	.e_pay {
+		justify-content: space-around;
 	}
 }
 @media (max-width: 620px) {
