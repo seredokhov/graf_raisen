@@ -425,7 +425,8 @@ section.content_blue {
 	.excurs_form .radio-custom,
 	.excurs_form .checkbox-custom,
 	.add_service .checkbox-custom,
-	div.row.section .checkbox-custom{
+	div.row.section .checkbox-custom,
+	.transfer_form .checkbox-custom {
 		width: 20px;
 		height: 20px;
 	}
@@ -963,9 +964,11 @@ aside.left_bar ul li {
 .person {
 	padding: 5px;
 	border: 1px solid #e1e1e1;
+	display: inline-block;
 }
 .gen_dir {
 	min-height: 275px;
+	padding-bottom: 40px;
 }
 .gen_dir > .name_block {
 	position: absolute;
@@ -1033,7 +1036,51 @@ span.post {
 .transfer_form {
 	background: #f6f6f6;
 	border: 1px solid #cfcfcf;
+	padding: 15px 20px;
 }
+.transf_arr {
+	width: 100%;
+	overflow: visible;
+	margin: 5px 0;
+}
+.transfer_form label {
+	margin: 5px 0;
+	font-size: 18px;
+	color: #4b4b4b;
+	font-family: 'Proxima Nova Bold';
+}
+.transfer_form .form-control {
+	height: 41px;
+}
+.transfer_form input.born {
+	margin-bottom: 10px;
+}
+.transfer_form .btn_filter {
+	display: block;
+	width: 100%;
+	margin-bottom: 0;
+}
+.transfer_header {
+	font-size: 36px;
+	color: #4b4b4b;
+	font-family: 'Proxima Nova Black';
+	background: #f6f6f6;
+	border: 1px solid #cfcfcf;
+	border-bottom: none;
+	padding: 0 20px;
+}
+.transfer_header + .transfer_form {
+	padding-top: 0;
+}
+label.repeat {
+	display: block;
+}
+.transfer_form textarea {
+	resize: none;
+	min-height: 85px;
+}
+
+
 /*   Bookin_tour */
 
 .excursion_column {
@@ -1284,6 +1331,7 @@ fieldset .half:first-child {
 	color: #7e7e7e;
 }
 .excurs_form .label,
+.transfer_form .label,
 .underline {
 	text-decoration: underline;
 }
@@ -1375,6 +1423,12 @@ label.large_letter {
 	.about {
 		margin-top: 30px;
 	}
+	.gen_dir {
+		min-height: auto;
+	}
+	.left_bar {
+		margin: 0 auto;
+	}
 }
 @media (max-width: 768px) {
 	.filter .form-group {
@@ -1418,6 +1472,13 @@ label.large_letter {
 @media (min-width: 768px) {
 	li.dropdown:hover > .dropdown-menu { 
 	    display: block; 
+	}
+	.navbar-nav > li {
+		float: none;
+		display: inline-block !important;
+	}
+	.navbar-nav {
+		text-align: center;
 	}
 }
 
