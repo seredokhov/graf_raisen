@@ -1096,7 +1096,7 @@ label.repeat {
 	width: 100%;
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-around;
+	justify-content: space-between;
 	margin: 15px 0;
 }
 .e_pay {
@@ -1443,6 +1443,9 @@ label.large_letter {
 	.booking_content,
 	.excursion_column {
 		display: block;
+	}
+	.pay_way {
+		justify-content: space-around;
 	}
 }
 @media (max-width: 992px) {
