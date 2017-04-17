@@ -127,7 +127,7 @@ select {
 ============================================*/
 .upper_head {
 	background-color: #dadcde;
-	height: 44px;
+	min-height: 44px;
 }
 .upper_head > .container > .row {
 	height: 44px;
@@ -1488,6 +1488,11 @@ label.large_letter {
 		justify-content: space-around;
 	}
 }
+@media (max-width: 700px) {
+	header .contact_links > a {
+		margin: 0 10px;
+	}
+}
 @media (max-width: 620px) {
 	.inl {
 		max-width: 100%;
@@ -1496,6 +1501,27 @@ label.large_letter {
 		text-align: center;
 	}
 }
+@media (max-width: 620px) {
+	.half {
+		width: 100% !important;
+	}
+	.arrow {
+		display: block;
+		max-width: 439px;
+	}
+	.excurs_form .arrow {
+		margin: 5px 0;
+	}
+	.excurs_form select#num {
+		width: 100% !important;
+	}
+	.arrow.num {
+		margin: 0;
+		background-position: 95% 50%;
+	}
+
+}
+
 @media (max-width: 480px) {
 	.filter {
 		max-width: 100%;
@@ -1519,13 +1545,7 @@ label.large_letter {
 	li.dropdown:hover > .dropdown-menu { 
 	    display: block; 
 	}
-	.navbar-nav > li {
-		float: none;
-		display: inline-block !important;
-	}
-	.navbar-nav {
-		text-align: center;
-	}
+
 }
 
 
