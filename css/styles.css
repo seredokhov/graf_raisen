@@ -888,7 +888,6 @@ ul.foot:after {
 }
 aside.left_bar {
 	width: 270px;
-	min-height: 384px;
 	border: 1px solid #e1e1e1;
 	background: #fff;
 
