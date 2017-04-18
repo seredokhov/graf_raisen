@@ -337,6 +337,7 @@ li.dropdown ul.dropdown-menu {
 	right: -5px;
 	width: 370px;
 	border: 1px solid #cfcfcf;
+	margin-top: -1px !important;
 }
 .burg_block ul li {
 	border: none;
