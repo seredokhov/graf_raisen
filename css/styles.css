@@ -409,12 +409,24 @@ section.content_blue {
 }
 
 .arrow select {
-	 background: transparent;	 
-	 height: 41px;
-	 padding: 5px;
-	 line-height: 1;
-	 -webkit-appearance: none;
-	 color: #7e7e7e;
+	background: transparent;	 
+	height: 41px;
+	padding: 5px;
+	line-height: 1;
+	-webkit-appearance: none;
+	color: #7e7e7e;
+	/* for FF */
+	-moz-appearance: none;
+	text-indent: 0.01px; 
+	text-overflow: '';
+	/* for IE */
+	-ms-appearance: none;
+	appearance: none!important;
+}
+select::-ms-expand {
+
+	display: none;
+
 }
 .arrow {
 	overflow: hidden; 
