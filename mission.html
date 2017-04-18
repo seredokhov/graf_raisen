@@ -100,7 +100,7 @@
 									<a href="booking2.html">Экскурсии</a>
 								</li>
 								<li>
-									<a href="#">Новости</a>
+									<a href="news.htm">Новости</a>
 								</li>
 								<li>
 									<a href="FAQ.html">Вопросы и ответы</a>
@@ -108,8 +108,47 @@
 								<li class="hot"><a href="#"><span></span>Горячие предложения</a></li>
 								<li class="like"><a href="#"><span>1</span>Мои заментки</a></li>
 
-								<!-- Кнопка выдимая только на lg-->
-								<button type="button" class="burg"></button></ul>
+								<!-- Кнопка +меню выдимые только на lg/md-->
+								<li class="burg_block hidden-xs">
+									<button type="button" class="burg" data-toggle="dropdown"></button>
+									<div class="dropdown-menu">
+										<ul class="list-group">
+											<li class="search_li">
+												<form action="">
+													<label for="search">Поиск</label>
+													<input type="text" class="form-control" id="search">
+												</form>
+											</li>
+											<li class="list-group-item"><a href="#">О компании</a></li>
+											<li class="list-group-item"><a href="#">Услуги и стоимость</a></li>
+											<li class="list-group-item"><a href="#">Новости</a></li>
+											<li class="list-group-item"><a href="#">Оплата</a></li>
+											<li class="list-group-item"><a href="#">Горячее предложение</a></li>
+											<li class="list-group-item"><a href="#">Партнерам</a></li>
+										</ul>
+										<button class="close"><i class="fa fa-times" aria-hidden="true"></i></button>
+									</div>
+								</li>
+								<!-- ==================================== -->
+
+								<!-- Меню выдимое только на sm/xs-->
+								<li class=" visible-xs"><a href="#">О компании</a></li>
+								<li class=" visible-xs search_li">
+									<form action="">
+										<label for="">Поиск</label>
+										<input type="text" class="form-control">
+									</form>
+								</li>
+								<li class=" visible-xs"><a href="#">Услуги и стоимость</a></li>
+								<li class=" visible-xs"><a href="#">Новости</a></li>
+								<li class=" visible-xs"><a href="#">Оплата</a></li>
+								<li class=" visible-xs"><a href="#">Горячее предложение</a></li>
+								<li class=" visible-xs"><a href="#">Партнерам</a></li>
+
+
+
+
+								</ul>
 							</div>
 						</nav>
 				</div>
