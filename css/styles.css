@@ -925,7 +925,7 @@ aside.left_bar ul li a,
 	padding: 10px 20px;
 }
 aside.left_bar ul li.active a {
-	color: #69b334;
+	/*color: #69b334;*/
 }
 
 aside.left_bar ul li a:hover,
