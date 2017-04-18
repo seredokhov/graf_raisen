@@ -1299,6 +1299,7 @@ span.r_fb {
 	padding-left: 10px;
 	padding-right: 10px;
 	max-width: 290px;
+	margin: 0 auto;
 }
 .more_info,
 .excurs_form {
