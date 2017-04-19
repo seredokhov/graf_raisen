@@ -407,12 +407,15 @@ section.content_blue {
 .filter {
 	min-height: 352px;
 	width: 370px;
-	margin: 32px auto;
+	margin: 0 auto;
 	background: #fff;
 	border: 1px solid #cfcfcf;
 	outline: 1px solid #006abb;
 	outline-offset: -2px;
 	color: #4b4b4b;
+}
+.content_blue .filter {
+	margin: 32px auto;
 }
 .filter .form-group {
 	margin: 0;
@@ -465,7 +468,7 @@ select::-ms-expand {
 .arrow {
 	overflow: hidden; 
 	height: 41px;
-	background: url(../images/caret.png) no-repeat 95% 50%;
+	background: url(../images/caret.png) no-repeat 100% 50%;
 	background-color: #fff;
 }
 .radio_group {
@@ -513,6 +516,11 @@ select::-ms-expand {
 	.transfer_form .checkbox-custom {
 		width: 20px;
 		height: 20px;
+	}
+	.left_bar .checkbox-custom,
+	.left_bar .radio-custom {
+	width: 17px;
+	height: 17px;
 	}
 	.checkbox:checked + .checkbox-custom::before,
 	.excurs_form .radio:checked + .radio-custom::before{
@@ -755,7 +763,8 @@ section.content {
 	padding: 0 10px;
 }
 .thumb .price,
-.more_info .price {
+.more_info .price,
+.selection .price {
 	position: absolute;
 	right: 0;
 	top: 0;
@@ -936,7 +945,6 @@ aside.left_bar {
 	width: 270px;
 	border: 1px solid #e1e1e1;
 	background: #fff;
-
 }
 aside.left_bar header {
 	font-size: 18px;
@@ -945,6 +953,32 @@ aside.left_bar header {
 	text-decoration: none;
 	color: #4b4b4b;
 }
+aside.left_bar.hot_deal_aside {
+	margin: 30px 0;
+	padding-bottom: 30px;
+}
+aside.left_bar.hot_deal_aside header {
+	font-size: 16px;
+}
+aside.left_bar .service {
+	padding: 0 30px;
+}
+aside.left_bar .service .label {
+	font-size: 15px;
+}
+aside.left_bar .service .stars {
+	position: relative;
+	top: 2px;
+}
+aside.left_bar span.hdr {
+	font-size: 18px;
+	color: #4b4b4b;
+	display: block;
+	font-family: 'Proxima Nova Bold';
+	margin: 10px auto
+}
+
+
 aside.left_bar header a {
 	color: #4b4b4b;
 	text-decoration: none;
@@ -983,7 +1017,8 @@ aside.left_bar ul li,
 .burg_block ul li {
 	border-left: 5px solid transparent;
 }
-aside.left_bar ul + a {
+aside.left_bar ul + a,
+aside.left_bar .service a {
 	padding-bottom: 10px;
 	display: block;
 	text-align: center;
@@ -1355,7 +1390,7 @@ span.r_fb {
 	margin: 0 auto;
 }
 .service label {
-	margin: 5px;
+	margin: 5px 0;
 	margin-bottom: 10px;
 	display: block;
 }
@@ -1453,7 +1488,6 @@ fieldset .half:first-child {
 .arrow.num {
 	margin-left: 35px;
 	height: 25px;
-	background-position: 90% 50%;
 }
 .excurs_form label[for="num_humans"] {
 	position: relative;
@@ -1499,9 +1533,145 @@ label.large_letter {
 	margin-bottom: 20px;
 }
 
+/*   hot deals */
 
+ul.sort {
+	padding: 0;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+ul.sort li {
+	display: inline-block;
+	background: #fff;
+	border: 1px solid #c5c5c5;
+	cursor: pointer;
+}
+ul.sort li a:after {
+	content: "";
+	display: inline-block;
+	width: 10px;
+	height: 6px;
+	margin-left: 10px;
+	background: url(../images/caret.png) no-repeat;
+}
+ul.sort li a {
+	text-decoration: none;
+	color: #636363;
+	font-size: 16px;
+	display: block;
+	padding: 10px;
+	pointer-events: none;
+}
+ul.sort li.active {
+	background: linear-gradient(to top, #74bc1a, #8ac71c);
+	border: 1px solid;
+	border-image: linear-gradient(to bottom, #97d81f, #5a9f01) 1 100%;
+}
+ul.sort li.active a {
+	color: #fff;
+}
+ul.sort li.active a:after {
+	background-position: -10px 0; 
+}
 
+article.hot_thumb {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	margin: 15px auto;
+	border: 1px solid #c5c5c5;
+}
+article.hot_thumb > a {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	width: 100%;
+	text-decoration: none;
+}
+.hot_thumb .img_block {
+	align-self: center;
+	flex-basis: 240px;
+	height: 244px;
+	margin: 15px 5px;
+	overflow: hidden;
+	border: 1px solid #c5c5c5;
+	box-sizing: border-box;
+}
+.hot_thumb .descr_block {
+	margin: 15px 5px;
+	flex-basis: 440px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.hot_thumb .descr_block header span,
+.hot_thumb .descr_block span.rating {
+	color: #4b4b4b;
+	font-size: 18px;
+	font-family: 'Proxima Nova Black';
+	text-decoration: underline;
+}
+.hot_thumb .descr_block span.stars,
+.hot_thumb .descr_block span.rating {
+	color: #6fb919;
+	text-decoration: none;
+	display: inline-block;
+	margin-left: 15px;
+}
+.descr_block span.country {
+	display: block;
+	text-decoration: underline;
+	font-size: 14px;
+	color: #4b4b4b;
+}
+.services {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.services .item {
+	display: inline-block;
+	min-width: 70px;
+	margin: 15px 0;
+}
+.services .item span {
+	display: block;
+	color: #7b7b7b;
+	font-size: 12px;
+	font-family: 'Proxima Nova Light';
+	text-decoration: underline;
+}
+.services .item img {
+	border: 1px solid #c5c5c5;
+}
+.selection {
+	display: flex;
+	max-width: 100%;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+}
+.selection button {
+	padding: 15px 30px;
+	font-size: 14px;
+}
+.selection .price {
+	position: static;
+	margin: 0;
+	font-size: 30px;
+	height: 38px;
+	line-height: 38px;
+}
 
+/*
+background: linear-gradient(to top, #74bc1a, #8ac71c);
+border: 1px solid;
+border-image: linear-gradient(to bottom, #97d81f, #5a9f01) 1 100%;
+text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.8);
+
+*/
 
 
 
@@ -1552,6 +1722,16 @@ label.large_letter {
 	.pay_way {
 		justify-content: space-around;
 	}
+	ul.sort {
+		display: block;
+		text-align: center;
+	}
+	ul.sort li {
+		margin: 0 10px 10px;
+	}
+	.hot_thumb .img_block {
+		display: none;
+	}
 }
 @media (max-width: 992px) {
 	footer .contact_links {
@@ -1577,6 +1757,16 @@ label.large_letter {
 	.left_bar {
 		margin: 0 auto;
 	}
+	aside.left_bar.hot_deal_aside {
+		margin: 15px auto;
+		width: 100%;
+	}
+	aside.left_bar .service {
+		display: inline-block;
+	}
+	.hot_thumb .img_block {
+		display: flex;
+	}
 }
 @media (max-width: 768px) {
 	.filter .form-group {
@@ -1601,6 +1791,10 @@ label.large_letter {
 	.like span, .hot span {
 		margin-left: -7px;
 	}
+	.hot_thumb .img_block {
+		display: none;
+	}
+
 }
 @media (max-width: 700px) {
 	header .contact_links > a {
@@ -1645,6 +1839,9 @@ label.large_letter {
 	}
 	.tumb-2 {
 		min-height: auto;
+	}
+	.hot_thumb .descr_block {
+		margin: 15px;
 	}
 }
 

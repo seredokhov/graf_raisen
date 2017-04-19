@@ -1,0 +1,882 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Meta-теги и Favicon -->
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<link rel="icon" href="images/favicon.ico">
+
+	<!-- Название сайта -->
+	<title>Мой стандартный HTML</title>
+
+	<!-- Bootstrap CSS-->
+	<link href="css/bootstrap.css" rel="stylesheet">
+		<!-- OWL Carousel-->
+	<link href="css/owl.carousel.css" rel="stylesheet">
+	<link href="css/owl.theme.css" rel="stylesheet">
+
+	
+	<!-- Символьный шрифт FontAwesome -->
+	<link href="css/font-awesome.min.css" rel="stylesheet">
+
+
+	<!--Пользовательские стили этого шаблона -->
+	<link href="css/styles.css" rel="stylesheet">
+
+
+	<!-- Поддержка HTML5 элементов в Internet Explorer 8 -->
+	<!--[if lt IE 9]>
+	<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+</head>
+
+<body>
+
+	<header>
+		<div class="upper_head">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-3">
+						<div class="social">
+							<span class="VK"></span>
+							<span class="twit"></span>
+							<span class="ok"></span>
+						</div>
+					</div>
+					<div class="col-sm-9">
+						<div class="lang_drop dropdown">
+							<img src="images/Flag_of_Germany.png" class="lang_btn" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+							
+							</img>
+							<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+								<li>
+									<a href="#"><img src="images/RUS.png" alt="">ЭКСКУСИИ</a>
+								</li>
+								<li>
+									<a href="#"><img src="images/222.png" alt="">НОВОСТИ</a>
+								</li>
+							</ul>
+						</div>
+						<div class="contact_links"> 
+							<a href="#" class="phone"><span>+69 41099533</span></a>
+							<a href="#" class="mail"><span>travel@gmail.com</span></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="lower_head">
+			<div class="container">
+				<div class="row">
+					<nav class="navbar navbar-default header_nav">
+
+						<!--Блок с логотипом и кнопкой выпадающего меню -->
+						<div class="navbar-header">
+							<a class="logo" href="index.html"><img src="images/logo.png" class="img-responsive" alt=""></a>
+							<button type="button" class="burg navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"></button>
+						</div>
+						<!--  -->
+
+						<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+							<ul class="nav navbar-nav">
+								<li>
+									<a href="about.html">О компании</a>
+								</li>
+								<li>
+									<a href="transfer.html">Трансфер</a>
+								</li>
+								<li>
+									<a href="booking2.html">Экскурсии</a>
+								</li>
+								<li>
+									<a href="news.html">Новости</a>
+								</li>
+								<li>
+									<a href="FAQ.html">Вопросы и ответы</a>
+								</li>
+								<li class="hot"><a href="hot_deals.html"><span></span>Горячие предложения</a></li>
+								<li class="like"><a href="#"><span>1</span>Мои заментки</a></li>
+
+								<!-- Кнопка +меню выдимые только на lg/md-->
+								<li class="burg_block hidden-xs">
+									<button type="button" class="burg" data-toggle="dropdown"></button>
+									<div class="dropdown-menu">
+										<ul class="list-group">
+											<li class="search_li">
+												<form action="">
+													<label for="search">Поиск</label>
+													<input type="text" class="form-control" id="search">
+												</form>
+											</li>
+											<li class="list-group-item"><a href="#">О компании</a></li>
+											<li class="list-group-item"><a href="#">Услуги и стоимость</a></li>
+											<li class="list-group-item"><a href="#">Новости</a></li>
+											<li class="list-group-item"><a href="#">Оплата</a></li>
+											<li class="list-group-item"><a href="#">Горячее предложение</a></li>
+											<li class="list-group-item"><a href="#">Партнерам</a></li>
+										</ul>
+										<button class="close"><i class="fa fa-times" aria-hidden="true"></i></button>
+									</div>
+								</li>
+								<!-- ==================================== -->
+
+								<!-- Меню выдимое только на sm/xs-->
+								<li class=" visible-xs"><a href="#">О компании</a></li>
+								<li class=" visible-xs search_li">
+									<form action="">
+										<label for="">Поиск</label>
+										<input type="text" class="form-control">
+									</form>
+								</li>
+								<li class=" visible-xs"><a href="#">Услуги и стоимость</a></li>
+								<li class=" visible-xs"><a href="#">Новости</a></li>
+								<li class=" visible-xs"><a href="#">Оплата</a></li>
+								<li class=" visible-xs"><a href="#">Горячее предложение</a></li>
+								<li class=" visible-xs"><a href="#">Партнерам</a></li>
+
+
+
+
+								</ul>
+							</div>
+						</nav>
+				</div>
+			</div>
+		</div>
+
+	</header>
+
+	<main>
+
+		<div id="wrapper">
+
+			<section class="section ">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-4 col-md-5">
+
+							<div class="filter">
+								<header>Купить тур онлайн</header>
+								<form action=" " method="post">
+									<div class="form-group col-sm-6">
+										<label for="country">Страна</label>
+										<div class="arrow">
+											<select class="form-control" id="country" >
+												<option>1</option>
+												<option>2</option>
+												<option>3</option>
+												<option>4</option>
+												<option>5</option>
+											</select>
+										</div>
+									</div>
+									<div class="form-group col-sm-6">
+										<label for="curort">Курорт</label>
+										<div class="arrow">
+											<select class="form-control" id="curort" >
+												<option>1</option>
+												<option>2</option>
+												<option>3</option>
+												<option>4</option>
+												<option>5</option>
+											</select>
+										</div>
+									</div>
+									<div class="form-group col-sm-6">
+										<label for="sanatory">Санаторий</label>
+										<div class="arrow">
+											<select class="form-control" id="sanatory" >
+												<option>1</option>
+												<option>2</option>
+												<option>3</option>
+												<option>4</option>
+												<option>5</option>
+											</select>
+										</div>
+									</div>
+									<div class="form-group col-sm-6">
+										<label for="date">Дата отдыха</label>
+										<div class="arrow">
+											<select class="form-control" id="date" >
+												<option>1</option>
+												<option>2</option>
+												<option>3</option>
+												<option>4</option>
+												<option>5</option>
+											</select>
+										</div>
+									</div>
+									<div class="form-group col-sm-6">
+										<label for="food">Питание</label>
+										<div class="arrow">
+											<select class="form-control" id="food" >
+												<option>1</option>
+												<option>2</option>
+												<option>3</option>
+												<option>4</option>
+												<option>5</option>
+											</select>
+										</div>
+									</div>
+
+									<div class="form-group col-sm-6">
+										<label for="human">Кол-во человек</label>
+										<div class="arrow">
+											<select class="form-control" id="human" >
+												<option>1</option>
+												<option>2</option>
+												<option>3</option>
+												<option>4</option>
+												<option>5</option>
+											</select>
+										</div>
+									</div>
+
+									<div class="form-group reset-mg col-sm-6">
+										<label >Кол. номеров</label>
+										<fieldset class="radio_group">
+											<label>
+												<input class="radio" type="radio" name="radio-test" checked>
+												<span class="radio-custom radio-custom-1"></span>
+												<span class="label"></span>
+											</label>
+											<label>
+												<input class="radio" type="radio" name="radio-test">
+												<span class="radio-custom radio-custom-2"></span>
+												<span class="label"></span>
+											</label>
+											<label>
+												<input class="radio" type="radio" name="radio-test">
+												<span class="radio-custom radio-custom-3"></span>
+												<span class="label"></span>
+											</label>
+													<label>
+												<input class="radio" type="radio" name="radio-test">
+												<span class="radio-custom radio-custom-4"></span>
+												<span class="label"></span>
+											</label>
+													<label>
+												<input class="radio" type="radio" name="radio-test">
+												<span class="radio-custom radio-custom-5"></span>
+												<span class="label"></span>
+											</label>
+										</fieldset>
+									</div>
+									<div class="form-group reset-mg col-sm-6">
+										<div class="btn-filter_block">
+											<button type="submit" class="btn_custom btn_filter">Поиск тура</button>
+										</div>
+									</div>
+								</form>
+							</div>
+
+							<aside class="left_bar hot_deal_aside">
+								<header>
+									Выбрать по критериям
+								</header>
+								<hr>
+								<div class ="service">
+									<span class="hdr">Цена</span>
+									<label>
+										<input class="checkbox" type="checkbox" name="checkbox-test">
+										<span class="checkbox-custom"></span>
+										<span class="label">от 350 до 700 $</span>
+									</label>
+									<label>
+										<input class="checkbox" type="checkbox" name="checkbox-test">
+										<span class="checkbox-custom"></span>
+										<span class="label">от 850 до 1690 $</span>
+									</label>
+									<label>
+										<input class="checkbox" type="checkbox" name="checkbox-test">
+										<span class="checkbox-custom"></span>
+										<span class="label">от 1800 до 3000 $</span>
+									</label>
+									<label>
+										<input class="checkbox" type="checkbox" name="checkbox-test">
+										<span class="checkbox-custom"></span>
+										<span class="label">от 3400 до 4500 $</span>
+									</label>
+									<label>
+										<input class="checkbox" type="checkbox" name="checkbox-test">
+										<span class="checkbox-custom"></span>
+										<span class="label">от 5300 до 7890 $</span>
+									</label>
+									<a href="">Посмотреть все</a>
+								</div>
+								
+
+								<div class ="service">
+									<span class="hdr">Количество звёзд</span>
+									<label>
+										<input class="checkbox" type="checkbox" name="checkbox-test">
+										<span class="checkbox-custom"></span>
+										<span class="label">
+											<span class="stars">
+												<i class="fa fa-star green"></i>
+												<i class="fa fa-star green"></i>
+												<i class="fa fa-star green"></i>
+												<i class="fa fa-star green"></i>
+												<i class="fa fa-star green"></i>
+											</span>
+										</span>
+									</label>
+									<label>
+										<input class="checkbox" type="checkbox" name="checkbox-test">
+										<span class="checkbox-custom"></span>
+										<span class="label">
+											<span class="stars">
+												<i class="fa fa-star green"></i>
+												<i class="fa fa-star green"></i>
+												<i class="fa fa-star green"></i>
+												<i class="fa fa-star green"></i>
+											</span>
+										</span>
+									</label>
+									<label>
+										<input class="checkbox" type="checkbox" name="checkbox-test">
+										<span class="checkbox-custom"></span>
+										<span class="label">
+											<span class="stars">
+												<i class="fa fa-star green"></i>
+												<i class="fa fa-star green"></i>
+												<i class="fa fa-star green"></i>
+											</span>
+										</span>
+									</label>
+									<label>
+										<input class="checkbox" type="checkbox" name="checkbox-test">
+										<span class="checkbox-custom"></span>
+										<span class="label">
+											<span class="stars">
+												<i class="fa fa-star green"></i>
+												<i class="fa fa-star green"></i>
+											</span>
+										</span>
+									</label>
+									<label>
+										<input class="checkbox" type="checkbox" name="checkbox-test">
+										<span class="checkbox-custom"></span>
+										<span class="label">
+											<span class="stars">
+												<i class="fa fa-star green"></i>
+											</span>
+										</span>
+									</label>
+									<a href="">Посмотреть все</a>
+								</div>
+
+								<div class ="service">
+									<span class="hdr">Удобства</span>
+									<label>
+										<input class="checkbox" type="checkbox" name="checkbox-test">
+										<span class="checkbox-custom"></span>
+										<span class="label">Телевизор</span>
+									</label>
+									<label>
+										<input class="checkbox" type="checkbox" name="checkbox-test">
+										<span class="checkbox-custom"></span>
+										<span class="label">Интернет</span>
+									</label>
+									<label>
+										<input class="checkbox" type="checkbox" name="checkbox-test">
+										<span class="checkbox-custom"></span>
+										<span class="label">Ванная</span>
+									</label>
+									<label>
+										<input class="checkbox" type="checkbox" name="checkbox-test">
+										<span class="checkbox-custom"></span>
+										<span class="label">Кондиционер</span>
+									</label>
+									<label>
+										<input class="checkbox" type="checkbox" name="checkbox-test">
+										<span class="checkbox-custom"></span>
+										<span class="label">Джакузи</span>
+									</label>
+									<a href="">Посмотреть все</a>
+								</div>
+
+								<div class ="service">
+									<span class="hdr">Оснащение номера</span>
+									<label>
+										<input class="checkbox" type="checkbox" name="checkbox-test">
+										<span class="checkbox-custom"></span>
+										<span class="label">Двойные двери</span>
+									</label>
+									<label>
+										<input class="checkbox" type="checkbox" name="checkbox-test">
+										<span class="checkbox-custom"></span>
+										<span class="label">Стеклопакеты</span>
+									</label>
+									<label>
+										<input class="checkbox" type="checkbox" name="checkbox-test">
+										<span class="checkbox-custom"></span>
+										<span class="label">Пол с подогревом</span>
+									</label>
+									<label>
+										<input class="checkbox" type="checkbox" name="checkbox-test">
+										<span class="checkbox-custom"></span>
+										<span class="label">Коверный пол</span>
+									</label>
+									<label>
+										<input class="checkbox" type="checkbox" name="checkbox-test">
+										<span class="checkbox-custom"></span>
+										<span class="label">Ламинат</span>
+									</label>
+									<a href="">Посмотреть все</a>
+								</div>
+
+								<div class ="service">
+									<span class="hdr">Показания к лечению</span>
+									<label>
+										<input class="checkbox" type="checkbox" name="checkbox-test">
+										<span class="checkbox-custom"></span>
+										<span class="label">Массаж</span>
+									</label>
+									<label>
+										<input class="checkbox" type="checkbox" name="checkbox-test">
+										<span class="checkbox-custom"></span>
+										<span class="label">Вибро стол</span>
+									</label>
+									<label>
+										<input class="checkbox" type="checkbox" name="checkbox-test">
+										<span class="checkbox-custom"></span>
+										<span class="label">Кишечный тракт</span>
+									</label>
+									<label>
+										<input class="checkbox" type="checkbox" name="checkbox-test">
+										<span class="checkbox-custom"></span>
+										<span class="label">Диагностика сердца</span>
+									</label>
+									<a href="">Посмотреть все</a>
+								</div>
+
+								<div class ="service">
+									<span class="hdr">Лечебная база</span>
+									<label>
+										<input class="checkbox" type="checkbox" name="checkbox-test">
+										<span class="checkbox-custom"></span>
+										<span class="label">Душевая</span>
+									</label>
+									<label>
+										<input class="checkbox" type="checkbox" name="checkbox-test">
+										<span class="checkbox-custom"></span>
+										<span class="label">Вибро стол</span>
+									</label>
+									<label>
+										<input class="checkbox" type="checkbox" name="checkbox-test">
+										<span class="checkbox-custom"></span>
+										<span class="label">Узи центр</span>
+									</label>
+									<label>
+										<input class="checkbox" type="checkbox" name="checkbox-test">
+										<span class="checkbox-custom"></span>
+										<span class="label">Барокамера</span>
+									</label>
+									<a href="">Посмотреть все</a>
+								</div>
+							</aside>
+
+						</div>
+
+						<div class="col-lg-8 col-md-7">
+							<ul class="sort">
+								<li class="active"><a href="">Самая низкая цена</a></li>
+								<li><a href="">Звезды</a></li>
+								<li><a href="">Оценка по отзывам</a></li>
+								<li><a href="">Топовые санатории</a></li>
+							</ul>
+							
+							<article class="hot_thumb clearfix">
+								<div class="img_block">
+									<img class="" src="images/img-1.jpg" alt="">
+								</div>
+								<div class="descr_block">
+									<header>
+										<span>Санаторий звезда</span>
+									
+										<span class="stars">
+											<i class="fa fa-star green"></i>
+											<i class="fa fa-star green"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+										</span>
+										<span class="rating">Отлично 9,5</span>
+									</header>
+									<span class="country">Колумбия</span>
+									<div class="services">
+											<div class="item">
+												<span>Приставка</span>
+												<img src="images/console.jpg" alt="console">
+											</div>
+											<div class="item">
+												<span>Интернет</span>
+												<img src="images/www.jpg" alt="www">
+											</div>
+											<div class="item">
+												<span>Ванная</span>
+												<img src="images/mush.jpg" alt="mush">
+											</div>
+											<div class="item">
+												<span>Кондиционер</span>
+												<img src="images/cond.jpg" alt="cond">
+											</div>
+									</div>
+									<div class="selection">
+										<button class="btn_custom">Выбрать санаторий</button>
+										<span class="price">200 e</span>
+									</div>
+								</div>
+							</article>
+
+							<article class="hot_thumb clearfix">
+								<div class="img_block">
+									<img class="" src="images/img-1.jpg" alt="">
+								</div>
+								<div class="descr_block">
+									<header>
+										<span>Санаторий звезда</span>
+									
+										<span class="stars">
+											<i class="fa fa-star green"></i>
+											<i class="fa fa-star green"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+										</span>
+										<span class="rating">Отлично 9,5</span>
+									</header>
+									<span class="country">Колумбия</span>
+									<div class="services">
+											<div class="item">
+												<span>Приставка</span>
+												<img src="images/console.jpg" alt="console">
+											</div>
+											<div class="item">
+												<span>Интернет</span>
+												<img src="images/www.jpg" alt="www">
+											</div>
+											<div class="item">
+												<span>Ванная</span>
+												<img src="images/mush.jpg" alt="mush">
+											</div>
+											<div class="item">
+												<span>Кондиционер</span>
+												<img src="images/cond.jpg" alt="cond">
+											</div>
+									</div>
+									<div class="selection">
+										<button class="btn_custom">Выбрать санаторий</button>
+										<span class="price">200 e</span>
+									</div>
+								</div>
+							</article>
+
+							<article class="hot_thumb clearfix">
+								<div class="img_block">
+									<img class="" src="images/img-1.jpg" alt="">
+								</div>
+								<div class="descr_block">
+									<header>
+										<span>Санаторий звезда</span>
+									
+										<span class="stars">
+											<i class="fa fa-star green"></i>
+											<i class="fa fa-star green"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+										</span>
+										<span class="rating">Отлично 9,5</span>
+									</header>
+									<span class="country">Колумбия</span>
+									<div class="services">
+											<div class="item">
+												<span>Приставка</span>
+												<img src="images/console.jpg" alt="console">
+											</div>
+											<div class="item">
+												<span>Интернет</span>
+												<img src="images/www.jpg" alt="www">
+											</div>
+											<div class="item">
+												<span>Ванная</span>
+												<img src="images/mush.jpg" alt="mush">
+											</div>
+											<div class="item">
+												<span>Кондиционер</span>
+												<img src="images/cond.jpg" alt="cond">
+											</div>
+									</div>
+									<div class="selection">
+										<button class="btn_custom">Выбрать санаторий</button>
+										<span class="price">200 e</span>
+									</div>
+								</div>
+							</article>
+
+							<article class="hot_thumb clearfix">
+								<div class="img_block">
+									<img class="" src="images/img-1.jpg" alt="">
+								</div>
+								<div class="descr_block">
+									<header>
+										<span>Санаторий звезда</span>
+									
+										<span class="stars">
+											<i class="fa fa-star green"></i>
+											<i class="fa fa-star green"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+										</span>
+										<span class="rating">Отлично 9,5</span>
+									</header>
+									<span class="country">Колумбия</span>
+									<div class="services">
+											<div class="item">
+												<span>Приставка</span>
+												<img src="images/console.jpg" alt="console">
+											</div>
+											<div class="item">
+												<span>Интернет</span>
+												<img src="images/www.jpg" alt="www">
+											</div>
+											<div class="item">
+												<span>Ванная</span>
+												<img src="images/mush.jpg" alt="mush">
+											</div>
+											<div class="item">
+												<span>Кондиционер</span>
+												<img src="images/cond.jpg" alt="cond">
+											</div>
+									</div>
+									<div class="selection">
+										<button class="btn_custom">Выбрать санаторий</button>
+										<span class="price">200 e</span>
+									</div>
+								</div>
+							</article>
+
+							<article class="hot_thumb clearfix">
+								<div class="img_block">
+									<img class="" src="images/img-1.jpg" alt="">
+								</div>
+								<div class="descr_block">
+									<header>
+										<span>Санаторий звезда</span>
+									
+										<span class="stars">
+											<i class="fa fa-star green"></i>
+											<i class="fa fa-star green"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+										</span>
+										<span class="rating">Отлично 9,5</span>
+									</header>
+									<span class="country">Колумбия</span>
+									<div class="services">
+											<div class="item">
+												<span>Приставка</span>
+												<img src="images/console.jpg" alt="console">
+											</div>
+											<div class="item">
+												<span>Интернет</span>
+												<img src="images/www.jpg" alt="www">
+											</div>
+											<div class="item">
+												<span>Ванная</span>
+												<img src="images/mush.jpg" alt="mush">
+											</div>
+											<div class="item">
+												<span>Кондиционер</span>
+												<img src="images/cond.jpg" alt="cond">
+											</div>
+									</div>
+									<div class="selection">
+										<button class="btn_custom">Выбрать санаторий</button>
+										<span class="price">200 e</span>
+									</div>
+								</div>
+							</article>
+
+							<article class="hot_thumb clearfix">
+								<div class="img_block">
+									<img class="" src="images/img-1.jpg" alt="">
+								</div>
+								<div class="descr_block">
+									<header>
+										<span>Санаторий звезда</span>
+									
+										<span class="stars">
+											<i class="fa fa-star green"></i>
+											<i class="fa fa-star green"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+										</span>
+										<span class="rating">Отлично 9,5</span>
+									</header>
+									<span class="country">Колумбия</span>
+									<div class="services">
+											<div class="item">
+												<span>Приставка</span>
+												<img src="images/console.jpg" alt="console">
+											</div>
+											<div class="item">
+												<span>Интернет</span>
+												<img src="images/www.jpg" alt="www">
+											</div>
+											<div class="item">
+												<span>Ванная</span>
+												<img src="images/mush.jpg" alt="mush">
+											</div>
+											<div class="item">
+												<span>Кондиционер</span>
+												<img src="images/cond.jpg" alt="cond">
+											</div>
+									</div>
+									<div class="selection">
+										<button class="btn_custom">Выбрать санаторий</button>
+										<span class="price">200 e</span>
+									</div>
+								</div>
+							</article>
+
+						</div>
+					</div>
+				</div>
+			</section>
+
+		</div>
+
+
+
+	</main>
+
+	<footer>
+		<div class="container">
+			<div class="row">
+				<ul class="foot col-lg-12">
+					
+					<li class="inl ">
+						<h3>Санто Моника</h3>
+						<ul class="list-unstyled">
+							<li> <a href="#">Русские в Тайланде</a> </li>
+							<li> <a href="#">Тур в Египет</a> </li>
+							<li> <a href="#">Тур в Египет</a> </li>
+							<li> <a href="#">Тур в Египет</a> </li>
+							<li> <a href="#">Тур в Египет</a> </li>
+							<li> <a href="#">Русские в Тайланде</a> </li>
+						</ul>
+						<ul class="list-unstyled">
+							<li> <a href="#">Русские в Тайланде</a> </li>
+							<li> <a href="#">Тур в Египет</a> </li>
+							<li> <a href="#">Тур в Египет</a> </li>
+							<li> <a href="#">Тур в Египет</a> </li>
+							<li> <a href="#">Тур в Египет</a> </li>
+							<li> <a href="#">Русские в Тайланде</a> </li>
+						</ul>
+					</li>
+					<li class="inl ">
+						<h3>Популярные новости</h3>
+						<ul class="list-unstyled">
+							<li> <a href="#">Русские в Тайланде</a> </li>
+							<li> <a href="#">Русские в Тайланде</a> </li>
+							<li> <a href="#">Русские в Тайланде</a> </li>
+							<li> <a href="#">Русские в Тайланде</a> </li>
+							<li> <a href="#">Тур в Египет</a> </li>
+							<li> <a href="#">Русские в Тайланде</a> </li>
+						</ul>
+						<ul class="list-unstyled">
+							<li> <a href="#">Русские в Тайланде</a> </li>
+							<li> <a href="#">Русские в Тайланде</a> </li>
+							<li> <a href="#">Русские в Тайланде</a> </li>
+							<li> <a href="#">Русские в Тайланде</a> </li>
+							<li> <a href="#">Русские в Тайланде</a> </li>
+							<li> <a href="#">Русские в Тайланде</a> </li>
+						</ul>
+					</li>
+					<li class="inl">
+						<h3>Сервис</h3>
+						<ul class="list-unstyled ">
+							<li> <a href="#">Тур в Египет</a> </li>
+							<li> <a href="#">Тур в Египет</a> </li>
+							<li> <a href="#">Русские в Тайланде</a> </li>
+							<li> <a href="#">Русские в Тайланде</a> </li>
+							<li> <a href="#">Тур в Египет</a> </li>
+							<li> <a href="#">Русские в Тайланде</a> </li>
+						</ul>
+						<ul class="list-unstyled ">
+							<li> <a href="#">Русские в Тайланде</a> </li>
+							<li> <a href="#">Русские в Тайланде</a> </li>
+							<li> <a href="#">Тур в Египет</a> </li>
+							<li> <a href="#">Тур в Египет</a> </li>
+							<li> <a href="#">Тур в Египет</a> </li>
+							<li> <a href="#">Русские в Тайланде</a> </li>
+						</ul>
+					</li>
+
+				</ul>
+			</div>
+			<div class="row">
+
+				<div class="col-lg-4 col-md-6">
+					<div class="footer_block">
+						<label for="send">Подписаться на рассылку</label>
+						<div class="input-group">
+							<input type="email" class="form-control send input_reset" placeholder="Введите ваш email" id="send">
+							<span class="input-group-btn">
+							<button class="btn_send input_reset" type="button">
+								<img src="images/arrow.png" alt="">
+							</button>
+							</span>
+						</div>
+						<span class="copyright">© 2016 Название сайта</span>
+					</div>
+				</div>
+
+				<div class="col-lg-4 col-md-6">
+					<div class="contact_links"> 
+						<a href="#" class="phone"><span>Заказать звонок</span></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+
+	<!-- Bootstrap и другие JavaScript
+	================================================== -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/owl.carousel.js"></script>
+	<script src="js/lib.js"></script>
+	<script>
+		$(document).ready(function() {
+			$("#owl-demo").owlCarousel({
+				navigation : true,
+				navigationText : ["",""],
+				slideSpeed : 300,
+				paginationSpeed : 400,
+				singleItem:true
+		 
+		      // "singleItem:true" is a shortcut for:
+		      // items : 1, 
+		      // itemsDesktop : false,
+		      // itemsDesktopSmall : false,
+		      // itemsTablet: false,
+		      // itemsMobile : false
+			});
+		});
+	</script>
+
+</body>
+</html>
