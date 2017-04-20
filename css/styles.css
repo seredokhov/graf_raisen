@@ -1238,6 +1238,12 @@ label.repeat {
 	display: flex;
 	flex-wrap: wrap;
 }
+.new a {
+	display: flex;
+	flex-wrap: wrap;
+	text-decoration: none;
+	color: #8c8c8c;
+}
 .new h3{
 	font-size: 16px;
 	color: #353534;
@@ -1338,7 +1344,7 @@ label.repeat {
 #gallery .photos {
 	position: relative;
 	width: 100%;
-	min-height: 254px;
+	min-height: 234px;
 }
 #gallery .photos img {
 	width: 100%;

@@ -15,11 +15,14 @@ $(function() {
         $(this).toggleClass("active");
     })
 });
+
+
 var prev = document.querySelector('#gallery button.prev');
 var next = document.querySelector('#gallery button.next');
 var images = document.querySelectorAll('#gallery .photos img');
 var i = 0;
 
+if (next) {
 next.onclick = function () {
 	images[i].style.opacity = '0';
 	i++;
@@ -27,9 +30,10 @@ next.onclick = function () {
 		i = 0;
 	}
 	images[i].style.opacity = '1';
-}
+}}
 
 
+if (prev) {
 prev.onclick = function () {
 	images[i].style.opacity = '0';
 	i--;
@@ -37,7 +41,9 @@ prev.onclick = function () {
 		i = images.length - 1;
 	}
 	images[i].style.opacity = '1';
-}
+}}
+
+
 
 $(function() {
 	$("#gallery .small_galery div").click(function() {
