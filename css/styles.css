@@ -628,7 +628,7 @@ section.content {
 }
 .content_title > hr,
 .content_gray hr,
-.thumbs_block hr {
+.thumbs_block hr.short {
 	background: #6fb919;
 	width: 70px;
 	height: 2px;
