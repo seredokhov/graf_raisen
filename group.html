@@ -250,7 +250,9 @@
 								<label for="email">E-mail</label>
 								<input type="email" class="form-control" id="email">
 								<label for="date">Дата рождения</label>
-								<input type="text" name="date" class="form-control born tcal" id="date">
+								<div class="arrow transf_arr">
+									<input type="text" name="date" value="" class="form-control born" id="date">
+								</div>
 								<div class="arrow transf_arr">
 									<select class="form-control">
 										<option>В обе стороны</option>
@@ -311,8 +313,10 @@
 									<span class="checkbox-custom"></span>
 									<span class="label">Повторить данные</span>
 								</label>
-								<label for="date2">Дата рождения</label>
-								<input type="text" name="date" class="form-control born tcal" id="date2">
+								<label for="date">Дата рождения</label>
+								<div class="arrow transf_arr">
+									<input type="text" name="date" value="" class="form-control born" id="date2">
+								</div>
 								<div class="arrow transf_arr">
 									<select class="form-control">
 										<option>В обе стороны</option>
@@ -435,9 +439,10 @@
 	================================================== -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/moment.js"></script>
+	<script type="text/javascript" src="js/daterangepicker.js"></script>
 	<script src="js/owl.carousel.js"></script>
 	<script src="js/lib.js"></script>
-	<script src="js/tcal.js"></script>
 
 	<script>
 		$(document).ready(function() {
