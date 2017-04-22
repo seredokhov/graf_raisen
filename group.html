@@ -168,7 +168,7 @@
 											<a href="">Индивидуальный</a>
 										</li>
 										<li>
-											<a href="">Групповой</a>
+											<a class="active" href="">Групповой</a>
 										</li>
 										<li>
 											<a href="">Заказной</a>
@@ -179,7 +179,7 @@
 							</div>
 						</div>
 
-						<div class="col-sm-4">
+						<div class="col-md-4">
 							<div class="transfer_form">
 								<div class="arrow transf_arr">
 									<select class="form-control">
@@ -220,7 +220,7 @@
 								<button type="button" class="btn_custom btn_filter">Поиск</button>
 							</div>
 						</div>
-						<div class="col-sm-4">
+						<div class="col-md-4">
 							<header class="transfer_header">$</header>
 							<div class="transfer_form">
 								<label for="humans">Город отправления</label>
@@ -250,7 +250,7 @@
 								<label for="email">E-mail</label>
 								<input type="email" class="form-control" id="email">
 								<label for="date">Дата рождения</label>
-								<input type="date" class="form-control born" id="date">
+								<input type="text" name="date" class="form-control born tcal" id="date">
 								<div class="arrow transf_arr">
 									<select class="form-control">
 										<option>В обе стороны</option>
@@ -265,7 +265,7 @@
 								<button type="button" class="btn_custom btn_filter">Забронировать</button>
 							</div>
 						</div>
-						<div class="col-sm-4">
+						<div class="col-md-4">
 							<header class="transfer_header">$</header>
 							<div class="transfer_form">
 								<label for="index">Индекс</label>
@@ -312,7 +312,7 @@
 									<span class="label">Повторить данные</span>
 								</label>
 								<label for="date2">Дата рождения</label>
-								<input type="date" class="form-control born" id="date2">
+								<input type="text" name="date" class="form-control born tcal" id="date2">
 								<div class="arrow transf_arr">
 									<select class="form-control">
 										<option>В обе стороны</option>
@@ -437,6 +437,8 @@
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/owl.carousel.js"></script>
 	<script src="js/lib.js"></script>
+	<script src="js/tcal.js"></script>
+
 	<script>
 		$(document).ready(function() {
 			$("#owl-demo").owlCarousel({

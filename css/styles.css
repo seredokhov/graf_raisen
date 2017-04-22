@@ -992,6 +992,7 @@ aside.left_bar header + hr {
 }
 aside.left_bar ul {
 	margin-top: 10px;
+	margin-bottom: 10px;
 }
 aside.left_bar ul,
 aside.left_bar ul li {
@@ -1023,7 +1024,7 @@ aside.left_bar ul li,
 }
 aside.left_bar ul + a,
 aside.left_bar .service a {
-	padding-bottom: 10px;
+	padding-bottom: 20px;
 	display: block;
 	text-align: center;
 	font-size: 12px;
@@ -1167,6 +1168,9 @@ span.post {
 	padding: 0 10px;
 }
 .transfers ul > li a:hover {
+	color: #9cce4f;
+}
+.transfers ul > li a.active {
 	color: #9cce4f;
 	border-bottom: 6px solid #89c61c;
 }
@@ -1852,6 +1856,10 @@ article.hot_thumb > a {
 	font-size: 18px;
 	font-weight: bold;
 }
+.thumbs_block .thumb h3,
+.tour_section .thumb h3 {
+	font-size: 20px;
+}
 .thumbs_block .thumb,
 .tour_section .thumb {
 	min-height: 405px;
@@ -1887,6 +1895,9 @@ article.hot_thumb > a {
 	padding-right: 15px;
 	font-family: 'Proxima Nova Black';
 	font-size: 20px;
+}
+.tour_section .paginat {
+	margin: 30px auto;
 }
 
 /*    Saled **/
@@ -1926,14 +1937,106 @@ article.hot_thumb > a {
 
 
 
+/* =========Календарь=== */ 
+
+.tcalInput {
+	background: url('../images/caret.png') 100% 50% no-repeat #fff;
+	padding-right: 20px;
+	cursor: pointer;
+}
+
+/* additional properties for input boxe in activated state, above still applies unless in conflict */
+.tcalActive {
+	background-image: url('../images/no_cal.gif');
+	background-position: 98% 50%;
+}
+/* container of calendar's pop-up */
+#tcal {
+	position: absolute;
+	visibility: hidden;
+	z-index: 10000;
+	width: 330px;
+	background-color: white;
+	margin-top: 2px;
+	padding: 0 2px 2px 2px;
+	border: 1px solid silver;
+
+	-moz-box-shadow: 3px 3px 4px silver;
+	-webkit-box-shadow: 3px 3px 4px silver;
+	box-shadow: 3px 3px 4px silver;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='silver')";
+	filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='silver');
+}
+
+/* table containing navigation and current month */
+#tcalControls {
+	border-collapse: collapse;
+	border: 0;
+	width: 100%;
+}
+#tcalControls td {
+	border-collapse: collapse;
+	border: 0;
+	padding: 0;
+	width: 16px;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	cursor: pointer;
+}
+#tcalControls th {
+	border-collapse: collapse;
+	border: 0;
+	padding: 0;
+	line-height: 25px;
+	font-size: 18px;
+	text-align: center;
+	font-family: 'Proxima Nova Bold';
+	white-space: nowrap;
+}
+#tcalPrevYear { background-image: url('../images/prev_year.gif'); }
+#tcalPrevMonth { background-image: url('../images/prev_mon.gif'); }
+#tcalNextMonth { background-image: url('../images/next_mon.gif'); }
+#tcalNextYear { background-image: url('../images/next_year.gif'); }
+
+/* table containing week days header and calendar grid */
+#tcalGrid {
+	border-collapse: collapse;
+	border: 1px solid silver;
+	width: 100%;
+}
+#tcalGrid th {
+	border: 1px solid silver;
+	border-collapse: collapse;
+	padding: 3px 0;
+	text-align: center;
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 10px;
+	background-color: gray;
+	color: white;
+}
+#tcalGrid td {
+	border: 0;
+	border-collapse: collapse;
+	padding: 2px 0;
+	text-align: center;
+	font-family: 'Proxima nova Light';
+	width: 14%;
+	height: 40px;
+	font-size: 15px;
+	cursor: pointer;
+}		
+#tcalGrid td.tcalOtherMonth { color: silver; }
+#tcalGrid td.tcalWeekend { background-color: #ACD6F5; }
+#tcalGrid td.tcalToday { border: 1px solid red; }
+#tcalGrid td.tcalSelected { background-color: #FFB3BE; }
+/*=====================*/
 
 
 
 
 
 
-
-/*===*/
+/*==Медиа запро==*/
 
 @media (max-width: 1200px) {
 	.main_slaider #owl-demo .item img{
@@ -2100,7 +2203,13 @@ article.hot_thumb > a {
 		margin: 15px;
 	}
 }
-
+@media (max-width: 480px) {
+	.paginat span.prev_page,
+	.paginat span.next_page {
+		display: block;
+		margin: 15px 0;
+	}
+}
 
 @media (min-width: 1200px) {
 	.container {
@@ -2114,22 +2223,6 @@ article.hot_thumb > a {
 	}
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
