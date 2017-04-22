@@ -1,11 +1,6 @@
-/* Галерея */
-
-
-
-/*  ======*/
-
+/*   Смена классов    */
 $(function() {
-	$("#dom").click(function() {
+	$("#side").click(function() {
 		$('.left_bar ul li').removeClass('active');
 	})
 });
@@ -16,10 +11,28 @@ $(function() {
     })
 });
 
+/*Запрет перетаскивания картинок*/
+setInterval(function(){    
+	$('img').attr({
+		"ondrag":"return false",
+		"ondragdrop":"return false",
+		"ondragstart":"return false"
+	})
+}, 300)
+/*Запрет перетаскивания ссылок*/
+setInterval(function(){    
+	$('a').attr({
+		"ondrag":"return false",
+		"ondragdrop":"return false",
+		"ondragstart":"return false"
+	})
+}, 300)
 
-var prev = document.querySelector('#gallery button.prev');
-var next = document.querySelector('#gallery button.next');
-var images = document.querySelectorAll('#gallery .photos img');
+/* ==== Галерея =====*/
+
+var prev = document.querySelector('.gallery button.prev');
+var next = document.querySelector('.gallery button.next');
+var images = document.querySelectorAll('.gallery .photos img');
 var i = 0;
 
 if (next) {
@@ -44,11 +57,12 @@ prev.onclick = function () {
 }}
 
 
-
 $(function() {
-	$("#gallery .small_galery div").click(function() {
-		i = $(this).attr('id');
-		$("#gallery .photos img").css("opacity","0");
+	$(".gallery .small_galery div").click(function() {
+		i = $(this).attr('data-num');
+		$(".gallery .photos img").css("opacity","0");
 		images[i].style.opacity = '1';
 	})
 });
+
+/* =========*/

@@ -95,7 +95,7 @@ aside header,
 .excurs_form h3,
 .about h2,
 .about h3 {
-	font-family: 'Proxima Nova Extrabold';
+	font-family: 'Proxima Nova Black';
 	text-transform: uppercase;
 	color: #4b4b4b;
 	line-height: 1;
@@ -106,6 +106,9 @@ h2 {
 }
 p {
 	color: #8c8c8c;
+}
+a:focus {
+	outline: none;
 }
 input,
 textarea,
@@ -121,7 +124,7 @@ select {
 /*   Кнопки  */
 .btn_custom {
 	font-family: 'Proxima Nova Semibold';
-	display: block;
+	display: inline-block;
 	color: #fff;
 	text-align: center;
 	border: none;
@@ -132,8 +135,9 @@ select {
 }
 
 .btn_offer {
-	width: 430px;
+	min-width: 430px;
 	height: 64px;
+	line-height: 64px;
 	margin: 25px auto;
 	letter-spacing: -0.4px;
 }
@@ -178,6 +182,7 @@ select {
 	height: 36px;
 	margin-right: 5px;
 	margin-top: 5px;
+	cursor: pointer;
 }
 .social > span.VK{
 	background: url(../images/social.png) no-repeat;
@@ -232,7 +237,6 @@ footer .contact_links > a.phone:before{
 .like  span,
 .hot  span{
 	display: inline-block;
-	background: red;
 	line-height: 21px;
 	width: 27px;
 	height: 21px;
@@ -461,9 +465,7 @@ section.content_blue {
 	appearance: none!important;
 }
 select::-ms-expand {
-
 	display: none;
-
 }
 .arrow {
 	overflow: hidden; 
@@ -478,34 +480,34 @@ select::-ms-expand {
 	/* Радиокнопки и чекбоксы */
 	.radio,
 	.checkbox {
-	    display: none;
+		display: none;
 	}	
 	.radio-custom,
 	.checkbox-custom {
-	    width: 27px;
-	    height: 27px;
-	    border: 1px solid #cfcfcf;
-	    position: relative;
+		width: 27px;
+		height: 27px;
+		border: 1px solid #cfcfcf;
+		position: relative;
 	}	
 	.radio-custom,
 	.checkbox-custom,
 	fieldset .label {
-	    display: inline-block;
-	    vertical-align: middle;
+		display: inline-block;
+		vertical-align: middle;
 	}	
 
 
 	.radio:checked + .radio-custom::before,
 	.checkbox:checked + .checkbox-custom::before {
 		display: block;
-	    background: url(../images/check.png);
-	    color: #fff;
-	    text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.8);
-	    position: absolute;
-	    top: 0px;
-	    right: 0px;
-	    bottom: 0px;
-	    left: 0px;
+		background: url(../images/check.png);
+		color: #fff;
+		text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.8);
+		position: absolute;
+		top: 0px;
+		right: 0px;
+		bottom: 0px;
+		left: 0px;
 	}
 
 	/* маленькие кнопки / чекпоксы*/
@@ -519,8 +521,8 @@ select::-ms-expand {
 	}
 	.left_bar .checkbox-custom,
 	.left_bar .radio-custom {
-	width: 17px;
-	height: 17px;
+		width: 17px;
+		height: 17px;
 	}
 	.checkbox:checked + .checkbox-custom::before,
 	.excurs_form .radio:checked + .radio-custom::before{
@@ -540,16 +542,16 @@ select::-ms-expand {
 	.radio + .radio-custom-1::before {
 		content: "1";
 	}
-		.radio + .radio-custom-2::before {
+	.radio + .radio-custom-2::before {
 		content: "2";
 	}
-		.radio + .radio-custom-3::before {
+	.radio + .radio-custom-3::before {
 		content: "3";
 	}
-		.radio + .radio-custom-4::before {
+	.radio + .radio-custom-4::before {
 		content: "4";
 	}
-		.radio + .radio-custom-5::before {
+	.radio + .radio-custom-5::before {
 		content: "5";
 	}
 	/*------------------*/
@@ -644,8 +646,7 @@ section.content {
 .lower_content article{
 	padding: 15px 0;
 }
-.content .thumb,
-.thumbs_block .thumb {
+.thumb {
 	background: #f6f6f6;
 	outline: 1px solid #c5c5c5;
 	outline-offset: -1px;
@@ -654,7 +655,7 @@ section.content {
 	padding: 5px;
 	margin: 0 auto;
 }
-.thumb > h2 {
+.thumb > h3 {
 	font-weight: bold;
 	font-size: 24px;
 	color: #4b4b4b;
@@ -779,7 +780,10 @@ section.content {
 	text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.8);
 	background: linear-gradient(to top, #74bc1a, #8ac71c);
 }
-
+.content a.btn_custom {
+	text-decoration: none;
+	color: #fff;
+}
 .content_gray {
 	background: url(../images/fon-2.jpg) 50% 0%;
 	min-height: 350px;
@@ -943,6 +947,7 @@ aside.left_bar {
 	width: 270px;
 	border: 1px solid #e1e1e1;
 	background: #fff;
+	margin-bottom: 30px;
 }
 aside.left_bar header {
 	font-size: 18px;
@@ -1013,6 +1018,7 @@ aside.left_bar ul li a:hover,
 }
 aside.left_bar ul li,
 .burg_block ul li {
+	background: none;
 	border-left: 5px solid transparent;
 }
 aside.left_bar ul + a,
@@ -1037,9 +1043,11 @@ aside.left_bar .service a {
 	border-left: 5px solid #69b334;
 }
 .about,
-.new {
+.new,
+.full_new {
 	color: #8c8c8c;
 	font-size: 13px;
+	line-height: 1.6;
 }
 .about span,
 .about ul li span {
@@ -1255,7 +1263,12 @@ label.repeat {
 	bottom: 0;
 	left: 15px;
 }
-.new data:before {
+
+.full_new data {
+	display: block;
+	margin-bottom: 15px;
+}
+[class*='new'] data:before {
 	content: "";
 	display: inline-block;
 	width: 11px;
@@ -1263,6 +1276,38 @@ label.repeat {
 	margin-right: 10px;
 	background: url('../images/clock.png');
 }
+.full_new h1{
+	font-size: 20px;
+	font-family: 'Proxima Nova Black';
+}
+.full_new .images {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.full_new .images img {
+	margin: 30px 15px;
+}
+.full_new .social_round {
+	text-align: center;
+	margin: 20px auto;
+}
+.full_new .social_round + div {
+	text-align: center;
+	margin-bottom: 30px;
+}
+.full_new a.btn_custom {
+	margin: 0 auto !important;
+	padding: 0 15px;
+}
+.full_new a.btn_custom:hover,
+.full_new a.btn_custom:active,
+.full_new a.btn_custom:focus {
+	color: #fff;
+	text-decoration: none;
+}
+
+
 
 /*   Bookin_tour */
 
@@ -1337,31 +1382,24 @@ label.repeat {
 	right: 30px;
 }
 /*      Галерея        */
-#gallery {
-	width: 400px;
-	margin: 0 auto;	
-}
-#gallery .photos {
+
+[class*='gallery'] .photos {
 	position: relative;
 	width: 100%;
 	min-height: 234px;
+	overflow: hidden;
 }
-#gallery .photos img {
+[class*='gallery'] .photos img {
+	height: 234px;
 	width: 100%;
-	height: auto;
 	position: absolute;
 	opacity: 0;
+	transition: opacity 0.5s ease-in-out;
 }
-#gallery .photos img:first-child {
+[class*='gallery'] .photos img:first-child {
 	opacity: 1;
 }
-#gallery .photos img {
-	transition: all 0.5s ease-in-out;
-}
-#gallery .buttons {
-
-}
-#gallery .buttons button {
+[class*='gallery'] .buttons button {
 	display: inline-block;
 	zoom: 1;
 	*display: inline;/*IE7 life-saver */
@@ -1374,15 +1412,15 @@ label.repeat {
 	outline: none;
 	border: none;
 }
-#gallery .buttons button.next {
+[class*='gallery'] .buttons button.next {
 	right: 	-5px;
 	background: url('../images/arrow_right.png') no-repeat 50% 50% #c3c3c3;
 }
-#gallery .buttons button.prev {
+[class*='gallery'] .buttons button.prev {
 	left: -5px;
 	background: url('../images/arrow_left.png') no-repeat 50% 50% #c3c3c3;
 }
-#gallery .buttons button:hover {
+[class*='gallery'] .buttons button:hover {
 	background-color: #86c520;
 }
 /* ============*/
@@ -1399,6 +1437,7 @@ label.repeat {
 	display: inline-block;
 	height: 25px;
 	width: 25px;
+	cursor: pointer;
 }
 span.r_g {
 	background: url(../images/g+.png) no-repeat;
@@ -1423,6 +1462,7 @@ span.r_fb {
 	display: inline-block;
 	border: 1px solid #c5c5c5;
 	margin: 30px 3px;
+	cursor: pointer;
 }
 .small_galery img {
 	height: 68px;
@@ -1570,10 +1610,15 @@ fieldset .half:first-child {
 	margin: 5px 0;
 }
 .excurs_form button[type="submit"],
-.add_service button {
+.add_service a,
+.booking_buttons a,
+.full_new a.btn_custom,
+.saled a,
+.tour_section .clearfix a {
 	display: inline-block;
-	width: 200px;
+	min-width: 200px;
 	height: 54px;
+	line-height: 54px;
 	margin: 14px 0;
 }
 div.row.section .large_letter .label {
@@ -1584,7 +1629,40 @@ div.row.section .large_letter .label {
 label.large_letter {
 	margin-bottom: 20px;
 }
-
+.booking_buttons {
+	display: flex;
+	height: 100%;
+	flex-direction: column;
+	justify-content: center;
+}
+.booking_buttons a {
+	margin: 10px auto;
+	text-decoration: none;
+	color: #fff;
+}
+.booking_buttons a:last-child,
+.saled a:last-child {
+	background: #dadcde;
+	color: #6d6d6d;
+}
+.saled a,
+.add_service a,
+.tour_section .clearfix a {
+	vertical-align: middle;
+	text-decoration: none;
+	color: #fff;
+}
+.saled a,
+.saled a:hover,
+.saled a:focus{
+	line-height: 1.1;
+	padding: 10px 15px;
+	margin: 15px;
+	font-size: 16px;
+}
+.tour_section .clearfix a {
+	width: 240px;
+}
 /*   hot deals */
 
 ul.sort {
@@ -1705,9 +1783,11 @@ article.hot_thumb > a {
 	justify-content: space-between;
 	align-items: center;
 }
-.selection button {
+.selection a {
 	padding: 15px 30px;
 	font-size: 14px;
+	text-decoration: none;
+	color: #fff;
 }
 .selection .price {
 	position: static;
@@ -1736,6 +1816,7 @@ article.hot_thumb > a {
 	color: #898989;
 	text-decoration: underline;
 	text-decoration-color: #e1e1e1;
+	cursor: pointer;
 }
 .paginat span.diss {
 	opacity: 0.5;
@@ -1744,6 +1825,7 @@ article.hot_thumb > a {
 .paginat span.page_nums {
 	display: inline-block;
 	margin: 0 20px;
+	cursor: pointer;
 }
 .paginat span.page_nums > span {
 	display: inline-block;
@@ -1770,38 +1852,82 @@ article.hot_thumb > a {
 	font-size: 18px;
 	font-weight: bold;
 }
-.thumbs_block .thumb {
+.thumbs_block .thumb,
+.tour_section .thumb {
 	min-height: 405px;
 	margin: 20px auto;
 }
-.thumbs_block .thumb img {
+.thumbs_block .thumb img,
+.tour_section .thumb img {
 	height: auto;
 }
-.thumbs_block .thumb .price {
+.thumbs_block .thumb .price,
+.tour_section .thumb .price {
 	font-size: 25px;
 	height: 40px;
 	line-height: 40px;
 	min-width: 80px;
 }
 
-.thumbs_block .thumb_description_header {
+.thumbs_block .thumb_description_header,
+.tour_section .thumb_description_header  {
 	font-size: 16px;
 }
-.thumbs_block p {
+.thumbs_block p,
+.tour_section p {
 	font-size: 12px;
 	padding: 0 10px;
 }
-.thumbs_block .main_price {
+.thumbs_block .main_price,
+.tour_section .main_price {
 	max-width: 180px;
 }
+.tour_section h2 {
+	padding-left: 15px;
+	padding-right: 15px;
+	font-family: 'Proxima Nova Black';
+	font-size: 20px;
+}
 
-/*
-background: linear-gradient(to top, #74bc1a, #8ac71c);
-border: 1px solid;
-border-image: linear-gradient(to bottom, #97d81f, #5a9f01) 1 100%;
-text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.8);
+/*    Saled **/
 
-*/
+
+.saled {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	text-align: center;
+	justify-content: space-around;
+	border: 1px solid #c5c5c5;
+	min-height: 360px;
+	color: #4b4b4b;
+	padding: 30px 10px;
+}
+.saled h1 {
+	margin: 0;
+}
+.saled span {
+	font-family: 'Proxima Nova Light';
+	font-size: 17px;
+}
+.saled span:last-of-type {
+	font-family: 'Proxima Nova Black';
+	font-size: 18px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
