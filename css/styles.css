@@ -1196,6 +1196,9 @@ span.post {
 .transfer_form input.born {
 	margin-bottom: 10px;
 }
+input.born::-ms-clear {
+	display: none;
+}
 .transfer_form .btn_filter {
 	display: block;
 	width: 100%;
