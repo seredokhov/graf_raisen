@@ -73,55 +73,14 @@ $(function() {
 /*   Календарь   */
 
 
-if (document.querySelector('input[name^="date"]')) {
-
-$(function() {
-$('input[name="daterange"]').daterangepicker({
-"buttonClasses": "btn btn-md",
-"applyClass": "btn-primary",
-"autoApply": false,
- "locale": {
-        "format": "DD.MM.YY",
-        "separator": " - ",
-        "applyLabel": "Применить",
-        "cancelLabel": "Отмена",
-        "fromLabel": "От",
-        "toLabel": "До",
-        "customRangeLabel": "Свой",
-        "daysOfWeek": [
-            "Вс",
-            "Пн",
-            "Вт",
-            "Ср",
-            "Чт",
-            "Пт",
-            "Сб"
-        ],
-        "monthNames": [
-            "Январь",
-            "Февраль",
-            "Март",
-            "Апрель",
-            "Май",
-            "Июнь",
-            "Июль",
-            "Август",
-            "Сентябрь",
-            "Октябрь",
-            "Ноябрь",
-            "Декабрь"
-        ],
-        "firstDay": 1
-    }
-});});
-
-$(function() {
-$('input[name="date"]').daterangepicker({
-	"singleDatePicker": true,
-	"showDropdowns": true,
-	"startDate": "01. 01. 2000",
+if (document.querySelector('input[name="daterange"]')) {
+	$(function() {
+	$('input[name="daterange"]').daterangepicker({
+	"buttonClasses": "btn btn-md",
+	"applyClass": "btn-primary",
+	"autoApply": false,
 	 "locale": {
-	        "format": "DD. MM. YYYY",
+	        "format": "DD.MM.YY",
 	        "separator": " - ",
 	        "applyLabel": "Применить",
 	        "cancelLabel": "Отмена",
@@ -153,5 +112,47 @@ $('input[name="date"]').daterangepicker({
 	        ],
 	        "firstDay": 1
 	    }
-});});
+	});});
+}
+
+if (document.querySelector('input[name="date"]')) {
+	$(function() {
+	$('input[name="date"]').daterangepicker({
+		"singleDatePicker": true,
+		"showDropdowns": true,
+		"startDate": "01. 01. 2000",
+		 "locale": {
+		        "format": "DD. MM. YYYY",
+		        "separator": " - ",
+		        "applyLabel": "Применить",
+		        "cancelLabel": "Отмена",
+		        "fromLabel": "От",
+		        "toLabel": "До",
+		        "customRangeLabel": "Свой",
+		        "daysOfWeek": [
+		            "Вс",
+		            "Пн",
+		            "Вт",
+		            "Ср",
+		            "Чт",
+		            "Пт",
+		            "Сб"
+		        ],
+		        "monthNames": [
+		            "Январь",
+		            "Февраль",
+		            "Март",
+		            "Апрель",
+		            "Май",
+		            "Июнь",
+		            "Июль",
+		            "Август",
+		            "Сентябрь",
+		            "Октябрь",
+		            "Ноябрь",
+		            "Декабрь"
+		        ],
+		        "firstDay": 1
+		    }
+	});});
 };
