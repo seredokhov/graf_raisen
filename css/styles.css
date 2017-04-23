@@ -118,9 +118,6 @@ select.form-control {
 .relative {
 	position: relative;
 }
-.border-right {
-	border-right: 1px solid #c5c5c5;
-}
 /*   Кнопки  */
 .btn_custom {
 	font-family: 'Proxima Nova Semibold';
@@ -234,23 +231,28 @@ header .contact_links > a:hover span {
 footer .contact_links > a.phone:before{
 	background: url(../images/phone-2.png) 4px no-repeat;
 }
-.like  span,
-.hot  span{
+.like span,
+.hot span{
 	display: inline-block;
 	line-height: 21px;
-	width: 27px;
+	width: 19.1px;
 	height: 21px;
 	color: #fff;
 	margin-right: 5px;
-	margin-left: 8px;
 	font-size: 10px;
 	vertical-align: middle;
 	text-align: center;
-	background: url(../images/like.png) 4px no-repeat;
 }
-.hot  span {
-	background: url(../images/fire.png) 4px no-repeat;
-	margin-left: 0;
+.like  span {
+	width: 22px;
+	background: url(../images/like.png) -22.3px no-repeat;
+}
+.hot span {
+	background: url(../images/fire.png) -19px no-repeat;
+}
+.hot span.empty,
+.like  span.empty {
+	background-position: 0 0;
 }
 .lang_drop {
 	float: right;
@@ -404,7 +406,7 @@ li.dropdown ul.dropdown-menu {
 ============================================*/
 
 section.content_blue {
-	background: url(../images/fon.png) 50% 0%;
+	background: url(../images/bg-blue.jpg) 50% 0%;
 	height: 414px;
 	
 }
@@ -608,10 +610,11 @@ button.btn-filter::before {
 	display: none;
 }
 .main_slaider #owl-demo .item img{
-    display: block;
-    width: 100%;
-    height: 352px;
-    outline-offset: -1px;
+	display: block;
+	width: 100%;
+	height: auto;
+	max-height: 352px;
+	outline-offset: -1px;
 }
 
 /* ===========*/
@@ -664,13 +667,17 @@ section.content {
 	padding: 5px;
 	margin: 0 auto;
 }
-.thumb > h3 {
+.thumb h3 {
 	font-weight: bold;
 	font-size: 24px;
 	color: #4b4b4b;
 	padding: 0 10px;
 	margin-top: 30px;
 	margin-bottom: 0px;
+}
+.thumb > a:first-child {
+	display: block;
+	text-decoration: none;
 }
 .thumb >.breadcrumb {
 	margin-bottom: 0px;
@@ -794,7 +801,7 @@ section.content {
 	color: #fff;
 }
 .content_gray {
-	background: url(../images/fon-2.jpg) 50% 0%;
+	background: url(../images/bg-gray.jpg) 50% 0%;
 	min-height: 350px;
 	margin-bottom: 55px;
 }
@@ -810,6 +817,8 @@ section.content_gray + section {
 }
 
 .tumb-2 {
+	display: block;
+	text-decoration: none;
 	position: relative;
 	max-width: 370px;
 	min-height: 277px;
@@ -1328,24 +1337,24 @@ label.repeat {
 	padding: 0;
 	display: -webkit-flex;
 }
-.excursion {
-	width: 370px;
-}
 .booking_content {
 	border: 1px solid #c5c5c5;
 	padding-right: 0;
 	background-color: #fff;
 	display: flex;
-	    display: -webkit-flex;
-	    display: -ms-flexbox;
-	    -webkit-flex-wrap: wrap;
-	    flex-wrap: wrap;
-	    -ms-flex-wrap: wrap;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	-webkit-flex-wrap: wrap;
+	flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
 	margin-bottom: 20px;
-	/*min-height: 625px;*/
+}
+.booking_content .gallery {
+	width: 370px;
+	border-right: 1px solid #c5c5c5;
 }
 .small_slaider_block {
-	max-width: 315px;
+	width: 314px;
 	min-height: 254px;
 	margin: 0 auto;
 }
@@ -1398,16 +1407,20 @@ label.repeat {
 
 [class*='gallery'] .photos {
 	position: relative;
-	width: 100%;
 	min-height: 234px;
 	overflow: hidden;
 }
 [class*='gallery'] .photos img {
-	height: 234px;
-	width: 100%;
+	height: 100%;
 	position: absolute;
 	opacity: 0;
-	transition: opacity 0.5s ease-in-out;
+	transition: opacity 0.7s ease-in-out;
+}
+.excursion [class*='gallery'] .photos {
+	min-height: 352px
+}
+.excursion [class*='gallery'] .photos img {
+	min-width: 100%;
 }
 [class*='gallery'] .photos img:first-child {
 	opacity: 1;
@@ -1451,18 +1464,23 @@ label.repeat {
 	height: 25px;
 	width: 25px;
 	cursor: pointer;
+	/*transition: all 0.4s ease-in-out;*/
 }
 span.r_g {
-	background: url(../images/g+.png) no-repeat;
+	background: url(../images/social_round.png) 2px no-repeat;
 }
 span.r_twit {
-	background: url(../images/round_twit.png) no-repeat;
+	background: url(../images/social_round.png) -28px no-repeat;
 }
 span.r_ok {
-	background: url(../images/round_ok.png) no-repeat;
+	background: url(../images/social_round.png) -56px no-repeat;
 }
 span.r_fb {
-	background: url(../images/round_fb.png) no-repeat;
+	background: url(../images/social_round.png) -85px no-repeat;
+}
+.social_round span:hover {
+	position: relative;
+	bottom: 2px;
 }
 .small_galery {
 	text-align: center;
@@ -1470,19 +1488,19 @@ span.r_fb {
 }
 .small_galery > div {
 	max-width: 72px;
-	height: 68px;
 	overflow: hidden;
 	display: inline-block;
 	border: 1px solid #c5c5c5;
 	margin: 30px 3px;
 	cursor: pointer;
-	transition: all 0.5s ease-in-out;
+	transition: transform 0.5s ease-in-out;
+}
+.small_galery > div.showed {
+	transform: scale(1.1);
+
 }
 .small_galery img {
 	height: 68px;
-}
-.showed {
-	transform: scale(1.2);
 }
 .more_info {
 	padding-left: 10px;
@@ -1630,12 +1648,15 @@ fieldset .half:first-child {
 .booking_buttons a,
 .full_new a.btn_custom,
 .saled a,
-.tour_section .clearfix a {
+.tour_section .clearfix a,
+.excursion a.btn_custom {
 	display: inline-block;
 	min-width: 200px;
 	height: 54px;
 	line-height: 54px;
 	margin: 14px 0;
+	text-decoration: none;
+	color: #fff;
 }
 div.row.section .large_letter .label {
 	font-size: 20px;
@@ -1911,9 +1932,35 @@ article.hot_thumb > a {
 .tour_section .paginat {
 	margin: 30px auto;
 }
-
+.excursion .gallery {
+	border: 1px solid #c5c5c5;
+	background: #fff;
+	padding: 
+}
+.excursion .small_slaider_block {
+	width: 100%;
+	padding: 0 27.5px;
+}
+.excursion .small_slaider_block > div:first-child {
+	min-height: 30px;
+}
+.excursion .small_slaider_block .print {
+	left: 0;
+	top: 5px;
+}
+.excursion {
+	font-size: 15px;
+}
+.excursion p {
+	margin: 20px 0;
+}
+.excursion p span {
+	font-family: 'Proxima Nova Black';
+	font-size: 15px;
+	color: #898989;
+	display: block;
+}
 /*    Saled **/
-
 
 .saled {
 	display: flex;
@@ -1946,7 +1993,8 @@ article.hot_thumb > a {
 
 
 
-/* =========Календарь==== */ 
+/* ========= Календарь ==== */
+
 [id^="date"] {
 	background: none;
 }
@@ -2268,10 +2316,13 @@ div.ranges {
 	.more_info {
 		margin: 30px auto !important;
 	}
-	.excursion {
+	.booking_content .gallery {
 		width: 100%;
 		min-height: auto;
 		border: none;
+	}
+	.booking_content .gallery .small_slaider_block {
+		margin: 0 auto;
 	}
 	.booking_content,
 	.excursion_column {
@@ -2385,9 +2436,11 @@ div.ranges {
 		margin: 0;
 		background-position: 95% 50%;
 	}
+	.excursion [class*='gallery'] .photos {
+		min-height: 234px;
+	}
 
 }
-
 @media (max-width: 480px) {
 	.filter {
 		max-width: 100%;
@@ -2401,8 +2454,9 @@ div.ranges {
 	.hot_thumb .descr_block {
 		margin: 15px;
 	}
-}
-@media (max-width: 480px) {
+	.excursion [class*='gallery'] .photos {
+		min-height: 200px;
+	}
 	.paginat span.prev_page,
 	.paginat span.next_page {
 		display: block;
