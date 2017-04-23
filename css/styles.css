@@ -1709,6 +1709,10 @@ label.large_letter {
 	background: #dadcde;
 	color: #6d6d6d;
 }
+.booking_buttons a:hover:last-child,
+.saled a:hover:last-child {
+	background: #c9cbcd;
+}
 .saled a,
 .add_service a,
 .tour_section .clearfix a {
