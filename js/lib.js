@@ -29,7 +29,7 @@ setInterval(function(){
 }, 300)
 
 /* ==== Галерея =====*/
-
+/*
 var prev = document.querySelector('.gallery button.prev');
 var next = document.querySelector('.gallery button.next');
 var images = document.querySelectorAll('.gallery .photos img');
@@ -64,14 +64,48 @@ $(function() {
 		images[i].style.opacity = '1';
 	})
 });
+*/
 
 /* =========*/
 
 
+var i = 0;
+
+$(function() {
+    $(".next").click(function() {
+        var images = $(this).parents('div[class*="gallery"]').find(".photos img").toArray();
+        images[i].style.opacity = '0';
+        i++;
+        if (i >= images.length) {
+        	i = 0;
+        }
+        images[i].style.opacity = '1';
+    })
+});
+
+$(function() {
+    $(".prev").click(function() {
+        var images = $(this).parents('div[class*="gallery"]').find(".photos img").toArray();
+        images[i].style.opacity = '0';
+        i++;
+        if (i >= images.length) {
+        	i = 0;
+        }
+        images[i].style.opacity = '1';
+    })
+});
+
+$(function() {
+	$(" .gallery .small_galery div").click(function() {
+		var images = $(this).parents('div[class*="gallery"]').find(".photos img").toArray();
+		i = $(this).attr('data-num');
+		$(this).parents('div[class*="gallery"]').find(".photos img").css("opacity","0");
+		images[i].style.opacity = '1';
+	})
+});
 
 
 /*   Календарь   */
-
 
 if (document.querySelector('input[name="daterange"]')) {
 	$(function() {
