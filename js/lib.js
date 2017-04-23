@@ -28,81 +28,54 @@ setInterval(function(){
 	})
 }, 300)
 
-/* ==== Галерея =====*/
-/*
-var prev = document.querySelector('.gallery button.prev');
-var next = document.querySelector('.gallery button.next');
-var images = document.querySelectorAll('.gallery .photos img');
-var i = 0;
-
-if (next) {
-next.onclick = function () {
-	images[i].style.opacity = '0';
-	i++;
-	if (i >= images.length) {
-		i = 0;
-	}
-	images[i].style.opacity = '1';
-}}
 
 
-if (prev) {
-prev.onclick = function () {
-	images[i].style.opacity = '0';
-	i--;
-	if (i < 0) {
-		i = images.length - 1;
-	}
-	images[i].style.opacity = '1';
-}}
 
+/*  Галерея  */
 
-$(function() {
-	$(".gallery .small_galery div").click(function() {
-		i = $(this).attr('data-num');
-		$(".gallery .photos img").css("opacity","0");
-		images[i].style.opacity = '1';
-	})
-});
-*/
+function Gallery(target) {
+  this.target = $(target);
+  this.images = $('.photos img', this.target);
+  this.index = 0;
+}
 
-/* =========*/
-
-
-var i = 0;
-
-$(function() {
-    $(".next").click(function() {
-        var images = $(this).parents('div[class*="gallery"]').find(".photos img").toArray();
-        images[i].style.opacity = '0';
-        i++;
-        if (i >= images.length) {
-        	i = 0;
-        }
-        images[i].style.opacity = '1';
-    })
-});
+Gallery.prototype.init = function() {
+  var self = this;
+  $('button.next', this.target).click(function() {
+    self.images.eq(self.index).css('opacity',  0);
+    self.index++;
+    if (self.index >= self.images.length) {
+      self.index = 0;
+    }
+    self.images.eq(self.index).css('opacity', 1);
+    $(this).parents('div[class*="gallery"]').find(".small_galery div").removeClass("showed");
+    $(this).parents('div[class*="gallery"]').find(".small_galery img[data-num ="+self.index+"]").parent().addClass("showed");
+  });
+  $('button.prev', this.target).click(function() {
+    self.images.eq(self.index).css('opacity',  0);
+    self.index--;
+    if (self.index < 0) {
+      self.index = self.images.length - 1;
+    }
+    self.images.eq(self.index).css('opacity', 1);
+    $(this).parents('div[class*="gallery"]').find(".small_galery div").removeClass("showed");
+    $(this).parents('div[class*="gallery"]').find(".small_galery img[data-num ="+self.index+"]").parent().addClass("showed");
+  });
+  $('.small_galery img', this.target).click(function() {
+    self.index = $(this).attr('data-num');
+    self.images.css('opacity', 0);
+    self.images.eq(self.index).css('opacity', 1);
+    $(this).parents('div[class*="gallery"]').find(".small_galery div").removeClass("showed");
+    $(this).parent().addClass("showed");
+  });
+};
 
 $(function() {
-    $(".prev").click(function() {
-        var images = $(this).parents('div[class*="gallery"]').find(".photos img").toArray();
-        images[i].style.opacity = '0';
-        i++;
-        if (i >= images.length) {
-        	i = 0;
-        }
-        images[i].style.opacity = '1';
-    })
+  $('.gallery').each(function() {
+    new Gallery(this).init();
+  });
 });
 
-$(function() {
-	$(" .gallery .small_galery div").click(function() {
-		var images = $(this).parents('div[class*="gallery"]').find(".photos img").toArray();
-		i = $(this).attr('data-num');
-		$(this).parents('div[class*="gallery"]').find(".photos img").css("opacity","0");
-		images[i].style.opacity = '1';
-	})
-});
 
 
 /*   Календарь   */

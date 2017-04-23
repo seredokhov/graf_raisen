@@ -1476,11 +1476,14 @@ span.r_fb {
 	border: 1px solid #c5c5c5;
 	margin: 30px 3px;
 	cursor: pointer;
+	transition: all 0.5s ease-in-out;
 }
 .small_galery img {
 	height: 68px;
 }
-
+.showed {
+	transform: scale(1.2);
+}
 .more_info {
 	padding-left: 10px;
 	padding-right: 10px;
@@ -1934,9 +1937,6 @@ article.hot_thumb > a {
 	font-family: 'Proxima Nova Black';
 	font-size: 18px;
 }
-
-
-
 
 
 
