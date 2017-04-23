@@ -151,301 +151,155 @@
 
 	</header>
 
-
-
 	<main>
+
 		<div id="wrapper">
 
-			<section class="section">
+			<section class="section ">
 				<div class="container">
-
 					<div class="row">
 						<div class="col-lg-12">
-							<h1>Мои санатории</h1>
+							<div class="about transfer">
+								<h1>Чехия</h1>
+								<div class="transfers">
+									<span>Варианты трансферов:</span>
+									<ul>
+										<li>
+											<a href="">Индивидуальный</a>
+										</li>
+										<li>
+											<a href="group.html">Групповой</a>
+										</li>
+										<li>
+											<a href="zakaz.html" class="active">Заказной</a>
+										</li>
+									</ul>
+								</div>
+								<p>«Алендвик» объединяет три интернациональных бренда: «Кодак Экспресс», «Баскин Роббинс», «SFC-Express», один российский - "Шоколадница", а также пять собственных «Viva la Pizza», «Суши Сан»,  «Пельмешки да Вареники Экспресс», «Вкус странствий», «Tochitos».</p>
+							</div>
+						</div>
+
+						<div class="col-md-4">
+							<div class="transfer_form">
+								<div class="arrow transf_arr">
+									<select class="form-control">
+										<option>Аэропорт</option>
+										<option>Текст</option>
+										<option>Текст</option>
+										<option>Текст</option>
+										<option>Текст</option>
+									</select>
+								</div>
+								<div class="arrow transf_arr">
+									<select class="form-control">
+										<option>Московская область</option>
+										<option>Текст</option>
+										<option>Текст</option>
+										<option>Текст</option>
+										<option>Текст</option>
+									</select>
+								</div>
+								<div class="arrow transf_arr">
+									<select class="form-control">
+										<option>Санаторий 1</option>
+										<option>Санаторий 2</option>
+										<option>Санаторий 3</option>
+										<option>Санаторий 4</option>
+										<option>Санаторий 5</option>
+									</select>
+								</div>
+								<label for="humans">Количество пассажиров</label>
+								<div class="arrow transf_arr">
+									<select class="form-control" id="humans" >
+										<option>1</option>
+										<option>2</option>
+										<option>3</option>
+										<option>4</option>
+										<option>5</option>
+									</select>
+								</div>
+								<div class="arrow transf_arr">
+									<select class="form-control">
+										<option>В обе стороны</option>
+										<option>Текст</option>
+									</select>
+								</div>
+								<button type="button" class="btn_custom btn_filter">Поиск</button>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="transfer_form">
+								<label for="date-time-arrival">Дата и время прибытия</label>
+								<div class="arrow transf_arr">
+									<input type="text" name="date-time-arrival" value="" class="form-control" id="date-time-arrival">
+								</div>
+								<label for="reis">Номер рейса прибытия</label>
+								<input type="text" class="form-control" id="reis-arrival">
+								<label for="path">Маршрут</label>
+								<input type="text" class="form-control">
+								<label for="date-time-depar">Дата и время отправления</label>
+								<div class="arrow transf_arr">
+									<input type="text" name="date-time-depar" value="" class="form-control born" id="date-time-depar">
+								</div>
+								<label for="reis-depar">Номер рейся отправления</label>
+								<input type="text" class="form-control" id="reis-depar">
+								<label for="path">Маршрут</label>
+								<input type="text" class="form-control">
+							</div>
+						</div>
+						<div class="col-md-4">
+							<header class="transfer_header">$</header>
+							<div class="transfer_form">
+								<label for="sex">Пол</label>
+								<div class="arrow transf_arr">
+									<select class="form-control" id="sex">
+										<option>М</option>
+										<option>Ж</option>
+									</select>
+								</div>
+								<label for="family">Фамилия</label>
+								<input type="text" class="form-control" id="family">
+								<label for="name">Имя</label>
+								<input type="text" class="form-control" id="name">
+								<label for="city">Город</label>
+								<input type="text" class="form-control" id="city">
+								<label for="street">Улица</label>
+								<input type="text" class="form-control" id="street">
+								<label for="hous_num">Номер дома</label>
+								<input type="text" class="form-control" id="hous_num">
+								<label for="phone">Мобильный телефон</label>
+								<input type="text" class="form-control" id="phone">
+								<label for="email">E-mail</label>
+								<input type="email" class="form-control" id="email">
+								<label for="date">Дата рождения</label>
+								<div class="arrow transf_arr">
+									<input type="text" name="date" value="" class="form-control born" id="date">
+								</div>
+								<div class="arrow transf_arr">
+									<select class="form-control">
+										<option>В обе стороны</option>
+										<option>В одну сторону</option>
+									</select>
+								</div>
+								<label for="more">Примечания</label>
+								<textarea type="date" class="form-control" id="more"></textarea>
+								<label class="repeat">
+									<input class="checkbox" type="checkbox" name="checkbox-test">
+									<span class="checkbox-custom"></span>
+									<span class="label">Использование данных</span>
+								</label>
+								<button type="button" class="btn_custom btn_filter">Забронировать</button>
+							</div>
 						</div>
 					</div>
-
-					<div class="clearfix booking_content" id="1">
-
-						<div class="col-lg-4 excursion_column">
-							<div class="gallery">
-								<div class="small_slaider_block" >
-									<div class="relative">
-										<h2>
-											Экскурсия 1
-											<i class="fa fa-bath" aria-hidden="true"></i>
-										</h2>
-										<span>
-											ул. Горького 15 А, Колумбия, США
-										</span>
-										<span class="stars">
-											<i class="fa fa-star green"></i>
-											<i class="fa fa-star green"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-										</span>
-									</div>
-									<div class="relative">
-										<div class="photos">
-											<img src="images/img-1.jpg" alt="">
-											<img src="images/img-2.jpg" alt="">
-											<img src="images/img-3.jpg" alt="">
-											<img src="images/img-4.jpg" alt="">
-										</div>
-										<div class="buttons">
-											<button class="prev">Назад</button>
-											<button class="next">Вперед</button>
-										</div>
-									</div>
-									<div class="social_round">
-										<span class="r_g"></span>
-										<span class="r_twit"></span>
-										<span class="r_ok"></span>
-										<span class="r_fb"></span>
-									</div>
-								</div>
-
-								<div class="small_galery">
-									<div class="showed">
-										<img src="images/img-1.jpg" alt="" data-num="0">
-									</div>
-									<div>
-										<img src="images/img-2.jpg" alt="" data-num="1">
-									</div >
-									<div>
-										<img src="images/img-3.jpg" alt="" data-num="2">
-									</div>
-									<div>
-										<img src="images/img-4.jpg" alt="" data-num="3">
-									</div>
-								</div>
-							</div>
-						</div>
-
-
-
-						<div class="col-lg-4 col-md-5" ">
-							<div class="more_info">
-								<h3>Заголовок описания</h3>
-								<span>Описание экскурсии</span>
-								<p>7 ночей проживания, 2-x разовое питание, 20 лечебных процедур, 2 осмотра доктора, питьевой курс</p>
-								<span>2-й взрослый</span>
-								<p>7 ночей проживания, 2-x разовое питание, 20 лечебных процедур, 2 осмотра доктора, питьевой курс</p>
-								<div class="data_exc">
-									<span class=" ">
-									Дата<br>экскурсии:
-									</span>
-									<data class=" ">
-									07.11.2016 -14.11.2016<br>(7 ночей)
-									</data>
-								</div>
-								<div class="price_block">
-									<span class="">Итоговая цена:</span>
-									<span class="price">220 &euro;</span>
-								</div>
-							</div>
-						</div>
-
-						<div class="col-lg-4 col-md-7">
-							<div class="booking_buttons">
-								<a href="booking.html" type="button" class="btn_custom">Забронировать</a>
-								<a href="booking2.html" class="btn_custom">Детальнее</a>
-							</div>
-						</div>
-
-					</div>
-
-					<div class="clearfix booking_content" id="1">
-
-						<div class="col-lg-4 excursion_column">
-							<div class="gallery">
-								<div class="small_slaider_block" >
-									<div class="relative">
-										<h2>
-											Экскурсия 1
-											<i class="fa fa-bath" aria-hidden="true"></i>
-										</h2>
-										<span>
-											ул. Горького 15 А, Колумбия, США
-										</span>
-										<span class="stars">
-											<i class="fa fa-star green"></i>
-											<i class="fa fa-star green"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-										</span>
-									</div>
-									<div class="relative">
-										<div class="photos">
-											<img src="images/img-1.jpg" alt="">
-											<img src="images/img-2.jpg" alt="">
-											<img src="images/img-3.jpg" alt="">
-											<img src="images/img-4.jpg" alt="">
-										</div>
-										<div class="buttons">
-											<button class="prev">Назад</button>
-											<button class="next">Вперед</button>
-										</div>
-									</div>
-									<div class="social_round">
-										<span class="r_g"></span>
-										<span class="r_twit"></span>
-										<span class="r_ok"></span>
-										<span class="r_fb"></span>
-									</div>
-								</div>
-
-								<div class="small_galery">
-									<div class="showed">
-										<img src="images/img-1.jpg" alt="" data-num="0">
-									</div>
-									<div>
-										<img src="images/img-2.jpg" alt="" data-num="1">
-									</div >
-									<div>
-										<img src="images/img-3.jpg" alt="" data-num="2">
-									</div>
-									<div>
-										<img src="images/img-4.jpg" alt="" data-num="3">
-									</div>
-								</div>
-							</div>
-						</div>
-
-						
-
-						<div class="col-lg-4 col-md-5" ">
-							<div class="more_info">
-								<h3>Заголовок описания</h3>
-								<span>Описание экскурсии</span>
-								<p>7 ночей проживания, 2-x разовое питание, 20 лечебных процедур, 2 осмотра доктора, питьевой курс</p>
-								<span>2-й взрослый</span>
-								<p>7 ночей проживания, 2-x разовое питание, 20 лечебных процедур, 2 осмотра доктора, питьевой курс</p>
-								<div class="data_exc">
-									<span class=" ">
-									Дата<br>экскурсии:
-									</span>
-									<data class=" ">
-									07.11.2016 -14.11.2016<br>(7 ночей)
-									</data>
-								</div>
-								<div class="price_block">
-									<span class="">Итоговая цена:</span>
-									<span class="price">220 &euro;</span>
-								</div>
-							</div>
-						</div>
-
-						<div class="col-lg-4 col-md-7">
-							<div class="booking_buttons">
-								<a href="booking.html" type="button" class="btn_custom">Забронировать</a>
-								<a href="booking2.html" class="btn_custom">Детальнее</a>
-							</div>
-						</div>
-
-					</div>
-
-					<div class="clearfix booking_content" id="1">
-
-						<div class="col-lg-4 excursion_column">
-							<div class="gallery">
-								<div class="small_slaider_block" >
-									<div class="relative">
-										<h2>
-											Экскурсия 1
-											<i class="fa fa-bath" aria-hidden="true"></i>
-										</h2>
-										<span>
-											ул. Горького 15 А, Колумбия, США
-										</span>
-										<span class="stars">
-											<i class="fa fa-star green"></i>
-											<i class="fa fa-star green"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-										</span>
-									</div>
-									<div class="relative">
-										<div class="photos">
-											<img src="images/img-1.jpg" alt="">
-											<img src="images/img-2.jpg" alt="">
-											<img src="images/img-3.jpg" alt="">
-											<img src="images/img-4.jpg" alt="">
-										</div>
-										<div class="buttons">
-											<button class="prev">Назад</button>
-											<button class="next">Вперед</button>
-										</div>
-									</div>
-									<div class="social_round">
-										<span class="r_g"></span>
-										<span class="r_twit"></span>
-										<span class="r_ok"></span>
-										<span class="r_fb"></span>
-									</div>
-								</div>
-
-								<div class="small_galery">
-									<div class="showed">
-										<img src="images/img-1.jpg" alt="" data-num="0">
-									</div>
-									<div>
-										<img src="images/img-2.jpg" alt="" data-num="1">
-									</div >
-									<div>
-										<img src="images/img-3.jpg" alt="" data-num="2">
-									</div>
-									<div>
-										<img src="images/img-4.jpg" alt="" data-num="3">
-									</div>
-								</div>
-							</div>
-						</div>
-
-						
-
-						<div class="col-lg-4 col-md-5" ">
-							<div class="more_info">
-								<h3>Заголовок описания</h3>
-								<span>Описание экскурсии</span>
-								<p>7 ночей проживания, 2-x разовое питание, 20 лечебных процедур, 2 осмотра доктора, питьевой курс</p>
-								<span>2-й взрослый</span>
-								<p>7 ночей проживания, 2-x разовое питание, 20 лечебных процедур, 2 осмотра доктора, питьевой курс</p>
-								<div class="data_exc">
-									<span class=" ">
-									Дата<br>экскурсии:
-									</span>
-									<data class=" ">
-									07.11.2016 -14.11.2016<br>(7 ночей)
-									</data>
-								</div>
-								<div class="price_block">
-									<span class="">Итоговая цена:</span>
-									<span class="price">220 &euro;</span>
-								</div>
-							</div>
-						</div>
-
-						<div class="col-lg-4 col-md-7">
-							<div class="booking_buttons">
-								<a href="booking.html" type="button" class="btn_custom">Забронировать</a>
-								<a href="booking2.html" class="btn_custom">Детальнее</a>
-							</div>
-						</div>
-
-					</div>
-
-
 				</div>
 			</section>
 
 		</div>
+
+
+
 	</main>
-
-
 
 	<footer>
 		<div class="container">
@@ -537,6 +391,8 @@
 			</div>
 		</div>
 	</footer>
+
+
 	<!-- Bootstrap и другие JavaScript
 	================================================== -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
@@ -545,6 +401,7 @@
 	<script type="text/javascript" src="js/daterangepicker.js"></script>
 	<script src="js/owl.carousel.js"></script>
 	<script src="js/lib.js"></script>
+
 	<script>
 		$(document).ready(function() {
 			$("#owl-demo").owlCarousel({
@@ -553,6 +410,13 @@
 				slideSpeed : 300,
 				paginationSpeed : 400,
 				singleItem:true
+		 
+		      // "singleItem:true" is a shortcut for:
+		      // items : 1, 
+		      // itemsDesktop : false,
+		      // itemsDesktopSmall : false,
+		      // itemsTablet: false,
+		      // itemsMobile : false
 			});
 		});
 	</script>

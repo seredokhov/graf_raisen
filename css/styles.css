@@ -1213,6 +1213,7 @@ span.post {
 }
 .transfer_form .form-control {
 	height: 41px;
+	color: #7e7e7e;
 }
 .transfer_form input.born {
 	margin-bottom: 10px;

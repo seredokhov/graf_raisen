@@ -127,9 +127,53 @@ if (document.querySelector('input[name="date"]')) {
 	$('input[name="date"]').daterangepicker({
 		"singleDatePicker": true,
 		"showDropdowns": true,
+		 "autoApply": true,
 		"startDate": "01. 01. 2000",
 		 "locale": {
 		        "format": "DD. MM. YYYY",
+		        "separator": " - ",
+		        "applyLabel": "Применить",
+		        "cancelLabel": "Отмена",
+		        "fromLabel": "От",
+		        "toLabel": "До",
+		        "customRangeLabel": "Свой",
+		        "daysOfWeek": [
+		            "Вс",
+		            "Пн",
+		            "Вт",
+		            "Ср",
+		            "Чт",
+		            "Пт",
+		            "Сб"
+		        ],
+		        "monthNames": [
+		            "Январь",
+		            "Февраль",
+		            "Март",
+		            "Апрель",
+		            "Май",
+		            "Июнь",
+		            "Июль",
+		            "Август",
+		            "Сентябрь",
+		            "Октябрь",
+		            "Ноябрь",
+		            "Декабрь"
+		        ],
+		        "firstDay": 1
+		    }
+	});});
+};
+
+if (document.querySelector('input[name^="date-time"]')) {
+	$(function() {
+	$('input[name^="date-time"]').daterangepicker({
+		"singleDatePicker": true,
+		"showDropdowns": true,
+		 "timePicker": true,
+		 "timePicker24Hour": true,
+		 "locale": {
+		        "format": "DD. MM. YYYY  -  HH:mm ",
 		        "separator": " - ",
 		        "applyLabel": "Применить",
 		        "cancelLabel": "Отмена",
