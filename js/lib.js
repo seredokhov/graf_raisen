@@ -85,7 +85,7 @@ if (document.querySelector('input[name="daterange"]')) {
 	$('input[name="daterange"]').daterangepicker({
 	"buttonClasses": "btn btn-md",
 	"applyClass": "btn-primary",
-	"autoApply": false,
+	"applyClass": "apply_btn",
 	 "locale": {
 	        "format": "DD.MM.YY",
 	        "separator": " - ",
@@ -171,6 +171,7 @@ if (document.querySelector('input[name^="date-time"]')) {
 		"singleDatePicker": true,
 		"showDropdowns": true,
 		 "timePicker": true,
+		 "applyClass": "apply_btn",
 		 "timePicker24Hour": true,
 		 "locale": {
 		        "format": "DD. MM. YYYY  -  HH:mm ",

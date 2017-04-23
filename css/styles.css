@@ -130,7 +130,6 @@ select.form-control {
 	font-size: 19px;
 	letter-spacing: 0;
 }
-
 .btn_offer {
 	min-width: 430px;
 	height: 64px;
@@ -141,7 +140,6 @@ select.form-control {
 .btn_filter {
 	width: 150px;
 	height: 44px;
-	line-height: 44px;
 	vertical-align: middle;
 	margin: 15px 0;
 	background: linear-gradient(to top, #74bc1a, #8ac71c);
@@ -153,9 +151,23 @@ select.form-control {
 	width: 240px;
 	min-height: 50px;
 }
-
-
-
+.btn_send {
+	border: none;
+	outline: none;
+	width:53px;
+	height: 40px;
+	background: #87bb2d;
+}
+.btn_custom:hover,
+.btn_custom:focus {
+	background: #0059aa;
+}
+.btn_send:hover,
+.btn_send:focus,
+.btn_filter:hover,
+.btn_filter:focus {
+	background: #529a08;
+}
 
 
 /*============================================ 
@@ -239,6 +251,7 @@ footer .contact_links > a.phone:before{
 	height: 21px;
 	color: #fff;
 	margin-right: 5px;
+	padding-right: 2px;
 	font-size: 10px;
 	vertical-align: middle;
 	text-align: center;
@@ -367,14 +380,18 @@ li.dropdown ul.dropdown-menu {
 }
 .burg_block button.close {
 	position: absolute;
-	top: -1px;
-	right: -1px;
+	top: 0px;
+	right: 0px;
 	color: #4b4b4b;
-	border: 1px solid #cfcfcf;
+	border-bottom: 1px solid #cfcfcf;
+	border-left: 1px solid #cfcfcf;
 	outline: none;
 	width: 24px;
 	height: 24px;
 	opacity: 1;
+}
+.burg_block button.close:hover {
+	background: #e6e6e6;
 }
 .burg_block .dropdown-menu {
 	right: -5px;
@@ -502,7 +519,13 @@ input[name^="date"]::-ms-clear {
 		height: 27px;
 		border: 1px solid #cfcfcf;
 		position: relative;
-	}	
+		cursor: pointer;
+	}
+	label:hover > .checkbox-custom,
+	.radio-custom:hover,
+	.checkbox-custom:hover {
+		background-color: #e6e6e6;
+	}
 	.radio-custom,
 	.checkbox-custom,
 	fieldset .label {
@@ -900,13 +923,6 @@ footer .contact_links > a >span {
 }
 input.send {
 	height: 40px;
-}
-.btn_send {
-	border: none;
-	outline: none;
-	width:53px;
-	height: 40px;
-	background: #87bb2d;
 }
 footer .input-group {
 	width: 300px;
@@ -1376,11 +1392,16 @@ label.repeat {
 	padding-top: 20px;
 	padding-right: 25px;
 }
+.small_slaider_block span,
 .excursion span,
 .more_info p,
 .more_info data {
 	font-size: 12px;
 	color: #898989;
+}
+.small_slaider_block span {
+	font-family: 'Proxima Nova Light';
+	font-size: 13px;
 }
 .print {
 	position: absolute;
@@ -1738,9 +1759,12 @@ ul.sort li a {
 	pointer-events: none;
 }
 ul.sort li.active {
-	background: linear-gradient(to top, #74bc1a, #8ac71c);
+	background: linear-gradient(to top, #74bc1a, #8ac71c) !important;
 	border: 1px solid;
 	border-image: linear-gradient(to bottom, #97d81f, #5a9f01) 1 100%;
+}
+ul.sort li:hover {
+	background: #e6e6e6;
 }
 ul.sort li.active a {
 	color: #fff;
@@ -2012,6 +2036,19 @@ div.ranges {
 .range_inputs button {
 	width: 49%;
 }
+.apply_btn {
+	background: linear-gradient(to top, #74bc1a, #8ac71c);
+	color: #fff;
+}
+.apply_btn:hover,
+.apply_btn:focus {
+	color: #fff;
+	background: #529a08;
+}
+.daterangepicker td.active,
+.daterangepicker td.active:hover {
+	background: linear-gradient(to top, #74bc1a, #8ac71c);
+}
 .daterangepicker {
   position: absolute;
   color: inherit;
@@ -2022,6 +2059,7 @@ div.ranges {
   margin-top: 1px;
   top: 100px;
   left: 20px;
+
   /* Calendars */ }
   .daterangepicker:before, .daterangepicker:after {
     position: absolute;
@@ -2482,7 +2520,3 @@ div.ranges {
 	}
 
 }
-
-
-
-
