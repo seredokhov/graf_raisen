@@ -249,10 +249,13 @@ footer .contact_links > a.phone:before{
 }
 .hot span {
 	background: url(../images/fire.png) -19px no-repeat;
+	font-size: 0;
 }
-.hot span.empty,
-.like  span.empty {
+.like  span:empty {
 	background-position: 0 0;
+}
+.hot span:empty {
+	background-position: 1px 0;
 }
 .lang_drop {
 	float: right;
@@ -1411,7 +1414,7 @@ label.repeat {
 	overflow: hidden;
 }
 [class*='gallery'] .photos img {
-	height: 100%;
+	width: 100%;
 	position: absolute;
 	opacity: 0;
 	transition: opacity 0.7s ease-in-out;
@@ -1421,6 +1424,7 @@ label.repeat {
 }
 .excursion [class*='gallery'] .photos img {
 	min-width: 100%;
+	height: auto;
 }
 [class*='gallery'] .photos img:first-child {
 	opacity: 1;
@@ -1478,7 +1482,8 @@ span.r_ok {
 span.r_fb {
 	background: url(../images/social_round.png) -85px no-repeat;
 }
-.social_round span:hover {
+.social_round span:hover,
+.social > span:hover {
 	position: relative;
 	bottom: 2px;
 }
