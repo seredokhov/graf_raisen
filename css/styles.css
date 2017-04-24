@@ -503,6 +503,7 @@ input[name^="date"]::-ms-clear {
 }
 .filter .arrow {
 	width: 100%;
+	position: relative;
 }
 .radio_group {
 	margin-top: 10px;
@@ -552,7 +553,8 @@ input[name^="date"]::-ms-clear {
 	.excurs_form .checkbox-custom,
 	.add_service .checkbox-custom,
 	div.row.section .checkbox-custom,
-	.transfer_form .checkbox-custom {
+	.transfer_form .checkbox-custom,
+	.fix .radio-custom {
 		width: 20px;
 		height: 20px;
 	}
@@ -562,7 +564,8 @@ input[name^="date"]::-ms-clear {
 		height: 17px;
 	}
 	.checkbox:checked + .checkbox-custom::before,
-	.excurs_form .radio:checked + .radio-custom::before{
+	.excurs_form .radio:checked + .radio-custom::before,
+	.fix .radio:checked + .radio-custom::before {
 		content: "";
 		top: 2px;
 		right: 2px;
@@ -2024,9 +2027,66 @@ article.hot_thumb > a {
 
 
 
+.dropdown-menu.fix {
+	top: 68px !important;
+	left: 15px !important;
+	width: 420px;
+	min-height: 300px;
+	padding: 10px 20px;
+}
+.dropdown-menu.fix label {
+	text-align: center;
+	margin-right: 15px;
+}
+.dropdown-menu.fix span {
+	font-family: 'Proxima Nova Black';
+	font-size: 18px;
+	color: #4b4b4b;
+}
+.dropdown-menu.fix fieldset {
+	text-align: left;
+	margin-bottom: 15px;
+}
+span[class^="man-"],
+span[class^="child-"] {
+	display: block;
+	margin-bottom: 5px;
+	width: 31px;
+	height: 71px;
+	background: url(../images/man.png);
+	position: relative;
+}
+span[class^="child-"] {
+	width: 20px;
+	height: 48px;
+	background: url(../images/child.png);
+}
+span.man-2 {
+	width: 62px;
+}
+span.man-3 {
+	width: 92px;
+}
+span.man-4 {
+	width: 122px;
+}
+span.child-2 {
+	width: 40px;
+}
+span.child-3 {
+	width: 60px;
+}
+span.child-4 {
+	width: 80px;
+}
+span.man-4 i,
+span.child-4 i {
+	position: absolute;
+	top: 40%;
+	right: -15px;
+	color: #000;
 
-
-
+}
 /* ========= Календарь ==== */
 
 [id^="date"] {
@@ -2048,10 +2108,6 @@ div.ranges {
 .apply_btn:focus {
 	color: #fff;
 	background: #529a08;
-}
-.daterangepicker td.active,
-.daterangepicker td.active:hover {
-	background: linear-gradient(to top, #74bc1a, #8ac71c);
 }
 .daterangepicker {
   position: absolute;
@@ -2168,7 +2224,7 @@ div.ranges {
   .daterangepicker td.start-date.end-date {
     border-radius: 4px; }
   .daterangepicker td.active, .daterangepicker td.active:hover {
-    background-color: #357ebd;
+    background-color: #8ac71c;
     border-color: transparent;
     color: #fff; }
   .daterangepicker th.month {

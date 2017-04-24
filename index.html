@@ -216,16 +216,71 @@
 									</div>
 								</div>
 
-								<div class="form-group col-sm-6">
+								<div class="form-group col-sm-6" >
 									<label for="human">Кол-во человек</label>
-									<div class="arrow">
-										<select class="form-control" id="human" >
-											<option>1</option>
-											<option>2</option>
-											<option>3</option>
-											<option>4</option>
-											<option>5</option>
-										</select>
+									<div class="arrow" data-toggle="dropdown">
+										<input class="form-control" type="text" value="1" id="human" >
+									</div>
+									<div class="dropdown-menu opensright daterangepicker fix">
+										<span>Взрослые</span>
+
+										<fieldset class="radio_group">
+												<label>
+													<span class="man-1"></span>
+													<input class="radio" type="radio" value="1" name="man" checked>
+													<span class="radio-custom"></span>
+													
+												</label>
+												<label>
+													<span class="man-2"></span>
+													<input class="radio" type="radio" value="2" name="man">
+													<span class="radio-custom"></span>
+													
+												</label>
+												<label>
+													<span class="man-3"></span>
+													<input class="radio" type="radio" value="3" name="man">
+													<span class="radio-custom"></span>
+													
+												</label>
+												<label>
+													<span class="man-4"><i class="fa fa-plus" aria-hidden="true"></i></span>
+													<input class="radio" type="radio" value="4" name="man">
+													<span class="radio-custom"></span>
+													
+												</label>
+										</fieldset>
+
+										<span>Дети</span>
+
+										<fieldset class="radio_group">
+											<label>
+												<span class="child-1"></span>
+												<input class="radio" type="radio" value=" - 1" name="child">
+												<span class="radio-custom"></span>
+											</label>
+											<label>
+												<span class="child-2"></span>
+												<input class="radio" type="radio" value=" - 2" name="child">
+												<span class="radio-custom"></span>
+											</label>
+											<label>
+												<span class="child-3"></span>
+												<input class="radio" type="radio" value=" - 3" name="child">
+												<span class="radio-custom"></span>
+												
+											</label>
+											<label>
+												<span class="child-4"><i class="fa fa-plus" aria-hidden="true"></i></span>
+												<input class="radio" type="radio" value=" - 4" name="child">
+												<span class="radio-custom"></span>
+
+											</label>
+										</fieldset>
+										<div class="range_inputs">
+											<button class="applyBtn btn btn-md apply_btn" type="button">Применить</button> 
+											<button class="cancelBtn btn btn-md btn-default" type="button">Отмена</button>
+										</div>
 									</div>
 								</div>
 
@@ -671,6 +726,7 @@
 				singleItem:true
 			});
 		});
+
 	</script>
 </body>
 </html>
