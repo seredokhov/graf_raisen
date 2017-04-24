@@ -1,0 +1,1296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Meta-теги и Favicon -->
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<link rel="icon" href="images/favicon.ico">
+
+	<!-- Название сайта -->
+	<title>Graf Reisen</title>
+
+	<!-- Bootstrap CSS-->
+	<link href="css/bootstrap.css" rel="stylesheet">
+		<!-- OWL Carousel-->
+	<link href="css/owl.carousel.css" rel="stylesheet">
+	<link href="css/owl.theme.css" rel="stylesheet">
+
+	
+	<!-- Символьный шрифт FontAwesome -->
+	<link href="css/font-awesome.min.css" rel="stylesheet">
+
+
+	<!--Пользовательские стили этого шаблона -->
+	<link href="css/styles.css" rel="stylesheet">
+
+
+	<!-- Поддержка HTML5 элементов в Internet Explorer 8 -->
+	<!--[if lt IE 9]>
+	<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+</head>
+
+<body>
+
+	<header>
+		<div class="upper_head">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-3">
+						<div class="social">
+							<span class="VK"></span>
+							<span class="twit"></span>
+							<span class="ok"></span>
+						</div>
+					</div>
+					<div class="col-sm-9">
+						<div class="lang_drop dropdown">
+							<img src="images/Flag_of_Germany.png" class="lang_btn" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+							
+							</img>
+							<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+								<li>
+									<a href="#"><img src="images/russ.png" alt="">ЭКСКУСИИ</a>
+								</li>
+								<li>
+									<a href="#"><img src="images/germ.png" alt="">НОВОСТИ</a>
+								</li>
+							</ul>
+						</div>
+						<div class="contact_links"> 
+							<a href="#" class="phone"><span>+69 41099533</span></a>
+							<a href="#" class="mail"><span>travel@gmail.com</span></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="lower_head">
+			<div class="container">
+				<div class="row">
+					<nav class="navbar navbar-default header_nav">
+
+						<!--Блок с логотипом и кнопкой выпадающего меню -->
+						<div class="navbar-header">
+							<a class="logo" href="index.html"><img src="images/logo.png" class="img-responsive" alt=""></a>
+							<button type="button" class="burg navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"></button>
+						</div>
+						<!--  -->
+
+						<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+							<ul class="nav navbar-nav">
+								<li>
+									<a href="about.html">О компании</a>
+								</li>
+								<li>
+									<a href="transfer.html">Трансфер</a>
+								</li>
+								<li>
+									<a href="tours.html">Экскурсии</a>
+								</li>
+								<li>
+									<a href="news.html">Новости</a>
+								</li>
+								<li>
+									<a href="FAQ.html">Вопросы и ответы</a>
+								</li>
+								<li class="hot"><a href="hot_deals.html"><span>1</span>Горячие предложения</a></li>
+								<li class="like"><a href="my sanatory.html"><span>1</span>Мои заментки</a></li>
+
+								<!-- Кнопка +меню выдимые только на lg/md-->
+								<li class="burg_block hidden-xs">
+									<button type="button" class="burg" data-toggle="dropdown"></button>
+									<div class="dropdown-menu">
+										<ul class="list-group">
+											<li class="search_li">
+												<form action="">
+													<label for="search">Поиск</label>
+													<input type="search" class="form-control" id="search" placeholder="Поиск...">
+												</form>
+											</li>
+											<li class="list-group-item"><a href="#">О компании</a></li>
+											<li class="list-group-item"><a href="#">Услуги и стоимость</a></li>
+											<li class="list-group-item"><a href="#">Новости</a></li>
+											<li class="list-group-item"><a href="#">Оплата</a></li>
+											<li class="list-group-item"><a href="#">Горячее предложение</a></li>
+											<li class="list-group-item"><a href="#">Партнерам</a></li>
+										</ul>
+										<button class="close"><i class="fa fa-times" aria-hidden="true"></i></button>
+									</div>
+								</li>
+								<!-- ==================================== -->
+
+								<!-- Меню выдимое только на sm/xs-->
+								<li class=" visible-xs"><a href="#">О компании</a></li>
+								<li class=" visible-xs search_li">
+									<form action="">
+										<label for="">Поиск</label>
+										<input type="text" class="form-control">
+									</form>
+								</li>
+								<li class=" visible-xs"><a href="#">Услуги и стоимость</a></li>
+								<li class=" visible-xs"><a href="#">Новости</a></li>
+								<li class=" visible-xs"><a href="#">Оплата</a></li>
+								<li class=" visible-xs"><a href="#">Горячее предложение</a></li>
+								<li class=" visible-xs"><a href="#">Партнерам</a></li>
+
+
+
+
+								</ul>
+							</div>
+						</nav>
+				</div>
+			</div>
+		</div>
+
+	</header>
+
+	<main>
+		<div id="wrapper">
+			<section class="section">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-4">
+
+							<div class="filter">
+								<header>Купить тур онлайн</header>
+								<form action="filter.html" method="post">
+									<div class="form-group col-sm-6">
+										<label for="country">Страна</label>
+										<div class="arrow">
+											<select class="form-control" id="country" >
+												<option>1</option>
+												<option>2</option>
+												<option>3</option>
+												<option>4</option>
+												<option>5</option>
+											</select>
+										</div>
+									</div>
+									<div class="form-group col-sm-6">
+										<label for="curort">Курорт</label>
+										<div class="arrow">
+											<select class="form-control" id="curort" >
+												<option>1</option>
+												<option>2</option>
+												<option>3</option>
+												<option>4</option>
+												<option>5</option>
+											</select>
+										</div>
+									</div>
+									<div class="form-group col-sm-6">
+										<label for="sanatory">Санаторий</label>
+										<div class="arrow">
+											<select class="form-control" id="sanatory" >
+												<option>1</option>
+												<option>2</option>
+												<option>3</option>
+												<option>4</option>
+												<option>5</option>
+											</select>
+										</div>
+									</div>
+									<div class="form-group col-sm-6">
+										<label for="date">Дата отдыха</label>
+										<div class="arrow">
+											<input class="form-control" type="text" name="daterange" value="" id="date">
+										</div>
+									</div>
+									<div class="form-group col-sm-6">
+										<label for="food">Питание</label>
+										<div class="arrow">
+											<select class="form-control" id="food" >
+												<option>1</option>
+												<option>2</option>
+												<option>3</option>
+												<option>4</option>
+												<option>5</option>
+											</select>
+										</div>
+									</div>
+
+									<div class="form-group col-sm-6">
+										<label for="human">Кол-во человек</label>
+										<div class="arrow">
+											<select class="form-control" id="human" >
+												<option>1</option>
+												<option>2</option>
+												<option>3</option>
+												<option>4</option>
+												<option>5</option>
+											</select>
+										</div>
+									</div>
+
+									<div class="form-group reset-mg col-sm-6">
+										<label >Кол. номеров</label>
+										<fieldset class="radio_group">
+											<label>
+												<input class="radio" type="radio" name="radio-test" checked>
+												<span class="radio-custom radio-custom-1"></span>
+												<span class="label"></span>
+											</label>
+											<label>
+												<input class="radio" type="radio" name="radio-test">
+												<span class="radio-custom radio-custom-2"></span>
+												<span class="label"></span>
+											</label>
+											<label>
+												<input class="radio" type="radio" name="radio-test">
+												<span class="radio-custom radio-custom-3"></span>
+												<span class="label"></span>
+											</label>
+													<label>
+												<input class="radio" type="radio" name="radio-test">
+												<span class="radio-custom radio-custom-4"></span>
+												<span class="label"></span>
+											</label>
+													<label>
+												<input class="radio" type="radio" name="radio-test">
+												<span class="radio-custom radio-custom-5"></span>
+												<span class="label"></span>
+											</label>
+										</fieldset>
+									</div>
+									<div class="form-group reset-mg col-sm-6">
+										<div class="btn-filter_block">
+											<button type="submit" class="btn_custom btn_filter">Поиск тура</button>
+										</div>
+									</div>
+								</form>
+							</div>
+
+							<div class="map_block">
+								<img claass="map" src="" alt="">
+							</div>
+
+							<aside class="left_bar sanatory_aside">
+								<header>
+									Часто задаваемые вопросы
+								</header>
+								<hr>
+								<ul class="list-group" >
+									<li class="list-group-item" > 
+										<a href="team.html">Как производить оплату ?</a> 
+									</li>
+									<li class="list-group-item">
+										<a href="mission.html">Какие услуги оказывает санаторий?</a>
+									</li>
+									<li class="list-group-item">
+										<a href="corp.html">Сколько времени можно</a>
+									</li>
+									<li class="list-group-item">
+										<a href="vac.html">Сколько времени можно</a>
+									</li>
+									<li class="list-group-item">
+										<a href="partner.html">Сколько времени можно</a>
+									</li>
+								</ul>
+							</aside>
+
+							<aside class="left_bar sanatory_aside">
+								<header>
+									Отзывы клиентов
+								</header>
+								<hr>
+								<p>Читая положительные отзывы о санатории «Мотылёк»,просто умиляюсь.И вежливо встретили, проводили, расселили, и проживание замечательное, лечили и отлично кормили. Создается впечатление, что эти отзывы пишут сами сотрудники санатория...</p>
+							</aside>
+
+							<aside class="left_bar sanatory_aside">
+								<header>
+									Преимущества санатория
+								</header>
+								<hr>
+								<div class ="service">
+									<label>
+										<input class="checkbox" type="checkbox" name="checkbox-test">
+										<span class="checkbox-custom"></span>
+										<span class="label">Параметр 1</span>
+									</label>
+									<label>
+										<input class="checkbox" type="checkbox" name="checkbox-test">
+										<span class="checkbox-custom"></span>
+										<span class="label">Параметр 2</span>
+									</label>
+									<label>
+										<input class="checkbox" type="checkbox" name="checkbox-test">
+										<span class="checkbox-custom"></span>
+										<span class="label">Параметр 3</span>
+									</label>
+									<label>
+										<input class="checkbox" type="checkbox" name="checkbox-test">
+										<span class="checkbox-custom"></span>
+										<span class="label">Параметр 4</span>
+									</label>
+									<label>
+										<input class="checkbox" type="checkbox" name="checkbox-test">
+										<span class="checkbox-custom"></span>
+										<span class="label">Параметр 5</span>
+									</label>
+								</div>
+							</aside>
+
+						</div>
+
+						<div class="col-lg-8 sanatory_main">
+							<ul class="ankor">
+								<li class="active"><a href="">Номера</a></li>
+								<li><a href="">Описание</a></li>
+								<li><a href="">Видео</a></li>
+								<li><a href="">Лечебная база</a></li>
+								<li><a href="">Удобства и услуги</a></li>
+								<li><a href="">Показания</a></li>
+							</ul>
+
+							<div class="flex">
+								<div class="header_title">
+									<div>
+										<h1>Санаторий тропик</h1>
+										<span>ул. Горького 15 А, Колумбия, США</span>
+									</div>
+									<div class="star_block">
+										<span class="stars">
+											<i class="fa fa-star green"></i>
+											<i class="fa fa-star green"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+										</span>
+										<a href="#">Откыть карту</a>
+									</div>
+								</div>
+								<div class="header_buttons">
+									<a href="my sanatory.html" class="btn_custom">Добавить в мои санатории</a>
+									<a href="booking.html" class="btn_custom">Забронировать</a>
+								</div>
+							</div>
+
+							<section class="excursion">
+								<div class="gallery">
+									<div class="small_slaider_block" >
+										<div class="relative">
+
+											<span class="print"></span>
+											<div class="social_round">
+												<span class="r_g"></span>
+												<span class="r_twit"></span>
+												<span class="r_ok"></span>
+												<span class="r_fb"></span>
+											</div>
+
+										</div>
+										<div class="relative">
+											<div class="photos">
+												<img src="images/img.jpg" alt="">
+												<img src="images/img.jpg" alt="">
+												<img src="images/img.jpg" alt="">
+												<img src="images/img.jpg" alt="">
+												<img src="images/img.jpg" alt="">
+												<img src="images/img.jpg" alt="">
+												<img src="images/img.jpg" alt="">
+												<img src="images/img.jpg" alt="">
+											</div>
+											<div class="buttons">
+												<button class="prev">Назад</button>
+												<button class="next">Вперед</button>
+											</div>
+										</div>
+
+									</div>
+
+									<div class="small_galery">
+										<div class="showed">
+											<img src="images/img.jpg" alt="" data-num="0">
+										</div>
+										<div>
+											<img src="images/img.jpg" alt="" data-num="1">
+										</div >
+										<div>
+											<img src="images/img.jpg" alt="" data-num="2">
+										</div>
+										<div>
+											<img src="images/img.jpg" alt="" data-num="3">
+										</div>
+										<div>
+											<img src="images/img.jpg" alt="" data-num="4">
+										</div>
+										<div>
+											<img src="images/img.jpg" alt="" data-num="5">
+										</div >
+										<div>
+											<img src="images/img.jpg" alt="" data-num="6">
+										</div>
+										<div>
+											<img src="images/img.jpg" alt="" data-num="7">
+										</div>
+									</div>
+								</div>
+
+								<div class="flex">
+									<div>
+										<span>Вид санатория</span>
+										<a href="" class="img_block"> <img src="images/img-3.jpg" alt=""> </a>
+									</div>
+									<div>
+										<span>Номера</span>
+										<a href="" class="img_block"> <img src="images/img-2.jpg" alt=""> </a>
+									</div>
+									<div>
+										<span>Спа</span>
+										<a href="" class="img_block"> <img src="images/img-1.jpg" alt=""> </a>
+									</div>
+									<div>
+										<span>Лечебная база</span>
+										<a href="" class="img_block"> <img src="images/img-4.jpg" alt=""> </a>
+									</div>
+									<div>
+										<span>Ресторан</span>
+										<a href="" class="img_block"> <img src="images/img-3.jpg" alt=""> </a>
+									</div>
+									<div>
+										<span>Общий вид</span>
+										<a href="" class="img_block"> <img src="images/img-4.jpg" alt=""> </a>
+									</div>
+									<div>
+										<span>Общий вид 2</span>
+										<a href="" class="img_block"> <img src="images/img-2.jpg" alt=""> </a>
+									</div>
+									<div>
+										<span>Видео</span>
+										<a href="" class="img_block"> <img src="images/img-3.jpg" alt=""> </a>
+									</div>
+
+								</div>
+
+
+								<p>Наш санаторий расположен в экологически чистом уголке средней полосы России, на волжских просторах, общей площадью 12 га, вблизи города Кострома (30км).</p>
+								<p><span>Внутри номеров</span>
+								В номере установлен чайник. и телевизор с плоским экраном.
+								</p>
+								<p><span>Особенности варианта размещения</span>
+								Стойка регистрации открыта круглосуточно.
+								</p>
+								<p><span>Расположение</span>
+								Расстояние от санатория до ближайшего аэропорта, в США, составляет 12 км.
+								</p>
+								<p><span>Попуярные удобства</span></p>
+
+								<div class="services">
+										<div class="item">
+											<span>Приставка</span>
+											<img src="images/console.jpg" alt="console">
+										</div>
+										<div class="item">
+											<span>Интернет</span>
+											<img src="images/www.jpg" alt="www">
+										</div>
+										<div class="item">
+											<span>Ванная</span>
+											<img src="images/mush.jpg" alt="mush">
+										</div>
+										<div class="item">
+											<span>Кондиционер</span>
+											<img src="images/cond.jpg" alt="cond">
+										</div>
+										<div class="item">
+											<span>Кондиционер</span>
+											<img src="images/cond.jpg" alt="cond">
+										</div>
+										<div class="item">
+											<span>Кондиционер</span>
+											<img src="images/cond.jpg" alt="cond">
+										</div>
+								</div>
+
+								<div class="free_time">
+									<div class="col-md-8">Свободные номера в санатории с: <span>01.01.2017 - 15.01.2017</span></div>
+									
+									<a href="#" class="btn_custom">Изменить дату</a>
+									
+								</div>
+
+								<article class="hot_thumb clearfix">
+									<div class="img_block">
+										<img class="" src="images/img-1.jpg" alt="">
+									</div>
+
+									<div class="descr_block">
+										<header>
+											<span>Одноместный номер</span>
+										</header>
+										<span class="country">В стоимость входит</span>
+										<div class="services">
+												<div class="item">
+													<span>Приставка</span>
+													<img src="images/console.jpg" alt="console">
+												</div>
+												<div class="item">
+													<span>Интернет</span>
+													<img src="images/www.jpg" alt="www">
+												</div>
+												<div class="item">
+													<span>Ванная</span>
+													<img src="images/mush.jpg" alt="mush">
+												</div>
+												<div class="item">
+													<span>Кондиционер</span>
+													<img src="images/cond.jpg" alt="cond">
+												</div>
+												<div class="item">
+													<span>Ванная</span>
+													<img src="images/mush.jpg" alt="mush">
+												</div>
+												<div class="item">
+													<span>Интернет</span>
+													<img src="images/www.jpg" alt="www">
+												</div>
+										</div>
+									</div>
+
+									<div class="cost">
+										<span>Цена за номер</span>
+										<span class="prise">2000 &euro;</span>
+										<a href="#" class="btn_custom">Забронировать</a>
+									</div>
+
+
+								</article>
+								
+							</section>
+
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- ==================== 1 СЕКЦИЯ ЧЕКБОКСОВ =====================-->
+
+
+			<section class="section">
+				<div class="container">
+					<div class="row">
+						<div class="col-xs-12 text-center">
+							<h2>Показания к лечению</h2>
+						</div>
+						<div class="col-md-5 col-md-6 col-xs-12">
+							<div class="service">
+								<label>
+									<input class="checkbox" type="checkbox" name="checkbox-test">
+									<span class="checkbox-custom"></span>
+									<span class="label">Услуга 1</span>
+								</label>
+								<label>
+									<input class="checkbox" type="checkbox" name="checkbox-test">
+									<span class="checkbox-custom"></span>
+									<span class="label">Услуга 1</span>
+								</label>
+								<label>
+									<input class="checkbox" type="checkbox" name="checkbox-test">
+									<span class="checkbox-custom"></span>
+									<span class="label">Услуга 1</span>
+								</label>
+								<label>
+									<input class="checkbox" type="checkbox" name="checkbox-test">
+									<span class="checkbox-custom"></span>
+									<span class="label">Услуга 1</span>
+								</label>
+								<label>
+									<input class="checkbox" type="checkbox" name="checkbox-test">
+									<span class="checkbox-custom"></span>
+									<span class="label">Услуга 1</span>
+								</label>
+							</div>
+						</div>
+
+						<div class="col-md-5 col-md-6 col-xs-12">
+							<div class="service">
+								<label>
+									<input class="checkbox" type="checkbox" name="checkbox-test">
+									<span class="checkbox-custom"></span>
+									<span class="label">Услуга 1</span>
+								</label>
+								<label>
+									<input class="checkbox" type="checkbox" name="checkbox-test">
+									<span class="checkbox-custom"></span>
+									<span class="label">Услуга 1</span>
+								</label>
+								<label>
+									<input class="checkbox" type="checkbox" name="checkbox-test">
+									<span class="checkbox-custom"></span>
+									<span class="label">Услуга 1</span>
+								</label>
+								<label>
+									<input class="checkbox" type="checkbox" name="checkbox-test">
+									<span class="checkbox-custom"></span>
+									<span class="label">Услуга 1</span>
+								</label>
+								<label>
+									<input class="checkbox" type="checkbox" name="checkbox-test">
+									<span class="checkbox-custom"></span>
+									<span class="label">Услуга 1</span>
+								</label>
+							</div>
+						</div>
+
+						<div class="col-md-2 col-md-6 col-xs-12">
+							<div class="service">
+								<label>
+									<input class="checkbox" type="checkbox" name="checkbox-test">
+									<span class="checkbox-custom"></span>
+									<span class="label">Услуга 1</span>
+								</label>
+								<label>
+									<input class="checkbox" type="checkbox" name="checkbox-test">
+									<span class="checkbox-custom"></span>
+									<span class="label">Услуга 1</span>
+								</label>
+								<label>
+									<input class="checkbox" type="checkbox" name="checkbox-test">
+									<span class="checkbox-custom"></span>
+									<span class="label">Услуга 1</span>
+								</label>
+								<label>
+									<input class="checkbox" type="checkbox" name="checkbox-test">
+									<span class="checkbox-custom"></span>
+									<span class="label">Услуга 1</span>
+								</label>
+								<label>
+									<input class="checkbox" type="checkbox" name="checkbox-test">
+									<span class="checkbox-custom"></span>
+									<span class="label">Услуга 1</span>
+								</label>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</section>
+
+			<!-- ==================== 2 СЕКЦИЯ ЧЕКБОКСОВ =====================-->
+
+			<section class="section">
+				<div class="container">
+					<div class="row section">
+						<div class="col-xs-12 text-center">
+							<h2>Перечень</h2>
+						</div>
+
+						<div class="col-md-5 col-sm-6 col-xs-12">
+							<div class="row">
+								<div class="col-md-6">
+									<div class="service">
+										<label class="large_letter">
+											<input class="checkbox" type="checkbox" name="checkbox-test">
+											<span class="checkbox-custom"></span>
+											<span class="label">а</span>
+										</label>
+										<label>
+											<input class="checkbox" type="checkbox" name="checkbox-test">
+											<span class="checkbox-custom"></span>
+											<span class="label">Услуга 1</span>
+										</label>
+										<label>
+											<input class="checkbox" type="checkbox" name="checkbox-test">
+											<span class="checkbox-custom"></span>
+											<span class="label">Услуга 1</span>
+										</label>
+										<label>
+											<input class="checkbox" type="checkbox" name="checkbox-test">
+											<span class="checkbox-custom"></span>
+											<span class="label">Услуга 1</span>
+										</label>
+										<label>
+											<input class="checkbox" type="checkbox" name="checkbox-test">
+											<span class="checkbox-custom"></span>
+											<span class="label">Услуга 1</span>
+										</label>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="service">
+										<label class="large_letter">
+											<input class="checkbox" type="checkbox" name="checkbox-test">
+											<span class="checkbox-custom"></span>
+											<span class="label">б</span>
+										</label>
+										<label>
+											<input class="checkbox" type="checkbox" name="checkbox-test">
+											<span class="checkbox-custom"></span>
+											<span class="label">Услуга 1</span>
+										</label>
+										<label>
+											<input class="checkbox" type="checkbox" name="checkbox-test">
+											<span class="checkbox-custom"></span>
+											<span class="label">Услуга 1</span>
+										</label>
+										<label>
+											<input class="checkbox" type="checkbox" name="checkbox-test">
+											<span class="checkbox-custom"></span>
+											<span class="label">Услуга 1</span>
+										</label>
+										<label>
+											<input class="checkbox" type="checkbox" name="checkbox-test">
+											<span class="checkbox-custom"></span>
+											<span class="label">Услуга 1</span>
+										</label>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-md-5 col-sm-6 col-xs-12">
+							<div class="row">
+								<div class="col-md-6">
+									<div class="service">
+										<label class="large_letter">
+											<input class="checkbox" type="checkbox" name="checkbox-test">
+											<span class="checkbox-custom"></span>
+											<span class="label">в</span>
+										</label>
+										<label>
+											<input class="checkbox" type="checkbox" name="checkbox-test">
+											<span class="checkbox-custom"></span>
+											<span class="label">Услуга 1</span>
+										</label>
+										<label>
+											<input class="checkbox" type="checkbox" name="checkbox-test">
+											<span class="checkbox-custom"></span>
+											<span class="label">Услуга 1</span>
+										</label>
+										<label>
+											<input class="checkbox" type="checkbox" name="checkbox-test">
+											<span class="checkbox-custom"></span>
+											<span class="label">Услуга 1</span>
+										</label>
+										<label>
+											<input class="checkbox" type="checkbox" name="checkbox-test">
+											<span class="checkbox-custom"></span>
+											<span class="label">Услуга 1</span>
+										</label>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="service">
+										<label class="large_letter">
+											<input class="checkbox" type="checkbox" name="checkbox-test">
+											<span class="checkbox-custom"></span>
+											<span class="label">г</span>
+										</label>
+										<label>
+											<input class="checkbox" type="checkbox" name="checkbox-test">
+											<span class="checkbox-custom"></span>
+											<span class="label">Услуга 1</span>
+										</label>
+										<label>
+											<input class="checkbox" type="checkbox" name="checkbox-test">
+											<span class="checkbox-custom"></span>
+											<span class="label">Услуга 1</span>
+										</label>
+										<label>
+											<input class="checkbox" type="checkbox" name="checkbox-test">
+											<span class="checkbox-custom"></span>
+											<span class="label">Услуга 1</span>
+										</label>
+										<label>
+											<input class="checkbox" type="checkbox" name="checkbox-test">
+											<span class="checkbox-custom"></span>
+											<span class="label">Услуга 1</span>
+										</label>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-md-2 col-sm-6 col-xs-12">
+							<div class="service">
+								<label class="large_letter">
+									<input class="checkbox" type="checkbox" name="checkbox-test">
+									<span class="checkbox-custom"></span>
+									<span class="label">д</span>
+								</label>
+								<label>
+									<input class="checkbox" type="checkbox" name="checkbox-test">
+									<span class="checkbox-custom"></span>
+									<span class="label">Услуга 1</span>
+								</label>
+								<label>
+									<input class="checkbox" type="checkbox" name="checkbox-test">
+									<span class="checkbox-custom"></span>
+									<span class="label">Услуга 1</span>
+								</label>
+								<label>
+									<input class="checkbox" type="checkbox" name="checkbox-test">
+									<span class="checkbox-custom"></span>
+									<span class="label">Услуга 1</span>
+								</label>
+								<label>
+									<input class="checkbox" type="checkbox" name="checkbox-test">
+									<span class="checkbox-custom"></span>
+									<span class="label">Услуга 1</span>
+								</label>
+							</div>
+
+						</div>
+					</div>
+					<div class="row section">
+
+						<div class="col-md-5 col-sm-6 col-xs-12">
+							<div class="row">
+								<div class="col-md-6">
+									<div class="service">
+										<label class="large_letter">
+											<input class="checkbox" type="checkbox" name="checkbox-test">
+											<span class="checkbox-custom"></span>
+											<span class="label">а</span>
+										</label>
+										<label>
+											<input class="checkbox" type="checkbox" name="checkbox-test">
+											<span class="checkbox-custom"></span>
+											<span class="label">Услуга 1</span>
+										</label>
+										<label>
+											<input class="checkbox" type="checkbox" name="checkbox-test">
+											<span class="checkbox-custom"></span>
+											<span class="label">Услуга 1</span>
+										</label>
+										<label>
+											<input class="checkbox" type="checkbox" name="checkbox-test">
+											<span class="checkbox-custom"></span>
+											<span class="label">Услуга 1</span>
+										</label>
+										<label>
+											<input class="checkbox" type="checkbox" name="checkbox-test">
+											<span class="checkbox-custom"></span>
+											<span class="label">Услуга 1</span>
+										</label>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="service">
+										<label class="large_letter">
+											<input class="checkbox" type="checkbox" name="checkbox-test">
+											<span class="checkbox-custom"></span>
+											<span class="label">б</span>
+										</label>
+										<label>
+											<input class="checkbox" type="checkbox" name="checkbox-test">
+											<span class="checkbox-custom"></span>
+											<span class="label">Услуга 1</span>
+										</label>
+										<label>
+											<input class="checkbox" type="checkbox" name="checkbox-test">
+											<span class="checkbox-custom"></span>
+											<span class="label">Услуга 1</span>
+										</label>
+										<label>
+											<input class="checkbox" type="checkbox" name="checkbox-test">
+											<span class="checkbox-custom"></span>
+											<span class="label">Услуга 1</span>
+										</label>
+										<label>
+											<input class="checkbox" type="checkbox" name="checkbox-test">
+											<span class="checkbox-custom"></span>
+											<span class="label">Услуга 1</span>
+										</label>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-md-5 col-sm-6 col-xs-12">
+							<div class="row">
+								<div class="col-md-6">
+									<div class="service">
+										<label class="large_letter">
+											<input class="checkbox" type="checkbox" name="checkbox-test">
+											<span class="checkbox-custom"></span>
+											<span class="label">в</span>
+										</label>
+										<label>
+											<input class="checkbox" type="checkbox" name="checkbox-test">
+											<span class="checkbox-custom"></span>
+											<span class="label">Услуга 1</span>
+										</label>
+										<label>
+											<input class="checkbox" type="checkbox" name="checkbox-test">
+											<span class="checkbox-custom"></span>
+											<span class="label">Услуга 1</span>
+										</label>
+										<label>
+											<input class="checkbox" type="checkbox" name="checkbox-test">
+											<span class="checkbox-custom"></span>
+											<span class="label">Услуга 1</span>
+										</label>
+										<label>
+											<input class="checkbox" type="checkbox" name="checkbox-test">
+											<span class="checkbox-custom"></span>
+											<span class="label">Услуга 1</span>
+										</label>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="service">
+										<label class="large_letter">
+											<input class="checkbox" type="checkbox" name="checkbox-test">
+											<span class="checkbox-custom"></span>
+											<span class="label">г</span>
+										</label>
+										<label>
+											<input class="checkbox" type="checkbox" name="checkbox-test">
+											<span class="checkbox-custom"></span>
+											<span class="label">Услуга 1</span>
+										</label>
+										<label>
+											<input class="checkbox" type="checkbox" name="checkbox-test">
+											<span class="checkbox-custom"></span>
+											<span class="label">Услуга 1</span>
+										</label>
+										<label>
+											<input class="checkbox" type="checkbox" name="checkbox-test">
+											<span class="checkbox-custom"></span>
+											<span class="label">Услуга 1</span>
+										</label>
+										<label>
+											<input class="checkbox" type="checkbox" name="checkbox-test">
+											<span class="checkbox-custom"></span>
+											<span class="label">Услуга 1</span>
+										</label>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-md-2 col-sm-6 col-xs-12">
+							<div class="service">
+								<label class="large_letter">
+									<input class="checkbox" type="checkbox" name="checkbox-test">
+									<span class="checkbox-custom"></span>
+									<span class="label">д</span>
+								</label>
+								<label>
+									<input class="checkbox" type="checkbox" name="checkbox-test">
+									<span class="checkbox-custom"></span>
+									<span class="label">Услуга 1</span>
+								</label>
+								<label>
+									<input class="checkbox" type="checkbox" name="checkbox-test">
+									<span class="checkbox-custom"></span>
+									<span class="label">Услуга 1</span>
+								</label>
+								<label>
+									<input class="checkbox" type="checkbox" name="checkbox-test">
+									<span class="checkbox-custom"></span>
+									<span class="label">Услуга 1</span>
+								</label>
+								<label>
+									<input class="checkbox" type="checkbox" name="checkbox-test">
+									<span class="checkbox-custom"></span>
+									<span class="label">Услуга 1</span>
+								</label>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- ==================== 3 СЕКЦИЯ ЧЕКБОКСОВ =====================-->
+
+			<section class="section">
+				<div class="container">
+					<div class="row section">
+						<div class="col-xs-12 text-center">
+							<h2>Перечень услуг</h2>
+						</div>
+
+						<div class="col-md-5 col-sm-6 col-xs-12">
+							<div class="row">
+								<div class="col-md-6">
+									<div class="service">
+										<label>
+											<input class="checkbox" type="checkbox" name="checkbox-test">
+											<span class="checkbox-custom"></span>
+											<span class="label">Услуга 1</span>
+										</label>
+										<label>
+											<input class="checkbox" type="checkbox" name="checkbox-test">
+											<span class="checkbox-custom"></span>
+											<span class="label">Услуга 1</span>
+										</label>
+										<label>
+											<input class="checkbox" type="checkbox" name="checkbox-test">
+											<span class="checkbox-custom"></span>
+											<span class="label">Услуга 1</span>
+										</label>
+										<label>
+											<input class="checkbox" type="checkbox" name="checkbox-test">
+											<span class="checkbox-custom"></span>
+											<span class="label">Услуга 1</span>
+										</label>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="service">
+										<label>
+											<input class="checkbox" type="checkbox" name="checkbox-test">
+											<span class="checkbox-custom"></span>
+											<span class="label">Услуга 1</span>
+										</label>
+										<label>
+											<input class="checkbox" type="checkbox" name="checkbox-test">
+											<span class="checkbox-custom"></span>
+											<span class="label">Услуга 1</span>
+										</label>
+										<label>
+											<input class="checkbox" type="checkbox" name="checkbox-test">
+											<span class="checkbox-custom"></span>
+											<span class="label">Услуга 1</span>
+										</label>
+										<label>
+											<input class="checkbox" type="checkbox" name="checkbox-test">
+											<span class="checkbox-custom"></span>
+											<span class="label">Услуга 1</span>
+										</label>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-md-5 col-sm-6 col-xs-12">
+							<div class="row">
+								<div class="col-md-6">
+									<div class="service">
+										<label>
+											<input class="checkbox" type="checkbox" name="checkbox-test">
+											<span class="checkbox-custom"></span>
+											<span class="label">Услуга 1</span>
+										</label>
+										<label>
+											<input class="checkbox" type="checkbox" name="checkbox-test">
+											<span class="checkbox-custom"></span>
+											<span class="label">Услуга 1</span>
+										</label>
+										<label>
+											<input class="checkbox" type="checkbox" name="checkbox-test">
+											<span class="checkbox-custom"></span>
+											<span class="label">Услуга 1</span>
+										</label>
+										<label>
+											<input class="checkbox" type="checkbox" name="checkbox-test">
+											<span class="checkbox-custom"></span>
+											<span class="label">Услуга 1</span>
+										</label>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="service">
+										<label>
+											<input class="checkbox" type="checkbox" name="checkbox-test">
+											<span class="checkbox-custom"></span>
+											<span class="label">Услуга 1</span>
+										</label>
+										<label>
+											<input class="checkbox" type="checkbox" name="checkbox-test">
+											<span class="checkbox-custom"></span>
+											<span class="label">Услуга 1</span>
+										</label>
+										<label>
+											<input class="checkbox" type="checkbox" name="checkbox-test">
+											<span class="checkbox-custom"></span>
+											<span class="label">Услуга 1</span>
+										</label>
+										<label>
+											<input class="checkbox" type="checkbox" name="checkbox-test">
+											<span class="checkbox-custom"></span>
+											<span class="label">Услуга 1</span>
+										</label>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-md-2 col-sm-6 col-xs-12">
+							<div class="service">
+								<label>
+									<input class="checkbox" type="checkbox" name="checkbox-test">
+									<span class="checkbox-custom"></span>
+									<span class="label">Услуга 1</span>
+								</label>
+								<label>
+									<input class="checkbox" type="checkbox" name="checkbox-test">
+									<span class="checkbox-custom"></span>
+									<span class="label">Услуга 1</span>
+								</label>
+								<label>
+									<input class="checkbox" type="checkbox" name="checkbox-test">
+									<span class="checkbox-custom"></span>
+									<span class="label">Услуга 1</span>
+								</label>
+								<label>
+									<input class="checkbox" type="checkbox" name="checkbox-test">
+									<span class="checkbox-custom"></span>
+									<span class="label">Услуга 1</span>
+								</label>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- ==================== Видео =====================-->
+
+			<section class="section places">
+				<div class="container">
+					<h2>Видео санатория</h2>
+					<div class="video_block">
+						<div class="video">
+							<iframe src="https://www.youtube.com/embed/YWxMcyY-vaI" frameborder="0"></iframe>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-12">
+							<h2>Ближайшие достопримечательности</h2>
+						</div>
+						<div class="col-sm-6">
+							<header>Ближайшие достопримечательности</header>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+						</div>
+						<div class="col-sm-6">
+							<header>Ближайшие достопримечательности</header>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+						</div>
+					</div>
+				</div>
+			</section>
+
+		</div>
+	</main>
+
+	<footer>
+		<div class="container">
+			<div class="row">
+				<ul class="foot col-lg-12">
+					
+					<li class="inl ">
+						<h3>Санто Моника</h3>
+						<ul class="list-unstyled">
+							<li> <a href="#">Русские в Тайланде</a> </li>
+							<li> <a href="#">Тур в Египет</a> </li>
+							<li> <a href="#">Тур в Египет</a> </li>
+							<li> <a href="#">Тур в Египет</a> </li>
+							<li> <a href="#">Тур в Египет</a> </li>
+							<li> <a href="#">Русские в Тайланде</a> </li>
+						</ul>
+						<ul class="list-unstyled">
+							<li> <a href="#">Русские в Тайланде</a> </li>
+							<li> <a href="#">Тур в Египет</a> </li>
+							<li> <a href="#">Тур в Египет</a> </li>
+							<li> <a href="#">Тур в Египет</a> </li>
+							<li> <a href="#">Тур в Египет</a> </li>
+							<li> <a href="#">Русские в Тайланде</a> </li>
+						</ul>
+					</li>
+					<li class="inl ">
+						<h3>Популярные новости</h3>
+						<ul class="list-unstyled">
+							<li> <a href="#">Русские в Тайланде</a> </li>
+							<li> <a href="#">Русские в Тайланде</a> </li>
+							<li> <a href="#">Русские в Тайланде</a> </li>
+							<li> <a href="#">Русские в Тайланде</a> </li>
+							<li> <a href="#">Тур в Египет</a> </li>
+							<li> <a href="#">Русские в Тайланде</a> </li>
+						</ul>
+						<ul class="list-unstyled">
+							<li> <a href="#">Русские в Тайланде</a> </li>
+							<li> <a href="#">Русские в Тайланде</a> </li>
+							<li> <a href="#">Русские в Тайланде</a> </li>
+							<li> <a href="#">Русские в Тайланде</a> </li>
+							<li> <a href="#">Русские в Тайланде</a> </li>
+							<li> <a href="#">Русские в Тайланде</a> </li>
+						</ul>
+					</li>
+					<li class="inl">
+						<h3>Сервис</h3>
+						<ul class="list-unstyled ">
+							<li> <a href="#">Тур в Египет</a> </li>
+							<li> <a href="#">Тур в Египет</a> </li>
+							<li> <a href="#">Русские в Тайланде</a> </li>
+							<li> <a href="#">Русские в Тайланде</a> </li>
+							<li> <a href="#">Тур в Египет</a> </li>
+							<li> <a href="#">Русские в Тайланде</a> </li>
+						</ul>
+						<ul class="list-unstyled ">
+							<li> <a href="#">Русские в Тайланде</a> </li>
+							<li> <a href="#">Русские в Тайланде</a> </li>
+							<li> <a href="#">Тур в Египет</a> </li>
+							<li> <a href="#">Тур в Египет</a> </li>
+							<li> <a href="#">Тур в Египет</a> </li>
+							<li> <a href="#">Русские в Тайланде</a> </li>
+						</ul>
+					</li>
+
+				</ul>
+			</div>
+			<div class="row">
+
+				<div class="col-lg-4 col-md-6">
+					<div class="footer_block">
+						<label for="send">Подписаться на рассылку</label>
+						<div class="input-group">
+							<input type="email" class="form-control send input_reset" placeholder="Введите ваш email" id="send">
+							<span class="input-group-btn">
+							<button class="btn_send input_reset" type="button">
+								<img src="images/arrow_right.png" alt="">
+							</button>
+							</span>
+						</div>
+						<span class="copyright">© 2016 Название сайта</span>
+					</div>
+				</div>
+
+				<div class="col-lg-4 col-md-6">
+					<div class="contact_links"> 
+						<a href="#" class="phone"><span>Заказать звонок</span></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+
+	<!-- Bootstrap и другие JavaScript
+	================================================== -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/moment.js"></script>
+	<script type="text/javascript" src="js/daterangepicker.js"></script>
+	<script src="js/owl.carousel.js"></script>
+	<script src="js/lib.js"></script>
+	<script>
+		$(document).ready(function() {
+			$("#owl-demo").owlCarousel({
+				navigation : true,
+				navigationText : ["",""],
+				slideSpeed : 300,
+				paginationSpeed : 400,
+				singleItem:true
+			});
+		});
+	</script>
+
+</body>
+</html>
