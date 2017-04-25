@@ -70,9 +70,10 @@ body{
 	font-family: 'Proxima Nova Regular';
 	background-color: #fafafa;
 	color: #1e1e1e;
-	-moz-user-select: none;
+	-webkit-user-select: none;
 	-khtml-user-select: none;
-	user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
 	cursor: default;
 	min-width: 345px;
 }
@@ -418,10 +419,9 @@ li.dropdown ul.dropdown-menu {
 	Стили центрального блока
 ============================================*/
 
-section.content_blue {
+.content_blue {
 	background: url(../images/bg-blue.jpg) 50% 0%;
-	height: 414px;
-	
+	min-height: 414px;
 }
 .filter {
 	min-height: 352px;
@@ -478,9 +478,6 @@ section.content_blue {
 	-moz-appearance: none;
 	text-indent: 0.01px; 
 	text-overflow: '';
-	/* for IE */
-	-ms-appearance: none;
-	appearance: none!important;
 }
 ::-ms-expand {
 	display: none !important;
@@ -645,7 +642,7 @@ button.btn-filter::before {
 /* Центральный блок контента */
 
 
-section.content {
+.content {
 	min-height: 1400px;
 }
 .content_title {
@@ -677,8 +674,8 @@ section.content {
 	margin-top: 25px;
 	margin-bottom: 25px;
 }
-.content article,
-.lower_content article{
+.content .article,
+.lower_content .article{
 	padding: 15px 0;
 }
 .thumb {
@@ -689,6 +686,14 @@ section.content {
 	min-height: 512px;
 	padding: 5px;
 	margin: 0 auto;
+	transition: all .3s ease;
+}
+.thumb:hover,
+.tumb-2:hover {
+	outline: 1px solid #000;
+	-webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
 }
 .thumb h3 {
 	font-weight: bold;
@@ -832,7 +837,7 @@ section.content {
 	font-size: 36px;
 	text-align: center;
 }
-section.content_gray + section {
+.content_gray + div {
 	margin-bottom: 35px;
 }
 .img_block {	
@@ -846,9 +851,10 @@ section.content_gray + section {
 	max-width: 370px;
 	min-height: 277px;
 	padding: 5px;
-	border:1px solid #e6e6e6;
+	outline:1px solid #e6e6e6;
 	background: #f6f6f6;
 	margin: 0 auto;
+	transition: all .3s ease;
 }
 .tumb-2 > img {
 	max-height: 263px;
@@ -1168,7 +1174,7 @@ span.post {
 	text-align: center;
 }
 .section_bg .about h2,
-.section_bg + section .about h2 {
+.section_bg + .section .about h2 {
 	margin-top: 15px;
 }
 .transfers > span {
@@ -1457,8 +1463,6 @@ label.repeat {
 }
 [class*='gallery'] .buttons button {
 	display: inline-block;
-	zoom: 1;
-	*display: inline;/*IE7 life-saver */
 	width: 37px;
 	height: 77px;
 	position: absolute;
@@ -1679,6 +1683,7 @@ fieldset .half:first-child {
 }
 .underline {
 	margin: 5px 0;
+	display: block;
 }
 .excurs_form button[type="submit"],
 .add_service a,
@@ -1771,7 +1776,6 @@ ul.sort li a {
 	font-size: 16px;
 	display: block;
 	padding: 10px;
-	pointer-events: none;
 }
 ul.sort li.active {
 	background: linear-gradient(to top, #74bc1a, #8ac71c) !important;
@@ -1788,14 +1792,14 @@ ul.sort li.active a:after {
 	background-position: -10px 0; 
 }
 
-article.hot_thumb {
+.hot_thumb {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-around;
 	margin: 30px auto;
 	border: 1px solid #c5c5c5;
 }
-article.hot_thumb > a {
+.hot_thumb > a {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-around;
@@ -1980,7 +1984,6 @@ article.hot_thumb > a {
 .excursion .gallery {
 	border: 1px solid #c5c5c5;
 	background: #fff;
-	padding: 
 }
 .excursion .small_slaider_block {
 	width: 100%;

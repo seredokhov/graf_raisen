@@ -17,12 +17,9 @@
 	position: absolute;
 	bottom: 89px;
 	display: inline-block;
-	zoom: 1;
-	*display: inline;/*IE7 life-saver */
 	width: 37px;
 	height: 77px;
 	font-size: 12px;
-	filter: Alpha(Opacity=50);/*IE7 fix*/
 }
 .owl-theme .owl-controls .owl-buttons div:hover {
 	background-color: #86c520;
@@ -49,10 +46,8 @@
 
 .owl-theme .owl-controls .owl-page{
 	display: inline-block;
-	zoom: 1;
 	vertical-align: middle;
 	margin: 0 5px;
-	*display: inline;/*IE7 life-saver */
 }
 .owl-theme .owl-controls .owl-page span{
 	display: block;
