@@ -2172,7 +2172,7 @@ aside.sanatory_aside .service .label {
 	display: inline-block;
 	width: 170px;
 	min-height: 170px;
-	margin: 15px;
+	margin: 14px;
 	overflow: hidden;
 	transition: all 0.3s linear;
 }
