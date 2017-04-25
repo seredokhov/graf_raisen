@@ -36,22 +36,20 @@
 </head>
 
 <body>
-
 	<header>
 		<div class="upper_head">
 			<div class="container">
 				<div class="row">
 					<div class="col-sm-3">
 						<div class="social">
-							<span class="VK"></span>
-							<span class="twit"></span>
-							<span class="ok"></span>
+							<span class="fb"><i class="fa fa-facebook"></i></span>
+							<span class="twit"><i class="fa fa-twitter"></i></span>
+							<span class="ok"><i class="fa fa-odnoklassniki"></i></span>
 						</div>
 					</div>
 					<div class="col-sm-9">
 						<div class="lang_drop dropdown">
-							<img src="images/Flag_of_Germany.png" class="lang_btn" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-							
+							<img src="images/Flag_of_Germany.png" class="lang_btn" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">	
 							</img>
 							<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
 								<li>
@@ -63,8 +61,8 @@
 							</ul>
 						</div>
 						<div class="contact_links"> 
-							<a href="#" class="phone"><span>+69 41099533</span></a>
-							<a href="#" class="mail"><span>travel@gmail.com</span></a>
+							<a href="#" class="phone"> <i class="fa fa-phone"></i> <span>+69 41099533</span></a>
+							<a href="#" class="mail"> <i class="fa fa-envelope"></i></i> <span>travel@gmail.com</span></a>
 						</div>
 					</div>
 				</div>
@@ -74,14 +72,12 @@
 			<div class="container">
 				<div class="row">
 					<nav class="navbar navbar-default header_nav">
-
 						<!--Блок с логотипом и кнопкой выпадающего меню -->
 						<div class="navbar-header">
 							<a class="logo" href="index.html"><img src="images/logo.png" class="img-responsive" alt=""></a>
 							<button type="button" class="burg navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"></button>
 						</div>
 						<!--  -->
-
 						<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 							<ul class="nav navbar-nav">
 								<li>
@@ -101,7 +97,6 @@
 								</li>
 								<li class="hot"><a href="hot_deals.html"><span>1</span>Горячие предложения</a></li>
 								<li class="like"><a href="my sanatory.html"><span>1</span>Мои заментки</a></li>
-
 								<!-- Кнопка +меню выдимые только на lg/md-->
 								<li class="burg_block hidden-xs">
 									<button type="button" class="burg" data-toggle="dropdown"></button>
@@ -123,8 +118,6 @@
 										<button class="close"><i class="fa fa-times" aria-hidden="true"></i></button>
 									</div>
 								</li>
-								<!-- ==================================== -->
-
 								<!-- Меню выдимое только на sm/xs-->
 								<li class=" visible-xs"><a href="#">О компании</a></li>
 								<li class=" visible-xs search_li">
@@ -138,10 +131,6 @@
 								<li class=" visible-xs"><a href="#">Оплата</a></li>
 								<li class=" visible-xs"><a href="#">Горячее предложение</a></li>
 								<li class=" visible-xs"><a href="#">Партнерам</a></li>
-
-
-
-
 								</ul>
 							</div>
 						</nav>
@@ -157,7 +146,7 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-lg-4">
-
+							<!-- ===========Блок фильтра ======-->
 							<div class="filter">
 								<header>Купить тур онлайн</header>
 								<form action="filter.html" method="post">
@@ -216,16 +205,71 @@
 										</div>
 									</div>
 
-									<div class="form-group col-sm-6">
+									<div class="form-group col-sm-6" >
 										<label for="human">Кол-во человек</label>
-										<div class="arrow">
-											<select class="form-control" id="human" >
-												<option>1</option>
-												<option>2</option>
-												<option>3</option>
-												<option>4</option>
-												<option>5</option>
-											</select>
+										<div class="arrow" data-toggle="dropdown">
+											<input class="form-control" type="text" value="1" id="human" >
+										</div>
+										<div class="dropdown-menu opensright daterangepicker fix">
+											<span>Взрослые</span>
+
+											<fieldset class="radio_group">
+													<label>
+														<span class="man-1"></span>
+														<input class="radio" type="radio" value="1" name="man" checked>
+														<span class="radio-custom"></span>
+														
+													</label>
+													<label>
+														<span class="man-2"></span>
+														<input class="radio" type="radio" value="2" name="man">
+														<span class="radio-custom"></span>
+														
+													</label>
+													<label>
+														<span class="man-3"></span>
+														<input class="radio" type="radio" value="3" name="man">
+														<span class="radio-custom"></span>
+														
+													</label>
+													<label>
+														<span class="man-4"><i class="fa fa-plus" aria-hidden="true"></i></span>
+														<input class="radio" type="radio" value="4" name="man">
+														<span class="radio-custom"></span>
+														
+													</label>
+											</fieldset>
+
+											<span>Дети</span>
+
+											<fieldset class="radio_group">
+												<label>
+													<span class="child-1"></span>
+													<input class="radio" type="radio" value=" - 1" name="child">
+													<span class="radio-custom"></span>
+												</label>
+												<label>
+													<span class="child-2"></span>
+													<input class="radio" type="radio" value=" - 2" name="child">
+													<span class="radio-custom"></span>
+												</label>
+												<label>
+													<span class="child-3"></span>
+													<input class="radio" type="radio" value=" - 3" name="child">
+													<span class="radio-custom"></span>
+													
+												</label>
+												<label>
+													<span class="child-4"><i class="fa fa-plus" aria-hidden="true"></i></span>
+													<input class="radio" type="radio" value=" - 4" name="child">
+													<span class="radio-custom"></span>
+
+												</label>
+											</fieldset>
+											<div class="range_inputs">
+												<button class="applyBtn btn btn-md apply_btn" type="button">Применить</button> 
+												<button class="cancelBtn btn btn-md btn-default" type="button">Отмена</button>
+											</div>
 										</div>
 									</div>
 
@@ -268,13 +312,10 @@
 							</div>
 
 							<div class="map_block">
-								<img claass="map" src="" alt="">
+								<img class="map" src="images/map.png" alt="Карта">
 							</div>
-
 							<aside class="left_bar sanatory_aside">
-								<header>
-									Часто задаваемые вопросы
-								</header>
+								<header>Часто задаваемые вопросы</header>
 								<hr>
 								<ul class="list-group" >
 									<li class="list-group-item" > 
@@ -296,17 +337,13 @@
 							</aside>
 
 							<aside class="left_bar sanatory_aside">
-								<header>
-									Отзывы клиентов
-								</header>
+								<header>Отзывы клиентов</header>
 								<hr>
 								<p>Читая положительные отзывы о санатории «Мотылёк»,просто умиляюсь.И вежливо встретили, проводили, расселили, и проживание замечательное, лечили и отлично кормили. Создается впечатление, что эти отзывы пишут сами сотрудники санатория...</p>
 							</aside>
 
 							<aside class="left_bar sanatory_aside">
-								<header>
-									Преимущества санатория
-								</header>
+								<header>Преимущества санатория</header>
 								<hr>
 								<div class ="service">
 									<label>
@@ -336,9 +373,7 @@
 									</label>
 								</div>
 							</aside>
-
 						</div>
-
 						<div class="col-lg-8 sanatory_main">
 							<ul class="ankor">
 								<li class="active"><a href="">Номера</a></li>
@@ -348,7 +383,6 @@
 								<li><a href="">Удобства и услуги</a></li>
 								<li><a href="">Показания</a></li>
 							</ul>
-
 							<div class="flex">
 								<div class="header_title">
 									<div>
@@ -371,20 +405,17 @@
 									<a href="booking.html" class="btn_custom">Забронировать</a>
 								</div>
 							</div>
-
 							<section class="excursion">
 								<div class="gallery">
 									<div class="small_slaider_block" >
 										<div class="relative">
-
-											<span class="print"></span>
+											<span class="print"><i class="fa fa-print" aria-hidden="true"></i></span>
 											<div class="social_round">
-												<span class="r_g"></span>
-												<span class="r_twit"></span>
-												<span class="r_ok"></span>
-												<span class="r_fb"></span>
+												<span class="r_g"><i class="fa fa-google-plus"></i></span>
+												<span class="r_twit"><i class="fa fa-twitter"></i></span>
+												<span class="r_ok"><i class="fa fa-odnoklassniki"></i></span>
+												<span class="r_fb"><i class="fa fa-facebook"></i></span>
 											</div>
-
 										</div>
 										<div class="relative">
 											<div class="photos">
@@ -396,15 +427,18 @@
 												<img src="images/img.jpg" alt="">
 												<img src="images/img.jpg" alt="">
 												<img src="images/img.jpg" alt="">
+												<div class="photo_rate">
+													<div> <span>Оценка отзывы 7,9</span> </div>
+													<div> <span>Оценка лечения 9,5</span> </div>
+													<div> <span>Оценка персонала 6,5</span> </div>
+												</div>
 											</div>
 											<div class="buttons">
 												<button class="prev">Назад</button>
 												<button class="next">Вперед</button>
 											</div>
 										</div>
-
 									</div>
-
 									<div class="small_galery">
 										<div class="showed">
 											<img src="images/img.jpg" alt="" data-num="0">
@@ -432,7 +466,6 @@
 										</div>
 									</div>
 								</div>
-
 								<div class="flex">
 									<div>
 										<span>Вид санатория</span>
@@ -466,10 +499,7 @@
 										<span>Видео</span>
 										<a href="" class="img_block"> <img src="images/img-3.jpg" alt=""> </a>
 									</div>
-
 								</div>
-
-
 								<p>Наш санаторий расположен в экологически чистом уголке средней полосы России, на волжских просторах, общей площадью 12 га, вблизи города Кострома (30км).</p>
 								<p><span>Внутри номеров</span>
 								В номере установлен чайник. и телевизор с плоским экраном.
@@ -481,90 +511,79 @@
 								Расстояние от санатория до ближайшего аэропорта, в США, составляет 12 км.
 								</p>
 								<p><span>Попуярные удобства</span></p>
-
 								<div class="services">
-										<div class="item">
-											<span>Приставка</span>
-											<img src="images/console.jpg" alt="console">
-										</div>
-										<div class="item">
-											<span>Интернет</span>
-											<img src="images/www.jpg" alt="www">
-										</div>
-										<div class="item">
-											<span>Ванная</span>
-											<img src="images/mush.jpg" alt="mush">
-										</div>
-										<div class="item">
-											<span>Кондиционер</span>
-											<img src="images/cond.jpg" alt="cond">
-										</div>
-										<div class="item">
-											<span>Кондиционер</span>
-											<img src="images/cond.jpg" alt="cond">
-										</div>
-										<div class="item">
-											<span>Кондиционер</span>
-											<img src="images/cond.jpg" alt="cond">
-										</div>
+									<div class="item">
+										<span>Приставка</span>
+										<img src="images/console.jpg" alt="console">
+									</div>
+									<div class="item">
+										<span>Интернет</span>
+										<img src="images/www.jpg" alt="www">
+									</div>
+									<div class="item">
+										<span>Ванная</span>
+										<img src="images/mush.jpg" alt="mush">
+									</div>
+									<div class="item">
+										<span>Кондиционер</span>
+										<img src="images/cond.jpg" alt="cond">
+									</div>
+									<div class="item">
+										<span>Кондиционер</span>
+										<img src="images/cond.jpg" alt="cond">
+									</div>
+									<div class="item">
+										<span>Кондиционер</span>
+										<img src="images/cond.jpg" alt="cond">
+									</div>
 								</div>
-
 								<div class="free_time">
 									<div class="col-md-8">Свободные номера в санатории с: <span>01.01.2017 - 15.01.2017</span></div>
-									
 									<a href="#" class="btn_custom">Изменить дату</a>
-									
 								</div>
-
 								<article class="hot_thumb clearfix">
 									<div class="img_block">
 										<img class="" src="images/img-1.jpg" alt="">
 									</div>
-
 									<div class="descr_block">
 										<header>
 											<span>Одноместный номер</span>
 										</header>
 										<span class="country">В стоимость входит</span>
 										<div class="services">
-												<div class="item">
-													<span>Приставка</span>
-													<img src="images/console.jpg" alt="console">
-												</div>
-												<div class="item">
-													<span>Интернет</span>
-													<img src="images/www.jpg" alt="www">
-												</div>
-												<div class="item">
-													<span>Ванная</span>
-													<img src="images/mush.jpg" alt="mush">
-												</div>
-												<div class="item">
-													<span>Кондиционер</span>
-													<img src="images/cond.jpg" alt="cond">
-												</div>
-												<div class="item">
-													<span>Ванная</span>
-													<img src="images/mush.jpg" alt="mush">
-												</div>
-												<div class="item">
-													<span>Интернет</span>
-													<img src="images/www.jpg" alt="www">
-												</div>
+											<div class="item">
+												<span>Приставка</span>
+												<img src="images/console.jpg" alt="console">
+											</div>
+											<div class="item">
+												<span>Интернет</span>
+												<img src="images/www.jpg" alt="www">
+											</div>
+											<div class="item">
+												<span>Ванная</span>
+												<img src="images/mush.jpg" alt="mush">
+											</div>
+											<div class="item">
+												<span>Кондиционер</span>
+												<img src="images/cond.jpg" alt="cond">
+											</div>
+											<div class="item">
+												<span>Ванная</span>
+												<img src="images/mush.jpg" alt="mush">
+											</div>
+											<div class="item">
+												<span>Интернет</span>
+												<img src="images/www.jpg" alt="www">
+											</div>
 										</div>
 									</div>
-
 									<div class="cost">
 										<span>Цена за номер</span>
 										<span class="prise">2000 &euro;</span>
 										<a href="#" class="btn_custom">Забронировать</a>
 									</div>
-
-
 								</article>
-								
 							</section>
-
 						</div>
 					</div>
 				</div>
@@ -573,10 +592,10 @@
 			<!-- ==================== 1 СЕКЦИЯ ЧЕКБОКСОВ =====================-->
 
 
-			<section class="section">
+			<section class="section section_check">
 				<div class="container">
 					<div class="row">
-						<div class="col-xs-12 text-center">
+						<div class="col-xs-12">
 							<h2>Показания к лечению</h2>
 						</div>
 						<div class="col-md-5 col-md-6 col-xs-12">
@@ -675,10 +694,10 @@
 
 			<!-- ==================== 2 СЕКЦИЯ ЧЕКБОКСОВ =====================-->
 
-			<section class="section">
+			<section class="section section_check">
 				<div class="container">
 					<div class="row section">
-						<div class="col-xs-12 text-center">
+						<div class="col-xs-12">
 							<h2>Перечень</h2>
 						</div>
 
@@ -1003,10 +1022,10 @@
 
 			<!-- ==================== 3 СЕКЦИЯ ЧЕКБОКСОВ =====================-->
 
-			<section class="section">
+			<section class="section section_check">
 				<div class="container">
 					<div class="row section">
-						<div class="col-xs-12 text-center">
+						<div class="col-xs-12">
 							<h2>Перечень услуг</h2>
 						</div>
 
@@ -1155,24 +1174,288 @@
 							<iframe src="https://www.youtube.com/embed/YWxMcyY-vaI" frameborder="0"></iframe>
 						</div>
 					</div>
+					<h2>Ориентиры поблизости</h2>
 					<div class="row">
-						<div class="col-xs-12">
-							<h2>Ближайшие достопримечательности</h2>
+						<div class="col-md-7">
+							<span class="near">Ближайшие достопримечательности</span>
+							<ul class="attr_range">
+								<li>Музей<span class="range">0,2km</span></li>
+								<li>Ресторан<span class="range">0,2km</span></li>
+								<li>Цирк<span class="range">0,2km</span></li>
+								<li>Филармония<span class="range">0,2km</span></li>
+							</ul>
 						</div>
-						<div class="col-sm-6">
-							<header>Ближайшие достопримечательности</header>
-							<span></span>
-							<span></span>
-							<span></span>
-							<span></span>
+						<div class="col-md-5">
+							<span class="near">Ближайшие достопримечательности</span>
+							<ul class="attr_range">
+								<li>Музей<span class="range">0,2km</span></li>
+								<li>Ресторан<span class="range">0,2km</span></li>
+								<li>Цирк<span class="range">0,2km</span></li>
+								<li>Филармония<span class="range">0,2km</span></li>
+							</ul>
 						</div>
-						<div class="col-sm-6">
-							<header>Ближайшие достопримечательности</header>
-							<span></span>
-							<span></span>
-							<span></span>
-							<span></span>
+					</div>
+					<div class="row thumbs_block">
+						<div class="col-lg-12">
+							<h2>Может быть вас заинтересуют другие санатрории?</h2>
+							<hr class="short">
 						</div>
+
+						<article class="col-lg-3 col-md-4 col-sm-6">
+							<div class="thumb">
+								<a href="#">
+									<div class="img_block">
+										<img class="img-responsive" src="images/img-1.jpg" alt="">
+									</div>
+									<h3>Карловы Вары</h3>
+								</a>
+								<ol class="breadcrumb">
+									<li><a href="#">США</a></li>
+									<li><a href="#">Мичиган</a></li>
+									<li class="active">Инко</li>
+								</ol>
+								<span class="stars">
+									<i class="fa fa-star green"></i>
+									<i class="fa fa-star green"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+								</span>
+								<hr>
+								<div class="relative">
+									<div class="main_price">
+										<div class="thumb_description_header">Заголовок описания</div>
+										<p>Замечательное место для отдыха с семьей</p>
+									</div>
+									<span class="price">220 &euro;</span>
+
+								</div>
+							</div>
+						</article>
+
+						<article class="col-lg-3 col-md-4 col-sm-6">
+							<div class="thumb">
+								<a href="#">
+									<div class="img_block">
+										<img class="img-responsive" src="images/img-1.jpg" alt="">
+									</div>
+									<h3>Карловы Вары</h3>
+								</a>
+								<ol class="breadcrumb">
+									<li><a href="#">США</a></li>
+									<li><a href="#">Мичиган</a></li>
+									<li class="active">Инко</li>
+								</ol>
+								<span class="stars">
+									<i class="fa fa-star green"></i>
+									<i class="fa fa-star green"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+								</span>
+								<hr>
+								<div class="relative">
+									<div class="main_price">
+										<div class="thumb_description_header">Заголовок описания</div>
+										<p>Замечательное место для отдыха с семьей</p>
+									</div>
+									<span class="price">220 &euro;</span>
+
+								</div>
+							</div>
+						</article>
+
+						<article class="col-lg-3 col-md-4 col-sm-6">
+							<div class="thumb">
+								<a href="#">
+									<div class="img_block">
+										<img class="img-responsive" src="images/img-1.jpg" alt="">
+									</div>
+									<h3>Карловы Вары</h3>
+								</a>
+								<ol class="breadcrumb">
+									<li><a href="#">США</a></li>
+									<li><a href="#">Мичиган</a></li>
+									<li class="active">Инко</li>
+								</ol>
+								<span class="stars">
+									<i class="fa fa-star green"></i>
+									<i class="fa fa-star green"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+								</span>
+								<hr>
+								<div class="relative">
+									<div class="main_price">
+										<div class="thumb_description_header">Заголовок описания</div>
+										<p>Замечательное место для отдыха с семьей</p>
+									</div>
+									<span class="price">220 &euro;</span>
+
+								</div>
+							</div>
+						</article>
+
+						<article class="col-lg-3 col-md-4 col-sm-6">
+							<div class="thumb">
+								<a href="#">
+									<div class="img_block">
+										<img class="img-responsive" src="images/img-1.jpg" alt="">
+									</div>
+									<h3>Карловы Вары</h3>
+								</a>
+								<ol class="breadcrumb">
+									<li><a href="#">США</a></li>
+									<li><a href="#">Мичиган</a></li>
+									<li class="active">Инко</li>
+								</ol>
+								<span class="stars">
+									<i class="fa fa-star green"></i>
+									<i class="fa fa-star green"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+								</span>
+								<hr>
+								<div class="relative">
+									<div class="main_price">
+										<div class="thumb_description_header">Заголовок описания</div>
+										<p>Замечательное место для отдыха с семьей</p>
+									</div>
+									<span class="price">220 &euro;</span>
+
+								</div>
+							</div>
+						</article>
+
+						<article class="col-lg-3 col-md-4 col-sm-6">
+							<div class="thumb">
+								<a href="#">
+									<div class="img_block">
+										<img class="img-responsive" src="images/img-1.jpg" alt="">
+									</div>
+									<h3>Карловы Вары</h3>
+								</a>
+								<ol class="breadcrumb">
+									<li><a href="#">США</a></li>
+									<li><a href="#">Мичиган</a></li>
+									<li class="active">Инко</li>
+								</ol>
+								<span class="stars">
+									<i class="fa fa-star green"></i>
+									<i class="fa fa-star green"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+								</span>
+								<hr>
+								<div class="relative">
+									<div class="main_price">
+										<div class="thumb_description_header">Заголовок описания</div>
+										<p>Замечательное место для отдыха с семьей</p>
+									</div>
+									<span class="price">220 &euro;</span>
+
+								</div>
+							</div>
+						</article>
+
+						<article class="col-lg-3 col-md-4 col-sm-6">
+							<div class="thumb">
+								<a href="#">
+									<div class="img_block">
+										<img class="img-responsive" src="images/img-1.jpg" alt="">
+									</div>
+									<h3>Карловы Вары</h3>
+								</a>
+								<ol class="breadcrumb">
+									<li><a href="#">США</a></li>
+									<li><a href="#">Мичиган</a></li>
+									<li class="active">Инко</li>
+								</ol>
+								<span class="stars">
+									<i class="fa fa-star green"></i>
+									<i class="fa fa-star green"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+								</span>
+								<hr>
+								<div class="relative">
+									<div class="main_price">
+										<div class="thumb_description_header">Заголовок описания</div>
+										<p>Замечательное место для отдыха с семьей</p>
+									</div>
+									<span class="price">220 &euro;</span>
+
+								</div>
+							</div>
+						</article>
+
+						<article class="col-lg-3 col-md-4 col-sm-6">
+							<div class="thumb">
+								<a href="#">
+									<div class="img_block">
+										<img class="img-responsive" src="images/img-1.jpg" alt="">
+									</div>
+									<h3>Карловы Вары</h3>
+								</a>
+								<ol class="breadcrumb">
+									<li><a href="#">США</a></li>
+									<li><a href="#">Мичиган</a></li>
+									<li class="active">Инко</li>
+								</ol>
+								<span class="stars">
+									<i class="fa fa-star green"></i>
+									<i class="fa fa-star green"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+								</span>
+								<hr>
+								<div class="relative">
+									<div class="main_price">
+										<div class="thumb_description_header">Заголовок описания</div>
+										<p>Замечательное место для отдыха с семьей</p>
+									</div>
+									<span class="price">220 &euro;</span>
+
+								</div>
+							</div>
+						</article>
+
+						<article class="col-lg-3 col-md-4 col-sm-6">
+							<div class="thumb">
+								<a href="#">
+									<div class="img_block">
+										<img class="img-responsive" src="images/img-1.jpg" alt="">
+									</div>
+									<h3>Карловы Вары</h3>
+								</a>
+								<ol class="breadcrumb">
+									<li><a href="#">США</a></li>
+									<li><a href="#">Мичиган</a></li>
+									<li class="active">Инко</li>
+								</ol>
+								<span class="stars">
+									<i class="fa fa-star green"></i>
+									<i class="fa fa-star green"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+								</span>
+								<hr>
+								<div class="relative">
+									<div class="main_price">
+										<div class="thumb_description_header">Заголовок описания</div>
+										<p>Замечательное место для отдыха с семьей</p>
+									</div>
+									<span class="price">220 &euro;</span>
+
+								</div>
+							</div>
+						</article>
 					</div>
 				</div>
 			</section>
@@ -1264,7 +1547,7 @@
 
 				<div class="col-lg-4 col-md-6">
 					<div class="contact_links"> 
-						<a href="#" class="phone"><span>Заказать звонок</span></a>
+						<a href="#" class="phone"> <i class="fa fa-phone"></i> <span>Заказать звонок</span></a>
 					</div>
 				</div>
 			</div>
@@ -1291,6 +1574,5 @@
 			});
 		});
 	</script>
-
 </body>
 </html>

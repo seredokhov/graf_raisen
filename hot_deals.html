@@ -43,9 +43,9 @@
 				<div class="row">
 					<div class="col-sm-3">
 						<div class="social">
-							<span class="VK"></span>
-							<span class="twit"></span>
-							<span class="ok"></span>
+							<span class="fb"><i class="fa fa-facebook"></i></span>
+							<span class="twit"><i class="fa fa-twitter"></i></span>
+							<span class="ok"><i class="fa fa-odnoklassniki"></i></span>
 						</div>
 					</div>
 					<div class="col-sm-9">
@@ -63,8 +63,8 @@
 							</ul>
 						</div>
 						<div class="contact_links"> 
-							<a href="#" class="phone"><span>+69 41099533</span></a>
-							<a href="#" class="mail"><span>travel@gmail.com</span></a>
+							<a href="#" class="phone"> <i class="fa fa-phone"></i> <span>+69 41099533</span></a>
+							<a href="#" class="mail"> <i class="fa fa-envelope"></i></i> <span>travel@gmail.com</span></a>
 						</div>
 					</div>
 				</div>
@@ -159,116 +159,170 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-lg-4 col-md-5">
+							<!-- ===========Блок фильтра ======-->
+							<div class="filter">
+								<header>Купить тур онлайн</header>
+								<form action="filter.html" method="post">
+									<div class="form-group col-sm-6">
+										<label for="country">Страна</label>
+										<div class="arrow">
+											<select class="form-control" id="country" >
+												<option>1</option>
+												<option>2</option>
+												<option>3</option>
+												<option>4</option>
+												<option>5</option>
+											</select>
+										</div>
+									</div>
+									<div class="form-group col-sm-6">
+										<label for="curort">Курорт</label>
+										<div class="arrow">
+											<select class="form-control" id="curort" >
+												<option>1</option>
+												<option>2</option>
+												<option>3</option>
+												<option>4</option>
+												<option>5</option>
+											</select>
+										</div>
+									</div>
+									<div class="form-group col-sm-6">
+										<label for="sanatory">Санаторий</label>
+										<div class="arrow">
+											<select class="form-control" id="sanatory" >
+												<option>1</option>
+												<option>2</option>
+												<option>3</option>
+												<option>4</option>
+												<option>5</option>
+											</select>
+										</div>
+									</div>
+									<div class="form-group col-sm-6">
+										<label for="date">Дата отдыха</label>
+										<div class="arrow">
+											<input class="form-control" type="text" name="daterange" value="" id="date">
+										</div>
+									</div>
+									<div class="form-group col-sm-6">
+										<label for="food">Питание</label>
+										<div class="arrow">
+											<select class="form-control" id="food" >
+												<option>1</option>
+												<option>2</option>
+												<option>3</option>
+												<option>4</option>
+												<option>5</option>
+											</select>
+										</div>
+									</div>
 
-						<div class="filter">
-							<header>Купить тур онлайн</header>
-							<form action="filter.html" method="post">
-								<div class="form-group col-sm-6">
-									<label for="country">Страна</label>
-									<div class="arrow">
-										<select class="form-control" id="country" >
-											<option>1</option>
-											<option>2</option>
-											<option>3</option>
-											<option>4</option>
-											<option>5</option>
-										</select>
-									</div>
-								</div>
-								<div class="form-group col-sm-6">
-									<label for="curort">Курорт</label>
-									<div class="arrow">
-										<select class="form-control" id="curort" >
-											<option>1</option>
-											<option>2</option>
-											<option>3</option>
-											<option>4</option>
-											<option>5</option>
-										</select>
-									</div>
-								</div>
-								<div class="form-group col-sm-6">
-									<label for="sanatory">Санаторий</label>
-									<div class="arrow">
-										<select class="form-control" id="sanatory" >
-											<option>1</option>
-											<option>2</option>
-											<option>3</option>
-											<option>4</option>
-											<option>5</option>
-										</select>
-									</div>
-								</div>
-								<div class="form-group col-sm-6">
-									<label for="date">Дата отдыха</label>
-									<div class="arrow">
-										<input class="form-control" type="text" name="daterange" value="" id="date">
-									</div>
-								</div>
-								<div class="form-group col-sm-6">
-									<label for="food">Питание</label>
-									<div class="arrow">
-										<select class="form-control" id="food" >
-											<option>1</option>
-											<option>2</option>
-											<option>3</option>
-											<option>4</option>
-											<option>5</option>
-										</select>
-									</div>
-								</div>
+									<div class="form-group col-sm-6" >
+										<label for="human">Кол-во человек</label>
+										<div class="arrow" data-toggle="dropdown">
+											<input class="form-control" type="text" value="1" id="human" >
+										</div>
+										<div class="dropdown-menu opensright daterangepicker fix">
+											<span>Взрослые</span>
 
-								<div class="form-group col-sm-6">
-									<label for="human">Кол-во человек</label>
-									<div class="arrow">
-										<select class="form-control" id="human" >
-											<option>1</option>
-											<option>2</option>
-											<option>3</option>
-											<option>4</option>
-											<option>5</option>
-										</select>
-									</div>
-								</div>
+											<fieldset class="radio_group">
+													<label>
+														<span class="man-1"></span>
+														<input class="radio" type="radio" value="1" name="man" checked>
+														<span class="radio-custom"></span>
+														
+													</label>
+													<label>
+														<span class="man-2"></span>
+														<input class="radio" type="radio" value="2" name="man">
+														<span class="radio-custom"></span>
+														
+													</label>
+													<label>
+														<span class="man-3"></span>
+														<input class="radio" type="radio" value="3" name="man">
+														<span class="radio-custom"></span>
+														
+													</label>
+													<label>
+														<span class="man-4"><i class="fa fa-plus" aria-hidden="true"></i></span>
+														<input class="radio" type="radio" value="4" name="man">
+														<span class="radio-custom"></span>
+														
+													</label>
+											</fieldset>
 
-								<div class="form-group reset-mg col-sm-6">
-									<label >Кол. номеров</label>
-									<fieldset class="radio_group">
-										<label>
-											<input class="radio" type="radio" name="radio-test" checked>
-											<span class="radio-custom radio-custom-1"></span>
-											<span class="label"></span>
-										</label>
-										<label>
-											<input class="radio" type="radio" name="radio-test">
-											<span class="radio-custom radio-custom-2"></span>
-											<span class="label"></span>
-										</label>
-										<label>
-											<input class="radio" type="radio" name="radio-test">
-											<span class="radio-custom radio-custom-3"></span>
-											<span class="label"></span>
-										</label>
+											<span>Дети</span>
+
+											<fieldset class="radio_group">
 												<label>
-											<input class="radio" type="radio" name="radio-test">
-											<span class="radio-custom radio-custom-4"></span>
-											<span class="label"></span>
-										</label>
+													<span class="child-1"></span>
+													<input class="radio" type="radio" value=" - 1" name="child">
+													<span class="radio-custom"></span>
+												</label>
 												<label>
-											<input class="radio" type="radio" name="radio-test">
-											<span class="radio-custom radio-custom-5"></span>
-											<span class="label"></span>
-										</label>
-									</fieldset>
-								</div>
-								<div class="form-group reset-mg col-sm-6">
-									<div class="btn-filter_block">
-										<button type="submit" class="btn_custom btn_filter">Поиск тура</button>
-									</div>
-								</div>
-							</form>
-						</div>
+													<span class="child-2"></span>
+													<input class="radio" type="radio" value=" - 2" name="child">
+													<span class="radio-custom"></span>
+												</label>
+												<label>
+													<span class="child-3"></span>
+													<input class="radio" type="radio" value=" - 3" name="child">
+													<span class="radio-custom"></span>
+													
+												</label>
+												<label>
+													<span class="child-4"><i class="fa fa-plus" aria-hidden="true"></i></span>
+													<input class="radio" type="radio" value=" - 4" name="child">
+													<span class="radio-custom"></span>
 
+												</label>
+											</fieldset>
+											<div class="range_inputs">
+												<button class="applyBtn btn btn-md apply_btn" type="button">Применить</button> 
+												<button class="cancelBtn btn btn-md btn-default" type="button">Отмена</button>
+											</div>
+										</div>
+									</div>
+
+									<div class="form-group reset-mg col-sm-6">
+										<label >Кол. номеров</label>
+										<fieldset class="radio_group">
+											<label>
+												<input class="radio" type="radio" name="radio-test" checked>
+												<span class="radio-custom radio-custom-1"></span>
+												<span class="label"></span>
+											</label>
+											<label>
+												<input class="radio" type="radio" name="radio-test">
+												<span class="radio-custom radio-custom-2"></span>
+												<span class="label"></span>
+											</label>
+											<label>
+												<input class="radio" type="radio" name="radio-test">
+												<span class="radio-custom radio-custom-3"></span>
+												<span class="label"></span>
+											</label>
+													<label>
+												<input class="radio" type="radio" name="radio-test">
+												<span class="radio-custom radio-custom-4"></span>
+												<span class="label"></span>
+											</label>
+													<label>
+												<input class="radio" type="radio" name="radio-test">
+												<span class="radio-custom radio-custom-5"></span>
+												<span class="label"></span>
+											</label>
+										</fieldset>
+									</div>
+									<div class="form-group reset-mg col-sm-6">
+										<div class="btn-filter_block">
+											<button type="submit" class="btn_custom btn_filter">Поиск тура</button>
+										</div>
+									</div>
+								</form>
+							</div>
 							<aside class="left_bar hot_deal_aside">
 								<header>
 									Выбрать по критериям
@@ -1122,7 +1176,7 @@
 
 				<div class="col-lg-4 col-md-6">
 					<div class="contact_links"> 
-						<a href="#" class="phone"><span>Заказать звонок</span></a>
+						<a href="#" class="phone"> <i class="fa fa-phone"></i> <span>Заказать звонок</span></a>
 					</div>
 				</div>
 			</div>

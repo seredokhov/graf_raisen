@@ -173,7 +173,12 @@ select.form-control {
 	background: #529a08;
 }
 
-
+.contact_links i.fa {
+	font-size: 22px;
+	position: relative;
+	top: 2px;
+	margin-right: 5px;
+}
 /*============================================ 
 	Стили шапки
 ============================================*/
@@ -191,20 +196,24 @@ select.form-control {
 }
 .social > span{
 	display: inline-block;
+	text-align: center;
 	width: 36px;
 	height: 36px;
+	line-height: 37px;
 	margin-right: 5px;
 	margin-top: 5px;
 	cursor: pointer;
+	font-size: 22px;
+	color: #fff;
 }
-.social > span.VK{
-	background: url(../images/social.png) no-repeat;
+.social > span.fb {
+	background: #4065b4;
 }
-.social > span.twit{
-	background: url(../images/social.png) no-repeat -47px 0px;
+.social > span.twit {
+	background: #39b9dc;
 }
-.social > span.ok{
-	background: url(../images/social.png) no-repeat -92px 0px;
+.social > span.ok {
+	background: #fa8e12;
 }
 .contact_links {
 	float: right;
@@ -226,26 +235,6 @@ header .contact_links > a {
 header .contact_links > a:hover span {
 	border-bottom: 1px solid rgba(0,106,187, 1);
 
-}
-.contact_links > a:before{
-	content: " ";  
-	font-size: 24pt;
-	display: inline-block;  
-	height: 16px;  
-	width: 22px; 
-	position: relative;
-	top: 3px;
-	margin-right: 5px;
-}
-.contact_links > a.phone:before{
-	background: url(../images/phone.png) 4px no-repeat;
-}
-.contact_links > a.mail:before {
-	background: url(../images/mail.png) 4px no-repeat;
-	width: 30px;
-}
-footer .contact_links > a.phone:before{
-	background: url(../images/phone-2.png) 4px no-repeat;
 }
 .like span,
 .hot span{
@@ -929,6 +918,9 @@ footer .contact_links > a >span {
 	font-size: 16px;
 	letter-spacing: 0;
 }
+footer .contact_links > a {
+	color: #84b52f;
+}
 input.send {
 	height: 40px;
 }
@@ -1118,15 +1110,14 @@ aside.left_bar .service a {
 .about ul.FAQ li {
 	line-height: 24px;
 }
-.about ul.FAQ li:not(:first-child):before {
-	content: " ";
-	position: relative;
-	top: 4px;
+.about ul.FAQ li i {
+	display: inline-block;
 	width: 18px;
 	height: 20px;
-	display: inline-block;
+	line-height: 21px;
+	text-align: center;
+	font-size: 20px;
 	margin-right: 5px;
-	background: url(../images/thumbs-up.png);
 }
 .FAQ_form {
 	max-width: 600px;
@@ -1319,13 +1310,9 @@ label.repeat {
 	display: block;
 	margin-bottom: 15px;
 }
-[class*='new'] data:before {
-	content: "";
-	display: inline-block;
-	width: 11px;
-	height: 11px;
-	margin-right: 10px;
-	background: url('../images/clock.png');
+.full_new data i,
+.new data i {
+	margin-right: 7px;
 }
 .full_new h1{
 	font-size: 20px;
@@ -1415,11 +1402,17 @@ label.repeat {
 .print {
 	position: absolute;
 	right: 0;
-	top: 25px;
+	top: 20px;
 	display: inline-block;
+	text-align: center;
 	width: 20px;
 	height: 19px;
-	background: url(../images/printer.png);
+	line-height: 20px;
+	font-size: 22px !important;
+	cursor: pointer;
+}
+.print:hover {
+	transform: scale(1.2);
 }
 .thumb .stars {
 	margin-left: 10px;
@@ -1493,27 +1486,32 @@ label.repeat {
 }
 .social_round {
 	text-align: right;
-	padding-top: 5px;
+	margin: 5px 0;
 	height: 30px;
 }
 .social_round span {
 	display: inline-block;
-	height: 25px;
+		height: 25px;
+	line-height: 26px;
 	width: 25px;
+	text-align: center;
+	border-radius: 50%;
+	color: #fff;
+	font-size: 13px;
 	cursor: pointer;
 	/*transition: all 0.4s ease-in-out;*/
 }
 span.r_g {
-	background: url(../images/social_round.png) 2px no-repeat;
+	background: #fe4d3d;
 }
 span.r_twit {
-	background: url(../images/social_round.png) -28px no-repeat;
+	background: #2daae1;
 }
 span.r_ok {
-	background: url(../images/social_round.png) -56px no-repeat;
+	background: #ff8305;
 }
 span.r_fb {
-	background: url(../images/social_round.png) -85px no-repeat;
+	background: #195298;
 }
 .social_round span:hover,
 .social > span:hover {
@@ -2018,10 +2016,10 @@ aside.left_bar.sanatory_aside {
 	height: 240px;
 	margin: 20px auto;
 	overflow: hidden;
-	background: blue;
 }
 .map {
-	min-width: 100%;
+	width: 100%;
+	height: auto;
 }
 .sanatory_aside .list-group-item:hover {
 	border-color: transparent;
@@ -2135,12 +2133,35 @@ aside.sanatory_aside .service .label {
 	height: 25px;
 	padding: 0;
 }
+.photo_rate {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	width: 190px;
+	height: 120px;
+	z-index: 1;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.photo_rate > div {
+	height: 30%;
+	background: rgba(0, 0, 0, 0.7);
+	padding: 0 10px;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+.photo_rate > div > span {
+	color: #fafafa;
+	font-size: 15px;
+	font-family: 'Proxima Nova Black';
+}
 .sanatory_main .small_slaider_block {
 	margin-bottom: 20px;
 }
 .sanatory_main .excursion .flex {
 	margin: 20px -15px;
-
 }
 .sanatory_main .excursion .flex span {
 	font-size: 20px;
@@ -2260,13 +2281,34 @@ aside.sanatory_aside .service .label {
     width: 100%;
     height: 100%;
 }
+.section_check h2,
 .places h2,
 .places header {
 	text-align: center;
-	margin-bottom: 30px;
+	font-size: 27px;
+	margin-bottom: 20px;
+	text-transform: uppercase;
 }
-
-
+span.near {
+	display: block;
+	color: #7e7e7e;
+	font-size: 20px;
+}
+ul.attr_range {
+	list-style: none;
+	padding: 0;
+	display: inline-block;
+	font-size: 14px;
+	color: #7a7a7a;
+}
+ul.attr_range li {
+	display: block;
+	width: 100%;
+}
+span.range {
+	float: right;
+	margin-left: 20px;
+}
 
 
 
@@ -2380,8 +2422,8 @@ span.child-4 i {
 	color: #000;
 
 }
-/* ========= Календарь ==== */
 
+/* ========= Календарь ==== */
 [id^="date"] {
 	background: none;
 }
@@ -2791,7 +2833,6 @@ div.ranges {
 	.excursion .cost {
 		margin: 0 auto;
 	}
-
 }
 @media (max-width: 768px) {
 	.filter .form-group {
@@ -2828,7 +2869,6 @@ div.ranges {
 	.free_time span {
 		display: block;
 	}
-
 }
 @media (max-width: 700px) {
 	header .contact_links > a {
@@ -2876,6 +2916,14 @@ div.ranges {
 		margin-left: 10px;
 		margin-right: 10px;
 	}
+	.photo_rate {
+		right: 40px;
+	}
+}
+@media (max-width: 550px) {
+	.photo_rate {
+		display: none;
+	}
 }
 @media (max-width: 480px) {
 	.filter {
@@ -2911,13 +2959,11 @@ div.ranges {
 }
 @media (min-width: 1200px) {
 	.container {
-	    width: 1200px !important;
+	width: 1200px !important;
 	}
-
 }
 @media (min-width: 768px) {
 	li.dropdown:hover > .dropdown-menu { 
-	    display: block; 
+	display: block; 
 	}
-
 }
