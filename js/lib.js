@@ -1,1 +1,253 @@
-function Gallery(a){this.target=$(a),this.images=$(".photos img",this.target),this.index=0}$(function(){$("#side").click(function(){$(".left_bar ul li").removeClass("active")})}),$(function(){$("ul.sort li").click(function(){$("ul.sort li").removeClass("active"),$(this).toggleClass("active")})}),setInterval(function(){$("img").attr({ondrag:"return false",ondragdrop:"return false",ondragstart:"return false"})},300),setInterval(function(){$("a").attr({ondrag:"return false",ondragdrop:"return false",ondragstart:"return false"})},300),Gallery.prototype.init=function(){var a=this;$("button.next",this.target).click(function(){a.images.eq(a.index).css("opacity",0),a.index++,a.index>=a.images.length&&(a.index=0),a.images.eq(a.index).css("opacity",1),$(this).parents('div[class*="gallery"]').find(".small_galery div").removeClass("showed"),$(this).parents('div[class*="gallery"]').find(".small_galery img[data-num ="+a.index+"]").parent().addClass("showed")}),$("button.prev",this.target).click(function(){a.images.eq(a.index).css("opacity",0),a.index--,a.index<0&&(a.index=a.images.length-1),a.images.eq(a.index).css("opacity",1),$(this).parents('div[class*="gallery"]').find(".small_galery div").removeClass("showed"),$(this).parents('div[class*="gallery"]').find(".small_galery img[data-num ="+a.index+"]").parent().addClass("showed")}),$(".small_galery img",this.target).click(function(){a.index=$(this).attr("data-num"),a.images.css("opacity",0),a.images.eq(a.index).css("opacity",1),$(this).parents('div[class*="gallery"]').find(".small_galery div").removeClass("showed"),$(this).parent().addClass("showed")})},$(function(){$(".gallery").each(function(){new Gallery(this).init()})}),$(document).on("click.bs.dropdown.data-api",'[class*="fix"]',function(a){a.stopPropagation()}),$(function(){$(".fix .range_inputs .applyBtn").click(function(){$(this).parents(".open").removeClass("open")}),$(".fix .range_inputs .cancelBtn").click(function(){$("#human").val(1),$(".fix input[type='radio']").removeAttr("checked"),$(".fix input[name='man']:first").prop("checked",!0),$(this).parents(".open").removeClass("open")})}),$(function(){var a=$("#human"),b=$('.fix input[name="man"]'),c=$('.fix input[name="child"]');c.click(function(){"on"===$(this).data("state")?$(this).data("state","off").removeAttr("checked"):(c.data("state","off"),$(this).data("state","on").attr("checked","checked"))}),b.add(c).click(function(){a.val((b.filter(":checked").val()||"")+(c.filter(":checked").val()||""))})}),document.querySelector('input[name="daterange"]')&&$(function(){$('input[name="daterange"]').daterangepicker({buttonClasses:"btn btn-md",applyClass:"btn-primary",applyClass:"apply_btn",locale:{format:"DD.MM.YY",separator:" - ",applyLabel:"\u041f\u0440\u0438\u043c\u0435\u043d\u0438\u0442\u044c",cancelLabel:"\u041e\u0442\u043c\u0435\u043d\u0430",fromLabel:"\u041e\u0442",toLabel:"\u0414\u043e",customRangeLabel:"\u0421\u0432\u043e\u0439",daysOfWeek:["\u0412\u0441","\u041f\u043d","\u0412\u0442","\u0421\u0440","\u0427\u0442","\u041f\u0442","\u0421\u0431"],monthNames:["\u042f\u043d\u0432\u0430\u0440\u044c","\u0424\u0435\u0432\u0440\u0430\u043b\u044c","\u041c\u0430\u0440\u0442","\u0410\u043f\u0440\u0435\u043b\u044c","\u041c\u0430\u0439","\u0418\u044e\u043d\u044c","\u0418\u044e\u043b\u044c","\u0410\u0432\u0433\u0443\u0441\u0442","\u0421\u0435\u043d\u0442\u044f\u0431\u0440\u044c","\u041e\u043a\u0442\u044f\u0431\u0440\u044c","\u041d\u043e\u044f\u0431\u0440\u044c","\u0414\u0435\u043a\u0430\u0431\u0440\u044c"],firstDay:1}})}),document.querySelector('input[name="date"]')&&$(function(){$('input[name="date"]').daterangepicker({singleDatePicker:!0,showDropdowns:!0,autoApply:!0,startDate:"01. 01. 2000",locale:{format:"DD. MM. YYYY",separator:" - ",applyLabel:"\u041f\u0440\u0438\u043c\u0435\u043d\u0438\u0442\u044c",cancelLabel:"\u041e\u0442\u043c\u0435\u043d\u0430",fromLabel:"\u041e\u0442",toLabel:"\u0414\u043e",customRangeLabel:"\u0421\u0432\u043e\u0439",daysOfWeek:["\u0412\u0441","\u041f\u043d","\u0412\u0442","\u0421\u0440","\u0427\u0442","\u041f\u0442","\u0421\u0431"],monthNames:["\u042f\u043d\u0432\u0430\u0440\u044c","\u0424\u0435\u0432\u0440\u0430\u043b\u044c","\u041c\u0430\u0440\u0442","\u0410\u043f\u0440\u0435\u043b\u044c","\u041c\u0430\u0439","\u0418\u044e\u043d\u044c","\u0418\u044e\u043b\u044c","\u0410\u0432\u0433\u0443\u0441\u0442","\u0421\u0435\u043d\u0442\u044f\u0431\u0440\u044c","\u041e\u043a\u0442\u044f\u0431\u0440\u044c","\u041d\u043e\u044f\u0431\u0440\u044c","\u0414\u0435\u043a\u0430\u0431\u0440\u044c"],firstDay:1}})}),document.querySelector('input[name^="date-time"]')&&$(function(){$('input[name^="date-time"]').daterangepicker({singleDatePicker:!0,showDropdowns:!0,timePicker:!0,applyClass:"apply_btn",timePicker24Hour:!0,locale:{format:"DD. MM. YYYY  -  HH:mm ",separator:" - ",applyLabel:"\u041f\u0440\u0438\u043c\u0435\u043d\u0438\u0442\u044c",cancelLabel:"\u041e\u0442\u043c\u0435\u043d\u0430",fromLabel:"\u041e\u0442",toLabel:"\u0414\u043e",customRangeLabel:"\u0421\u0432\u043e\u0439",daysOfWeek:["\u0412\u0441","\u041f\u043d","\u0412\u0442","\u0421\u0440","\u0427\u0442","\u041f\u0442","\u0421\u0431"],monthNames:["\u042f\u043d\u0432\u0430\u0440\u044c","\u0424\u0435\u0432\u0440\u0430\u043b\u044c","\u041c\u0430\u0440\u0442","\u0410\u043f\u0440\u0435\u043b\u044c","\u041c\u0430\u0439","\u0418\u044e\u043d\u044c","\u0418\u044e\u043b\u044c","\u0410\u0432\u0433\u0443\u0441\u0442","\u0421\u0435\u043d\u0442\u044f\u0431\u0440\u044c","\u041e\u043a\u0442\u044f\u0431\u0440\u044c","\u041d\u043e\u044f\u0431\u0440\u044c","\u0414\u0435\u043a\u0430\u0431\u0440\u044c"],firstDay:1}})});
+/*   Смена классов    */
+$(function() {
+	$("#side").click(function() {
+		$('.left_bar ul li').removeClass('active');
+	})
+});
+$(function() {
+    $("ul.sort li").click(function() {
+        $("ul.sort li").removeClass("active");
+        $(this).toggleClass("active");
+    })
+});
+
+/*Запрет перетаскивания картинок*/
+setInterval(function(){    
+	$('img').attr({
+		"ondrag":"return false",
+		"ondragdrop":"return false",
+		"ondragstart":"return false"
+	})
+}, 300)
+/*Запрет перетаскивания ссылок*/
+setInterval(function(){    
+	$('a').attr({
+		"ondrag":"return false",
+		"ondragdrop":"return false",
+		"ondragstart":"return false"
+	})
+}, 300)
+
+
+
+
+/*  Галерея  */
+
+function Gallery(target) {
+  this.target = $(target);
+  this.images = $('.photos img', this.target);
+  this.index = 0;
+}
+
+Gallery.prototype.init = function() {
+  var self = this;
+  $('button.next', this.target).click(function() {
+    self.images.eq(self.index).css('opacity',  0);
+    self.index++;
+    if (self.index >= self.images.length) {
+      self.index = 0;
+    }
+    self.images.eq(self.index).css('opacity', 1);
+    $(this).parents('div[class*="gallery"]').find(".small_galery div").removeClass("showed");
+    $(this).parents('div[class*="gallery"]').find(".small_galery img[data-num ="+self.index+"]").parent().addClass("showed");
+  });
+  $('button.prev', this.target).click(function() {
+    self.images.eq(self.index).css('opacity',  0);
+    self.index--;
+    if (self.index < 0) {
+      self.index = self.images.length - 1;
+    }
+    self.images.eq(self.index).css('opacity', 1);
+    $(this).parents('div[class*="gallery"]').find(".small_galery div").removeClass("showed");
+    $(this).parents('div[class*="gallery"]').find(".small_galery img[data-num ="+self.index+"]").parent().addClass("showed");
+  });
+  $('.small_galery img', this.target).click(function() {
+    self.index = $(this).attr('data-num');
+    self.images.css('opacity', 0);
+    self.images.eq(self.index).css('opacity', 1);
+    $(this).parents('div[class*="gallery"]').find(".small_galery div").removeClass("showed");
+    $(this).parent().addClass("showed");
+  });
+};
+
+$(function() {
+  $('.gallery').each(function() {
+    new Gallery(this).init();
+  });
+});
+
+
+
+/* ====  Количество человек (выпадающее меню)  ====*/
+
+$(document).on(
+	'click.bs.dropdown.data-api', 
+	'[class*="fix"]',
+	function (e) { e.stopPropagation() }
+);
+
+$(function() {
+	$(".fix .range_inputs .applyBtn").click(function() {
+		$(this).parents('.open').removeClass("open");
+
+	})
+	$(".fix .range_inputs .cancelBtn").click(function() {
+		$('#human').val( 1);
+		$(".fix input[type='radio']").removeAttr("checked");
+		$(".fix input[name='man']:first").prop("checked", true);
+		$(this).parents('.open').removeClass("open");
+	})
+});
+
+
+/* Чекбоксы выпадающего меню  */
+
+$(function() {
+  var target = $('#human')
+    , men = $('.fix input[name="man"]')
+    , children = $('.fix input[name="child"]');
+  children.click(function() {
+    if ('on' === $(this).data('state')) {  
+      $(this).data('state', 'off').removeAttr('checked');
+    }
+    else {
+      children.data('state', 'off');
+      $(this).data('state', 'on').attr('checked', 'checked');
+    }
+  });
+  men.add(children).click(function() {
+    target.val((men.filter(':checked').val() || '')
+      + (children.filter(':checked').val() || ''));
+  });
+});
+
+/*   Календарь   */
+
+if (document.querySelector('input[name="daterange"]')) {
+	$(function() {
+	$('input[name="daterange"]').daterangepicker({
+	"buttonClasses": "btn btn-md",
+	"applyClass": "btn-primary",
+	"applyClass": "apply_btn",
+	 "locale": {
+	        "format": "DD.MM.YY",
+	        "separator": " - ",
+	        "applyLabel": "Применить",
+	        "cancelLabel": "Отмена",
+	        "fromLabel": "От",
+	        "toLabel": "До",
+	        "customRangeLabel": "Свой",
+	        "daysOfWeek": [
+	            "Вс",
+	            "Пн",
+	            "Вт",
+	            "Ср",
+	            "Чт",
+	            "Пт",
+	            "Сб"
+	        ],
+	        "monthNames": [
+	            "Январь",
+	            "Февраль",
+	            "Март",
+	            "Апрель",
+	            "Май",
+	            "Июнь",
+	            "Июль",
+	            "Август",
+	            "Сентябрь",
+	            "Октябрь",
+	            "Ноябрь",
+	            "Декабрь"
+	        ],
+	        "firstDay": 1
+	    }
+	});});
+}
+
+if (document.querySelector('input[name="date"]')) {
+	$(function() {
+	$('input[name="date"]').daterangepicker({
+		"singleDatePicker": true,
+		"showDropdowns": true,
+		 "autoApply": true,
+		"startDate": "01. 01. 2000",
+		 "locale": {
+		        "format": "DD. MM. YYYY",
+		        "separator": " - ",
+		        "applyLabel": "Применить",
+		        "cancelLabel": "Отмена",
+		        "fromLabel": "От",
+		        "toLabel": "До",
+		        "customRangeLabel": "Свой",
+		        "daysOfWeek": [
+		            "Вс",
+		            "Пн",
+		            "Вт",
+		            "Ср",
+		            "Чт",
+		            "Пт",
+		            "Сб"
+		        ],
+		        "monthNames": [
+		            "Январь",
+		            "Февраль",
+		            "Март",
+		            "Апрель",
+		            "Май",
+		            "Июнь",
+		            "Июль",
+		            "Август",
+		            "Сентябрь",
+		            "Октябрь",
+		            "Ноябрь",
+		            "Декабрь"
+		        ],
+		        "firstDay": 1
+		    }
+	});});
+};
+
+if (document.querySelector('input[name^="date-time"]')) {
+	$(function() {
+	$('input[name^="date-time"]').daterangepicker({
+		"singleDatePicker": true,
+		"showDropdowns": true,
+		 "timePicker": true,
+		 "applyClass": "apply_btn",
+		 "timePicker24Hour": true,
+		 "locale": {
+		        "format": "DD. MM. YYYY  -  HH:mm ",
+		        "separator": " - ",
+		        "applyLabel": "Применить",
+		        "cancelLabel": "Отмена",
+		        "fromLabel": "От",
+		        "toLabel": "До",
+		        "customRangeLabel": "Свой",
+		        "daysOfWeek": [
+		            "Вс",
+		            "Пн",
+		            "Вт",
+		            "Ср",
+		            "Чт",
+		            "Пт",
+		            "Сб"
+		        ],
+		        "monthNames": [
+		            "Январь",
+		            "Февраль",
+		            "Март",
+		            "Апрель",
+		            "Май",
+		            "Июнь",
+		            "Июль",
+		            "Август",
+		            "Сентябрь",
+		            "Октябрь",
+		            "Ноябрь",
+		            "Декабрь"
+		        ],
+		        "firstDay": 1
+		    }
+	});});
+};
