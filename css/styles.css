@@ -102,7 +102,8 @@ aside header,
 	line-height: 1;
 	letter-spacing: -0.5px;
 }
-h2 {
+h2,
+.h2 {
 	color: #4b4b4b;
 	font-family: 'Proxima Nova Black';
 }
@@ -860,6 +861,7 @@ button.btn-filter::before {
 	max-height: 263px;
 	display: block;
 	border:1px solid #e6e6e6;
+	margin: 0 auto;
 }
 .custom_text {
 	font-family: 'Proxima Nova Bold';
@@ -876,6 +878,31 @@ button.btn-filter::before {
 	text-transform: uppercase;
 	color: #fff;
 	letter-spacing: 4px;
+	text-shadow: 
+
+	#333 1px 0px,
+	#333 1px 1px,
+	#333 0px 1px,
+	#333 -1px 1px,
+	#333 -1px 0px,
+	#333 -1px -1px,
+	#333 0px -1px,
+	#333 1px -1px,
+	#333 0 0 8px,
+	#333 0 0 8px,
+	#333 0 0 8px,
+	#333 0 0 8px,
+	#333 0 0 8px,
+	#333 0 0 8px,
+	#333 0 0 8px,
+	#333 0 0 8px,
+	#333 0 0 8px,
+	#333 0 0 8px,
+	#333 0 0 8px,
+	#333 0 0 8px,
+	#333 0 0 8px,
+	#333 0 0 8px;
+
 }
 
 /* ========= Футер ======= */
@@ -2188,7 +2215,7 @@ aside.sanatory_aside .service .label {
 	display: block;
 }
 .sanatory_main .excursion .flex > div:hover {
-	transform: scale(1.1);
+	transform: scale(1.05);
 }
 .sanatory_main .excursion .flex .img_block img {
 	height: 160px;
@@ -2284,14 +2311,18 @@ aside.sanatory_aside .service .label {
     width: 100%;
     height: 100%;
 }
-.section_check h2,
+.section_check .h2,
 .places h2,
-.places header {
+header.h2 {
 	text-align: center;
 	font-size: 27px;
 	margin-bottom: 20px;
 	text-transform: uppercase;
 }
+.places header.h2 {
+	text-align: left;
+}
+
 span.near {
 	display: block;
 	color: #7e7e7e;
