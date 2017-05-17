@@ -140,6 +140,11 @@ select.form-control {
 	margin: 25px auto;
 	letter-spacing: -0.4px;
 }
+.content .btn_offer {
+	display: block;
+	min-width: initial;
+	max-width: 430px;
+}
 .btn_filter {
 	width: 150px;
 	height: 44px;
@@ -686,6 +691,7 @@ button.btn-filter::before {
 	outline-offset: -1px;
 	max-width: 370px;
 	min-height: 512px;
+	height: 100%;
 	padding: 5px;
 	margin: 0 auto;
 	transition: all .3s ease;
@@ -812,16 +818,17 @@ button.btn-filter::before {
 .selection .price {
 	position: absolute;
 	right: 0;
-	top: 0;
+	top: 50%;
+	transform: translate(0,-50%);
 	padding: 0 5px;
 	min-width: 145px;
 	height: 56px;
 	line-height: 56px;
 	vertical-align: middle;
 	text-align: center;
-	margin: 10px auto;
+	margin: 0 auto;
 	font-family: 'Proxima Nova Black';
-	font-size: 43px;
+	font-size: 40px;
 	color: #fff;
 	text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.8);
 	background: linear-gradient(to top, #74bc1a, #8ac71c);
@@ -1025,7 +1032,7 @@ ul.foot:after {
 	padding-bottom: 20px;
 }
 .section h1{
-	font-size: 27px;
+	font-size: 23px;
 	margin-top: 0;
 	margin-bottom: 20px;
 	line-height: 1;
@@ -1643,6 +1650,7 @@ span.r_fb {
 	height: 38px;
 	line-height: 38px;
 	vertical-align: middle;
+	min-width: 100px;
 }
 .excurs_form {
 	padding-left: 3px;
@@ -1972,7 +1980,7 @@ ul.sort li.active a:after {
 	margin-top: 95px;
 }
 .thumbs_block h1 {
-	font-size: 24px;
+	font-size: 23px;
 	text-align: center;
 	margin-bottom: 10px;
 }
@@ -1988,7 +1996,7 @@ ul.sort li.active a:after {
 }
 .thumbs_block .thumb,
 .tour_section .thumb {
-	min-height: 405px;
+	min-height: 410px;
 	margin: 20px auto;
 }
 .thumbs_block .thumb img,
@@ -2001,6 +2009,10 @@ ul.sort li.active a:after {
 	height: 40px;
 	line-height: 40px;
 	min-width: 90px;
+}
+.tour_section .thumb .stars {
+	margin-top: 10px;
+	display: inline-block;
 }
 
 .thumbs_block .thumb_description_header,
@@ -2015,6 +2027,9 @@ ul.sort li.active a:after {
 .thumbs_block .main_price,
 .tour_section .main_price {
 	max-width: 180px;
+}
+.main_price p {
+	margin-bottom: 0;
 }
 .tour_section h2 {
 	padding-left: 15px;
@@ -2145,14 +2160,32 @@ aside.sanatory_aside .service .label {
 	vertical-align: middle;
 	background: linear-gradient(to top, #74bc1a, #8ac71c);
 }
-.flex {
+.flex,
+.flex_section {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
 	align-items: center;
 }
+.flex_section {
+	justify-content: center;
+	align-items: stretch;
+}
+.flex_section > .article {
+	flex-basis: 400px;
+}
+.flex_section > .article p {
+	margin-bottom: 0;
+}
 .header_title {
-	min-width: 400px;
+	text-align: center;
+}
+.header_title + div {
+	margin: 15px 0;
+	justify-content: center;
+}
+.header_stars {
+	min-width: 150px;
 	display: flex;
 }
 .header_buttons {
@@ -2161,7 +2194,7 @@ aside.sanatory_aside .service .label {
 	width: 340px;
 }
 .star_block {
-	margin-left: 20px;
+	margin-right: 20px;
 	text-align: center;
 }
 .star_block > span,
@@ -2331,8 +2364,8 @@ aside.sanatory_aside .service .label {
 .section_check .h2,
 .places h2,
 header.h2 {
-	text-align: center;
-	font-size: 27px;
+	text-align: left;
+	font-size: 20px;
 	margin-bottom: 20px;
 	text-transform: uppercase;
 }
