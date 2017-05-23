@@ -134,7 +134,7 @@ select.form-control {
 	letter-spacing: 0;
 }
 .btn_offer {
-	min-width: 430px;
+	/*min-width: 430px;*/
 	height: 64px;
 	line-height: 64px;
 	margin: 25px auto;
@@ -819,7 +819,6 @@ button.btn-filter::before {
 	position: absolute;
 	right: 0;
 	top: 50%;
-	transform: translate(0,-50%);
 	padding: 0 5px;
 	min-width: 145px;
 	height: 56px;
@@ -832,6 +831,10 @@ button.btn-filter::before {
 	color: #fff;
 	text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.8);
 	background: linear-gradient(to top, #74bc1a, #8ac71c);
+}
+.thumb .price,
+.more_info .price {
+	transform: translate(0,-50%);
 }
 .content a.btn_custom {
 	text-decoration: none;
@@ -2892,6 +2895,28 @@ div.ranges {
 	.excursion .cost {
 		margin: 0 auto;
 	}
+	.thumb,
+	div.article {
+		max-width: 300px;
+		margin: 0 auto;
+	}
+	.tumb-2 {
+		min-height: auto;
+	}
+	.main_price {
+		max-width: 100%;
+		width: 100%;
+	}
+	.thumb .price {
+		position: static;
+		display: block;
+		transform: translate(0);
+	}
+	.content .btn_offer {
+		max-width: 300px;
+		line-height: 1;
+		padding: 11px;
+	}
 }
 @media (max-width: 768px) {
 	.filter .form-group {
@@ -2928,6 +2953,13 @@ div.ranges {
 	.free_time span {
 		display: block;
 	}
+	.selection {
+		justify-content: center;
+	}
+	.selection a,
+	.selection .price {
+		margin: 10px;
+	} 
 }
 @media (max-width: 700px) {
 	header .contact_links > a {
