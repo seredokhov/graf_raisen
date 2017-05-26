@@ -51,8 +51,6 @@
 					<div class="col-sm-9">
 						<div class="lang_drop dropdown">
 							 <img src="images/Flag_of_Germany.png" alt="" class="lang_btn" id="dropdownMenu1" data-toggle="dropdown" >
-							
-							
 							<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
 								<li>
 									<a href="#"><img src="images/russ.png" alt="">ЭКСКУСИИ</a>
@@ -126,29 +124,24 @@
 								<!-- ==================================== -->
 
 								<!-- Меню выдимое только на sm/xs-->
-								<li class=" visible-xs"><a href="#">О компании</a></li>
+								<li class=" visible-xs"><a href="payment.html">Оплата</a></li>
+								<li class=" visible-xs"><a href="partner.html">Партнерам</a></li>
+								<li class=" visible-xs"><a href="#">Услуги и стоимость</a></li>
 								<li class=" visible-xs search_li">
 									<form action="/">
 										<label  >Поиск</label>
-										<input type="text" class="form-control">
+										<div class="relative">
+											<input type="search" class="form-control">
+											<input type="submit" class="find_btn" value="Найти">
+										</div>
 									</form>
 								</li>
-								<li class=" visible-xs"><a href="#">Услуги и стоимость</a></li>
-								<li class=" visible-xs"><a href="#">Новости</a></li>
-								<li class=" visible-xs"><a href="#">Оплата</a></li>
-								<li class=" visible-xs"><a href="#">Горячее предложение</a></li>
-								<li class=" visible-xs"><a href="#">Партнерам</a></li>
-
-
-
-
-								</ul>
-							</div>
-						</nav>
+							</ul>
+						</div>
+					</nav>
 				</div>
 			</div>
 		</div>
-
 	</header>
 
 	<main>
@@ -165,7 +158,7 @@
 									<span>Варианты трансферов:</span>
 									<ul>
 										<li>
-											<a href="">Индивидуальный</a>
+											<a href="individ.html">Индивидуальный</a>
 										</li>
 										<li>
 											<a href="group.html" class="active">Групповой</a>
@@ -199,7 +192,7 @@
 										<option>Санаторий 5</option>
 									</select>
 								</div>
-								<label for="humans">Количество пассажиров</label>
+								<label for="humans">Количество Человек</label>
 								<div class="arrow transf_arr">
 									<select class="form-control" id="humans" >
 										<option>1</option>
@@ -215,26 +208,25 @@
 										<option>Текст</option>
 									</select>
 								</div>
-								<label>Количество пассажиров</label>
-								<input type="text" class="form-control">
+								<label>Дата отдыха</label>
+								<div class="arrow transf_arr">
+									<input class="form-control" type="text" name="daterange" value="" id="date">
+								</div>
 								<button type="button" class="btn_custom btn_filter">Поиск</button>
 							</div>
 						</div>
 						<div class="col-md-4">
 							<header class="transfer_header">$</header>
 							<div class="transfer_form">
-								<label for="num_hum">Город отправления</label>
+								<label for="index">Индекс отправления</label>
+								<input type="text" class="form-control" id="index">
+								<label for="sex">Пол</label>
 								<div class="arrow transf_arr">
-									<select class="form-control" id="num_hum">
-										<option>1</option>
-										<option>2</option>
-										<option>3</option>
-										<option>4</option>
-										<option>5</option>
+									<select class="form-control" id="sex">
+										<option>М</option>
+										<option>Ж</option>
 									</select>
 								</div>
-								<label for="sex">Пол</label>
-								<input type="text" class="form-control" id="sex">
 								<label for="family">Фамилия</label>
 								<input type="text" class="form-control" id="family">
 								<label for="name">Имя</label>
@@ -253,27 +245,29 @@
 								<div class="arrow transf_arr">
 									<input type="text" name="date" value="" class="form-control born" id="date">
 								</div>
-								<div class="arrow transf_arr">
-									<select class="form-control">
-										<option>В обе стороны</option>
-										<option>В одну сторону</option>
-									</select>
-								</div>
-								<label>
-									<input class="checkbox" type="checkbox" name="checkbox-test">
-									<span class="checkbox-custom"></span>
-									<span class="label">Использование данных</span>
-								</label>
-								<button type="button" class="btn_custom btn_filter">Забронировать</button>
+								<label for="more2">Примечания</label>
+								<textarea class="form-control" id="more2"></textarea>
 							</div>
 						</div>
 						<div class="col-md-4">
 							<header class="transfer_header">$</header>
 							<div class="transfer_form">
-								<label for="index">Индекс</label>
-								<input type="text" class="form-control" id="index">
+								<label for="city_start">Город отправления</label>
+								<div class="arrow transf_arr">
+									<select class="form-control" id="city_start">
+										<option>Город 1</option>
+										<option>Город 2</option>
+										<option>Город 3</option>
+										<option>Город 4</option>
+									</select>
+								</div>
 								<label for="sex2">Пол</label>
-								<input type="text" class="form-control" id="sex2">
+								<div class="arrow transf_arr">
+									<select class="form-control" id="sex2">
+										<option>М</option>
+										<option>Ж</option>
+									</select>
+								</div>
 								<label for="family2">Фамилия</label>
 								<input type="text" class="form-control" id="family2">
 								<label for="name2">Имя</label>
@@ -317,14 +311,8 @@
 								<div class="arrow transf_arr">
 									<input type="text" name="date" value="" class="form-control born" id="date2">
 								</div>
-								<div class="arrow transf_arr">
-									<select class="form-control">
-										<option>В обе стороны</option>
-										<option>В одну сторону</option>
-									</select>
-								</div>
-								<label for="more">Примечания</label>
-								<textarea class="form-control" id="more"></textarea>
+								<label for="more2">Примечания</label>
+								<textarea class="form-control" id="more2"></textarea>
 								<label class="repeat">
 									<input class="checkbox" type="checkbox" name="checkbox-test">
 									<span class="checkbox-custom"></span>

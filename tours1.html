@@ -51,8 +51,6 @@
 					<div class="col-sm-9">
 						<div class="lang_drop dropdown">
 							 <img src="images/Flag_of_Germany.png" alt="" class="lang_btn" id="dropdownMenu1" data-toggle="dropdown" >
-							
-							
 							<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
 								<li>
 									<a href="#"><img src="images/russ.png" alt="">ЭКСКУСИИ</a>
@@ -126,25 +124,21 @@
 								<!-- ==================================== -->
 
 								<!-- Меню выдимое только на sm/xs-->
-								<li class=" visible-xs"><a href="#">О компании</a></li>
+								<li class=" visible-xs"><a href="payment.html">Оплата</a></li>
+								<li class=" visible-xs"><a href="partner.html">Партнерам</a></li>
+								<li class=" visible-xs"><a href="#">Услуги и стоимость</a></li>
 								<li class=" visible-xs search_li">
 									<form action="/">
 										<label  >Поиск</label>
-										<input type="text" class="form-control">
+										<div class="relative">
+											<input type="search" class="form-control">
+											<input type="submit" class="find_btn" value="Найти">
+										</div>
 									</form>
 								</li>
-								<li class=" visible-xs"><a href="#">Услуги и стоимость</a></li>
-								<li class=" visible-xs"><a href="#">Новости</a></li>
-								<li class=" visible-xs"><a href="#">Оплата</a></li>
-								<li class=" visible-xs"><a href="#">Горячее предложение</a></li>
-								<li class=" visible-xs"><a href="#">Партнерам</a></li>
-
-
-
-
-								</ul>
-							</div>
-						</nav>
+							</ul>
+						</div>
+					</nav>
 				</div>
 			</div>
 		</div>
@@ -156,82 +150,85 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-lg-3 col-md-4">
-							<aside class="left_bar">
-								<header>
-									Россия
-								</header>
-								<hr>
-								<ul class="list-group" >
-									<li class="list-group-item active" > 
-										<a href="tours_Russia1.html">Курорт 1</a> 
-									</li>
-									<li class="list-group-item">
-										<a href="#">Курорт 2</a>
-									</li>
-									<li class="list-group-item">
-										<a href="#">Курорт 3</a>
-									</li>
-									<li class="list-group-item">
-										<a href="#">Курорт 4</a>
-									</li>
-									<li class="list-group-item">
-										<a href="#">Курорт 5</a>
-									</li>
-								</ul>
-								<a href="#">Посмотреть все</a>
-							</aside>
-							<aside class="left_bar">
-								<header>
-									Германия
-								</header>
-								<hr>
-								<ul class="list-group" >
-									<li class="list-group-item" > 
-										<a href="#">Курорт 1</a> 
-									</li>
-									<li class="list-group-item">
-										<a href="#">Курорт 2</a>
-									</li>
-									<li class="list-group-item">
-										<a href="#">Курорт 3</a>
-									</li>
-									<li class="list-group-item">
-										<a href="#">Курорт 4</a>
-									</li>
-									<li class="list-group-item">
-										<a href="#">Курорт 5</a>
-									</li>
-								</ul>
-								<a href="#">Посмотреть все</a>
-							</aside>
-							<aside class="left_bar">
-								<header>
-									Эстония
-								</header>
-								<hr>
-								<ul class="list-group" >
-									<li class="list-group-item" > 
-										<a href="#">Курорт 1</a> 
-									</li>
-									<li class="list-group-item">
-										<a href="#">Курорт 2</a>
-									</li>
-									<li class="list-group-item">
-										<a href="#">Курорт 3</a>
-									</li>
-									<li class="list-group-item">
-										<a href="#">Курорт 4</a>
-									</li>
-									<li class="list-group-item">
-										<a href="#">Курорт 5</a>
-									</li>
-								</ul>
-								<a href="#">Посмотреть все</a>
-							</aside>
+							<div class="filter-2">
+								<form action="filter.html" method="post">
+									<div class="form-group col-sm-6">
+										<label for="country">Страна</label>
+										<div class="arrow">
+											<select class="form-control" id="country" >
+												<option>Россия</option>
+												<option>Германия</option>
+												<option>Эстония</option>
+											</select>
+										</div>
+									</div>
+									<div class="form-group col-sm-6">
+										<label for="curort">Город</label>
+										<div class="arrow">
+											<select class="form-control" id="curort" >
+												<option>Город 1</option>
+												<option>Город 2</option>
+												<option>Город 3</option>
+											</select>
+										</div>
+									</div>
+									<div class="form-group col-sm-6">
+										<label for="sanatory">Месяц</label>
+										<div class="arrow">
+											<select class="form-control" id="sanatory" >
+												<option value="1">1</option>
+												<option value="2">2</option>
+												<option value="3">3</option>
+												<option value="4">4</option>
+												<option value="5">5</option>
+												<option value="6">6</option>
+												<option value="7">7</option>
+												<option value="8">8</option>
+												<option value="9">9</option>
+												<option value="10">10</option>
+												<option value="11">11</option>
+												<option value="12">12</option>
+											</select>
+										</div>
+									</div>
+									<div class="form-group col-sm-6">
+										<label for="food">Транспорт</label>
+										<div class="arrow">
+											<select class="form-control" id="food" >
+												<option>Вид 1</option>
+												<option>Вид 2</option>
+											</select>
+										</div>
+									</div>
+									<div class="form-group col-sm-6">
+										<label for="food">Выезд из</label>
+										<div class="arrow">
+											<select class="form-control" id="food" >
+												<option>Место 1</option>
+												<option>Место 2</option>
+											</select>
+										</div>
+									</div>
+									<div class="form-group col-sm-6">
+										<label for="food">Тип тура</label>
+										<div class="arrow">
+											<select class="form-control" id="food" >
+												<option>Тип 1</option>
+												<option>Тип 2</option>
+											</select>
+										</div>
+									</div>
+									<div class="form-group reset-mg col-xs-12">
+										<button type="submit" class="btn_custom btn_filter">Поиск тура</button>
+									</div>
+								</form>
+							</div>
+
+
 						</div>
 						<div class="col-lg-9 col-md-8">
 							<div class="about">
-								<h1>Курорт 1. Перечень экскурсий</h1>
+								<h1>Поиск экскурсионного тура</h1>
 							</div>
 							<div class="row tour_section">
 								<div class="col-lg-4 col-md-6 col-sm-12">
@@ -242,13 +239,6 @@
 											</div>
 											<h3>Санта Моника</h3>
 										</a>
-										<span class="stars">
-											<i class="fa fa-star green"></i>
-											<i class="fa fa-star green"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-										</span>
 										<hr>
 										<div class="relative">
 											<div class="main_price">
@@ -268,13 +258,6 @@
 											</div>
 											<h3>Санта Моника</h3>
 										</a>
-										<span class="stars">
-											<i class="fa fa-star green"></i>
-											<i class="fa fa-star green"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-										</span>
 										<hr>
 										<div class="relative">
 											<div class="main_price">
@@ -294,13 +277,6 @@
 											</div>
 											<h3>Санта Моника</h3>
 										</a>
-										<span class="stars">
-											<i class="fa fa-star green"></i>
-											<i class="fa fa-star green"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-										</span>
 										<hr>
 										<div class="relative">
 											<div class="main_price">
@@ -320,13 +296,6 @@
 											</div>
 											<h3>Санта Моника</h3>
 										</a>
-										<span class="stars">
-											<i class="fa fa-star green"></i>
-											<i class="fa fa-star green"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-										</span>
 										<hr>
 										<div class="relative">
 											<div class="main_price">
@@ -346,13 +315,6 @@
 											</div>
 											<h3>Санта Моника</h3>
 										</a>
-										<span class="stars">
-											<i class="fa fa-star green"></i>
-											<i class="fa fa-star green"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-										</span>
 										<hr>
 										<div class="relative">
 											<div class="main_price">
@@ -372,13 +334,6 @@
 											</div>
 											<h3>Санта Моника</h3>
 										</a>
-										<span class="stars">
-											<i class="fa fa-star green"></i>
-											<i class="fa fa-star green"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-										</span>
 										<hr>
 										<div class="relative">
 											<div class="main_price">
@@ -398,13 +353,6 @@
 											</div>
 											<h3>Санта Моника</h3>
 										</a>
-										<span class="stars">
-											<i class="fa fa-star green"></i>
-											<i class="fa fa-star green"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-										</span>
 										<hr>
 										<div class="relative">
 											<div class="main_price">
@@ -424,13 +372,6 @@
 											</div>
 											<h3>Санта Моника</h3>
 										</a>
-										<span class="stars">
-											<i class="fa fa-star green"></i>
-											<i class="fa fa-star green"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-										</span>
 										<hr>
 										<div class="relative">
 											<div class="main_price">
@@ -450,13 +391,6 @@
 											</div>
 											<h3>Санта Моника</h3>
 										</a>
-										<span class="stars">
-											<i class="fa fa-star green"></i>
-											<i class="fa fa-star green"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-										</span>
 										<hr>
 										<div class="relative">
 											<div class="main_price">
@@ -476,13 +410,6 @@
 											</div>
 											<h3>Санта Моника</h3>
 										</a>
-										<span class="stars">
-											<i class="fa fa-star green"></i>
-											<i class="fa fa-star green"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-										</span>
 										<hr>
 										<div class="relative">
 											<div class="main_price">
@@ -502,13 +429,6 @@
 											</div>
 											<h3>Санта Моника</h3>
 										</a>
-										<span class="stars">
-											<i class="fa fa-star green"></i>
-											<i class="fa fa-star green"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-										</span>
 										<hr>
 										<div class="relative">
 											<div class="main_price">
@@ -528,13 +448,6 @@
 											</div>
 											<h3>Санта Моника</h3>
 										</a>
-										<span class="stars">
-											<i class="fa fa-star green"></i>
-											<i class="fa fa-star green"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-										</span>
 										<hr>
 										<div class="relative">
 											<div class="main_price">
@@ -546,6 +459,7 @@
 										</div>
 									</div>
 								</div>
+
 
 								<div class="col-xs-12 paginat">
 									<span class="prev_page">Предыдущая страница</span>

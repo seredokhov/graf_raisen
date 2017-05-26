@@ -121,6 +121,15 @@ $(function() {
   });
 });
 
+/*   Акордион  */
+$(function() {
+	var acord = $('.left_bar.slide');
+	acord.click(function(){
+		acord.not(this).children('div').slideUp();
+		$(this).children('div').slideDown();
+	})
+});
+
 /*   Календарь   */
 
 if (document.querySelector('input[name="daterange"]')) {
@@ -219,11 +228,6 @@ if (document.querySelector('input[name^="date-time"]')) {
 		 "locale": {
 		        "format": "DD. MM. YYYY  -  HH:mm ",
 		        "separator": " - ",
-		        "applyLabel": "Применить",
-		        "cancelLabel": "Отмена",
-		        "fromLabel": "От",
-		        "toLabel": "До",
-		        "customRangeLabel": "Свой",
 		        "daysOfWeek": [
 		            "Вс",
 		            "Пн",
@@ -251,3 +255,48 @@ if (document.querySelector('input[name^="date-time"]')) {
 		    }
 	});});
 };
+
+
+
+
+$(function() {
+
+  $('input[name="datefilter"]').daterangepicker({
+      autoUpdateInput: false,
+      singleDatePicker: true,
+      autoApply: true,
+      locale: {
+             "format": "DD. MM. YYYY  -  HH:mm ",
+             "daysOfWeek": [
+                 "Вс",
+                 "Пн",
+                 "Вт",
+                 "Ср",
+                 "Чт",
+                 "Пт",
+                 "Сб"
+             ],
+             "monthNames": [
+                 "Январь",
+                 "Февраль",
+                 "Март",
+                 "Апрель",
+                 "Май",
+                 "Июнь",
+                 "Июль",
+                 "Август",
+                 "Сентябрь",
+                 "Октябрь",
+                 "Ноябрь",
+                 "Декабрь"
+             ],
+             "firstDay": 1
+         }
+  });
+  $('input[name="datefilter"]').on('apply.daterangepicker', function(ev, picker) {
+      $(this).val(picker.startDate.format('MM.DD.YYYY'));
+  });
+  $('input[name="datefilter"]').on('cancel.daterangepicker', function(ev, picker) {
+      $(this).val('');
+  });
+});

@@ -49,8 +49,7 @@
 					</div>
 					<div class="col-sm-9">
 						<div class="lang_drop dropdown">
-							 <img src="images/Flag_of_Germany.png" alt="" class="lang_btn" id="dropdownMenu1" data-toggle="dropdown" >	
-							
+							 <img src="images/Flag_of_Germany.png" alt="" class="lang_btn" id="dropdownMenu1" data-toggle="dropdown" >
 							<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
 								<li>
 									<a href="#"><img src="images/russ.png" alt="">ЭКСКУСИИ</a>
@@ -72,12 +71,14 @@
 			<div class="container">
 				<div class="row">
 					<nav class="navbar navbar-default header_nav">
+
 						<!--Блок с логотипом и кнопкой выпадающего меню -->
 						<div class="navbar-header">
 							<a class="logo" href="index.html"><img src="images/logo.png" class="img-responsive" alt=""></a>
 							<button type="button" class="burg navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"></button>
 						</div>
 						<!--  -->
+
 						<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 							<ul class="nav navbar-nav">
 								<li>
@@ -97,6 +98,7 @@
 								</li>
 								<li class="hot"><a href="hot_deals.html"><span>1</span>Горячие предложения</a></li>
 								<li class="like"><a href="my_sanatory.html"><span>1</span>Мои заментки</a></li>
+
 								<!-- Кнопка +меню выдимые только на lg/md-->
 								<li class="burg_block hidden-xs">
 									<button type="button" class="burg" data-toggle="dropdown"></button>
@@ -118,26 +120,27 @@
 										<button class="close"><i class="fa fa-times" aria-hidden="true"></i></button>
 									</div>
 								</li>
+								<!-- ==================================== -->
+
 								<!-- Меню выдимое только на sm/xs-->
-								<li class=" visible-xs"><a href="#">О компании</a></li>
+								<li class=" visible-xs"><a href="payment.html">Оплата</a></li>
+								<li class=" visible-xs"><a href="partner.html">Партнерам</a></li>
+								<li class=" visible-xs"><a href="#">Услуги и стоимость</a></li>
 								<li class=" visible-xs search_li">
 									<form action="/">
 										<label  >Поиск</label>
-										<input type="text" class="form-control">
+										<div class="relative">
+											<input type="search" class="form-control">
+											<input type="submit" class="find_btn" value="Найти">
+										</div>
 									</form>
 								</li>
-								<li class=" visible-xs"><a href="#">Услуги и стоимость</a></li>
-								<li class=" visible-xs"><a href="#">Новости</a></li>
-								<li class=" visible-xs"><a href="#">Оплата</a></li>
-								<li class=" visible-xs"><a href="#">Горячее предложение</a></li>
-								<li class=" visible-xs"><a href="#">Партнерам</a></li>
-								</ul>
-							</div>
-						</nav>
+							</ul>
+						</div>
+					</nav>
 				</div>
 			</div>
 		</div>
-
 	</header>
 
 	<main>
@@ -589,107 +592,56 @@
 
 			<section class="section section_check">
 				<div class="container">
-					<div class="row">
-						<div class="col-xs-12">
-							<header class="h2">Показания к лечению</header>
+					<header class="h2">Показания к лечению</header>
+					
+					<div class="clearfix med_service">
+						<div class="med_item">
+							<div class="med_img skelet"></div>
+							<span>Опорно-двигательный аппарат</span>
 						</div>
-						<div class="col-md-5 col-md-6 col-xs-12">
-							<div class="service">
-								<label>
-									<input class="checkbox" type="checkbox" name="checkbox-test">
-									<span class="checkbox-custom"></span>
-									<span class="label">Услуга 1</span>
-								</label>
-								<label>
-									<input class="checkbox" type="checkbox" name="checkbox-test">
-									<span class="checkbox-custom"></span>
-									<span class="label">Услуга 1</span>
-								</label>
-								<label>
-									<input class="checkbox" type="checkbox" name="checkbox-test">
-									<span class="checkbox-custom"></span>
-									<span class="label">Услуга 1</span>
-								</label>
-								<label>
-									<input class="checkbox" type="checkbox" name="checkbox-test">
-									<span class="checkbox-custom"></span>
-									<span class="label">Услуга 1</span>
-								</label>
-								<label>
-									<input class="checkbox" type="checkbox" name="checkbox-test">
-									<span class="checkbox-custom"></span>
-									<span class="label">Услуга 1</span>
-								</label>
-							</div>
+						<div class="med_item">
+							<div class="med_img muscl"></div>
+							<span>Костно-мышечная система</span>
 						</div>
-
-						<div class="col-md-5 col-md-6 col-xs-12">
-							<div class="service">
-								<label>
-									<input class="checkbox" type="checkbox" name="checkbox-test">
-									<span class="checkbox-custom"></span>
-									<span class="label">Услуга 1</span>
-								</label>
-								<label>
-									<input class="checkbox" type="checkbox" name="checkbox-test">
-									<span class="checkbox-custom"></span>
-									<span class="label">Услуга 1</span>
-								</label>
-								<label>
-									<input class="checkbox" type="checkbox" name="checkbox-test">
-									<span class="checkbox-custom"></span>
-									<span class="label">Услуга 1</span>
-								</label>
-								<label>
-									<input class="checkbox" type="checkbox" name="checkbox-test">
-									<span class="checkbox-custom"></span>
-									<span class="label">Услуга 1</span>
-								</label>
-								<label>
-									<input class="checkbox" type="checkbox" name="checkbox-test">
-									<span class="checkbox-custom"></span>
-									<span class="label">Услуга 1</span>
-								</label>
-							</div>
+						<div class="med_item">
+							<div class="med_img cardio"></div>
+							<span>Сердечно-сосудистая система</span>
 						</div>
-
-						<div class="col-md-2 col-md-6 col-xs-12">
-							<div class="service">
-								<label>
-									<input class="checkbox" type="checkbox" name="checkbox-test">
-									<span class="checkbox-custom"></span>
-									<span class="label">Услуга 1</span>
-								</label>
-								<label>
-									<input class="checkbox" type="checkbox" name="checkbox-test">
-									<span class="checkbox-custom"></span>
-									<span class="label">Услуга 1</span>
-								</label>
-								<label>
-									<input class="checkbox" type="checkbox" name="checkbox-test">
-									<span class="checkbox-custom"></span>
-									<span class="label">Услуга 1</span>
-								</label>
-								<label>
-									<input class="checkbox" type="checkbox" name="checkbox-test">
-									<span class="checkbox-custom"></span>
-									<span class="label">Услуга 1</span>
-								</label>
-								<label>
-									<input class="checkbox" type="checkbox" name="checkbox-test">
-									<span class="checkbox-custom"></span>
-									<span class="label">Услуга 1</span>
-								</label>
-							</div>
+						<div class="med_item">
+							<div class="med_img brain"></div>
+							<span>Нервная система</span>
 						</div>
-
+						<div class="med_item">
+							<div class="med_img kidneys"></div>
+							<span>Мочеполовая система</span>
+						</div>
+						<div class="med_item">
+							<div class="med_img ginecology"></div>
+							<span>Гинекология</span>
+						</div>
+						<div class="med_item">
+							<div class="med_img stomach"></div>
+							<span>Обмен веществ</span>
+						</div>
+						<div class="med_item">
+							<div class="med_img lungs"></div>
+							<span>Органы дыхания</span>
+						</div>
+						<div class="med_item">
+							<div class="med_img tooth"></div>
+							<span>Стоматология</span>
+						</div>
+						<div class="med_item">
+							<div class="med_img intestine"></div>
+							<span>Желудочно-кишечный тракт</span>
+						</div>
 					</div>
 				</div>
 			</section>
 
 			<!-- ==================== 2 СЕКЦИЯ ЧЕКБОКСОВ =====================-->
 
-			<section class="section section_check">
+			<section class="section">
 				<div class="container">
 					<div class="row section">
 						<div class="col-xs-12">
@@ -701,27 +653,27 @@
 								<div class="col-md-6">
 									<div class="service">
 										<label class="large_letter">
-											<input class="checkbox" type="checkbox" name="checkbox-test">
+											<input class="checkbox" type="checkbox" checked disabled>
 											<span class="checkbox-custom"></span>
 											<span class="label">а</span>
 										</label>
 										<label>
-											<input class="checkbox" type="checkbox" name="checkbox-test">
+											<input class="checkbox" type="checkbox" checked disabled>
 											<span class="checkbox-custom"></span>
 											<span class="label">Услуга 1</span>
 										</label>
 										<label>
-											<input class="checkbox" type="checkbox" name="checkbox-test">
+											<input class="checkbox" type="checkbox" disabled>
 											<span class="checkbox-custom"></span>
 											<span class="label">Услуга 1</span>
 										</label>
 										<label>
-											<input class="checkbox" type="checkbox" name="checkbox-test">
+											<input class="checkbox" type="checkbox" checked disabled>
 											<span class="checkbox-custom"></span>
 											<span class="label">Услуга 1</span>
 										</label>
 										<label>
-											<input class="checkbox" type="checkbox" name="checkbox-test">
+											<input class="checkbox" type="checkbox" disabled>
 											<span class="checkbox-custom"></span>
 											<span class="label">Услуга 1</span>
 										</label>
@@ -730,27 +682,27 @@
 								<div class="col-md-6">
 									<div class="service">
 										<label class="large_letter">
-											<input class="checkbox" type="checkbox" name="checkbox-test">
+											<input class="checkbox" type="checkbox" checked disabled>
 											<span class="checkbox-custom"></span>
 											<span class="label">б</span>
 										</label>
 										<label>
-											<input class="checkbox" type="checkbox" name="checkbox-test">
+											<input class="checkbox" type="checkbox" disabled>
 											<span class="checkbox-custom"></span>
 											<span class="label">Услуга 1</span>
 										</label>
 										<label>
-											<input class="checkbox" type="checkbox" name="checkbox-test">
+											<input class="checkbox" type="checkbox" disabled>
 											<span class="checkbox-custom"></span>
 											<span class="label">Услуга 1</span>
 										</label>
 										<label>
-											<input class="checkbox" type="checkbox" name="checkbox-test">
+											<input class="checkbox" type="checkbox" checked disabled>
 											<span class="checkbox-custom"></span>
 											<span class="label">Услуга 1</span>
 										</label>
 										<label>
-											<input class="checkbox" type="checkbox" name="checkbox-test">
+											<input class="checkbox" type="checkbox" checked disabled>
 											<span class="checkbox-custom"></span>
 											<span class="label">Услуга 1</span>
 										</label>
@@ -764,27 +716,27 @@
 								<div class="col-md-6">
 									<div class="service">
 										<label class="large_letter">
-											<input class="checkbox" type="checkbox" name="checkbox-test">
+											<input class="checkbox" type="checkbox" disabled>
 											<span class="checkbox-custom"></span>
 											<span class="label">в</span>
 										</label>
 										<label>
-											<input class="checkbox" type="checkbox" name="checkbox-test">
+											<input class="checkbox" type="checkbox" disabled>
 											<span class="checkbox-custom"></span>
 											<span class="label">Услуга 1</span>
 										</label>
 										<label>
-											<input class="checkbox" type="checkbox" name="checkbox-test">
+											<input class="checkbox" type="checkbox" disabled>
 											<span class="checkbox-custom"></span>
 											<span class="label">Услуга 1</span>
 										</label>
 										<label>
-											<input class="checkbox" type="checkbox" name="checkbox-test">
+											<input class="checkbox" type="checkbox" disabled>
 											<span class="checkbox-custom"></span>
 											<span class="label">Услуга 1</span>
 										</label>
 										<label>
-											<input class="checkbox" type="checkbox" name="checkbox-test">
+											<input class="checkbox" type="checkbox" disabled>
 											<span class="checkbox-custom"></span>
 											<span class="label">Услуга 1</span>
 										</label>
@@ -793,27 +745,27 @@
 								<div class="col-md-6">
 									<div class="service">
 										<label class="large_letter">
-											<input class="checkbox" type="checkbox" name="checkbox-test">
+											<input class="checkbox" type="checkbox" disabled>
 											<span class="checkbox-custom"></span>
 											<span class="label">г</span>
 										</label>
 										<label>
-											<input class="checkbox" type="checkbox" name="checkbox-test">
+											<input class="checkbox" type="checkbox" disabled>
 											<span class="checkbox-custom"></span>
 											<span class="label">Услуга 1</span>
 										</label>
 										<label>
-											<input class="checkbox" type="checkbox" name="checkbox-test">
+											<input class="checkbox" type="checkbox" disabled>
 											<span class="checkbox-custom"></span>
 											<span class="label">Услуга 1</span>
 										</label>
 										<label>
-											<input class="checkbox" type="checkbox" name="checkbox-test">
+											<input class="checkbox" type="checkbox" disabled>
 											<span class="checkbox-custom"></span>
 											<span class="label">Услуга 1</span>
 										</label>
 										<label>
-											<input class="checkbox" type="checkbox" name="checkbox-test">
+											<input class="checkbox" type="checkbox" disabled>
 											<span class="checkbox-custom"></span>
 											<span class="label">Услуга 1</span>
 										</label>
@@ -825,27 +777,27 @@
 						<div class="col-md-2 col-sm-6 col-xs-12">
 							<div class="service">
 								<label class="large_letter">
-									<input class="checkbox" type="checkbox" name="checkbox-test">
+									<input class="checkbox" type="checkbox" disabled>
 									<span class="checkbox-custom"></span>
 									<span class="label">д</span>
 								</label>
 								<label>
-									<input class="checkbox" type="checkbox" name="checkbox-test">
+									<input class="checkbox" type="checkbox" disabled>
 									<span class="checkbox-custom"></span>
 									<span class="label">Услуга 1</span>
 								</label>
 								<label>
-									<input class="checkbox" type="checkbox" name="checkbox-test">
+									<input class="checkbox" type="checkbox" disabled>
 									<span class="checkbox-custom"></span>
 									<span class="label">Услуга 1</span>
 								</label>
 								<label>
-									<input class="checkbox" type="checkbox" name="checkbox-test">
+									<input class="checkbox" type="checkbox" disabled>
 									<span class="checkbox-custom"></span>
 									<span class="label">Услуга 1</span>
 								</label>
 								<label>
-									<input class="checkbox" type="checkbox" name="checkbox-test">
+									<input class="checkbox" type="checkbox" disabled>
 									<span class="checkbox-custom"></span>
 									<span class="label">Услуга 1</span>
 								</label>
@@ -860,27 +812,27 @@
 								<div class="col-md-6">
 									<div class="service">
 										<label class="large_letter">
-											<input class="checkbox" type="checkbox" name="checkbox-test">
+											<input class="checkbox" type="checkbox" disabled>
 											<span class="checkbox-custom"></span>
 											<span class="label">а</span>
 										</label>
 										<label>
-											<input class="checkbox" type="checkbox" name="checkbox-test">
+											<input class="checkbox" type="checkbox" disabled>
 											<span class="checkbox-custom"></span>
 											<span class="label">Услуга 1</span>
 										</label>
 										<label>
-											<input class="checkbox" type="checkbox" name="checkbox-test">
+											<input class="checkbox" type="checkbox" disabled>
 											<span class="checkbox-custom"></span>
 											<span class="label">Услуга 1</span>
 										</label>
 										<label>
-											<input class="checkbox" type="checkbox" name="checkbox-test">
+											<input class="checkbox" type="checkbox" disabled>
 											<span class="checkbox-custom"></span>
 											<span class="label">Услуга 1</span>
 										</label>
 										<label>
-											<input class="checkbox" type="checkbox" name="checkbox-test">
+											<input class="checkbox" type="checkbox" disabled>
 											<span class="checkbox-custom"></span>
 											<span class="label">Услуга 1</span>
 										</label>
@@ -889,27 +841,27 @@
 								<div class="col-md-6">
 									<div class="service">
 										<label class="large_letter">
-											<input class="checkbox" type="checkbox" name="checkbox-test">
+											<input class="checkbox" type="checkbox" disabled>
 											<span class="checkbox-custom"></span>
 											<span class="label">б</span>
 										</label>
 										<label>
-											<input class="checkbox" type="checkbox" name="checkbox-test">
+											<input class="checkbox" type="checkbox" disabled>
 											<span class="checkbox-custom"></span>
 											<span class="label">Услуга 1</span>
 										</label>
 										<label>
-											<input class="checkbox" type="checkbox" name="checkbox-test">
+											<input class="checkbox" type="checkbox" disabled>
 											<span class="checkbox-custom"></span>
 											<span class="label">Услуга 1</span>
 										</label>
 										<label>
-											<input class="checkbox" type="checkbox" name="checkbox-test">
+											<input class="checkbox" type="checkbox" disabled>
 											<span class="checkbox-custom"></span>
 											<span class="label">Услуга 1</span>
 										</label>
 										<label>
-											<input class="checkbox" type="checkbox" name="checkbox-test">
+											<input class="checkbox" type="checkbox" disableddisabled>
 											<span class="checkbox-custom"></span>
 											<span class="label">Услуга 1</span>
 										</label>
@@ -923,27 +875,27 @@
 								<div class="col-md-6">
 									<div class="service">
 										<label class="large_letter">
-											<input class="checkbox" type="checkbox" name="checkbox-test">
+											<input class="checkbox" type="checkbox" disabled>
 											<span class="checkbox-custom"></span>
 											<span class="label">в</span>
 										</label>
 										<label>
-											<input class="checkbox" type="checkbox" name="checkbox-test">
+											<input class="checkbox" type="checkbox" disabled>
 											<span class="checkbox-custom"></span>
 											<span class="label">Услуга 1</span>
 										</label>
 										<label>
-											<input class="checkbox" type="checkbox" name="checkbox-test">
+											<input class="checkbox" type="checkbox" disabled>
 											<span class="checkbox-custom"></span>
 											<span class="label">Услуга 1</span>
 										</label>
 										<label>
-											<input class="checkbox" type="checkbox" name="checkbox-test">
+											<input class="checkbox" type="checkbox" disabled>
 											<span class="checkbox-custom"></span>
 											<span class="label">Услуга 1</span>
 										</label>
 										<label>
-											<input class="checkbox" type="checkbox" name="checkbox-test">
+											<input class="checkbox" type="checkbox" disabled>
 											<span class="checkbox-custom"></span>
 											<span class="label">Услуга 1</span>
 										</label>
@@ -952,27 +904,27 @@
 								<div class="col-md-6">
 									<div class="service">
 										<label class="large_letter">
-											<input class="checkbox" type="checkbox" name="checkbox-test">
+											<input class="checkbox" type="checkbox" disabled>
 											<span class="checkbox-custom"></span>
 											<span class="label">г</span>
 										</label>
 										<label>
-											<input class="checkbox" type="checkbox" name="checkbox-test">
+											<input class="checkbox" type="checkbox" disabled>
 											<span class="checkbox-custom"></span>
 											<span class="label">Услуга 1</span>
 										</label>
 										<label>
-											<input class="checkbox" type="checkbox" name="checkbox-test">
+											<input class="checkbox" type="checkbox" disabled>
 											<span class="checkbox-custom"></span>
 											<span class="label">Услуга 1</span>
 										</label>
 										<label>
-											<input class="checkbox" type="checkbox" name="checkbox-test">
+											<input class="checkbox" type="checkbox" disabled>
 											<span class="checkbox-custom"></span>
 											<span class="label">Услуга 1</span>
 										</label>
 										<label>
-											<input class="checkbox" type="checkbox" name="checkbox-test">
+											<input class="checkbox" type="checkbox" disabled>
 											<span class="checkbox-custom"></span>
 											<span class="label">Услуга 1</span>
 										</label>
@@ -984,27 +936,27 @@
 						<div class="col-md-2 col-sm-6 col-xs-12">
 							<div class="service">
 								<label class="large_letter">
-									<input class="checkbox" type="checkbox" name="checkbox-test">
+									<input class="checkbox" type="checkbox" disabled>
 									<span class="checkbox-custom"></span>
 									<span class="label">д</span>
 								</label>
 								<label>
-									<input class="checkbox" type="checkbox" name="checkbox-test">
+									<input class="checkbox" type="checkbox" disabled>
 									<span class="checkbox-custom"></span>
 									<span class="label">Услуга 1</span>
 								</label>
 								<label>
-									<input class="checkbox" type="checkbox" name="checkbox-test">
+									<input class="checkbox" type="checkbox" disabled>
 									<span class="checkbox-custom"></span>
 									<span class="label">Услуга 1</span>
 								</label>
 								<label>
-									<input class="checkbox" type="checkbox" name="checkbox-test">
+									<input class="checkbox" type="checkbox" disabled>
 									<span class="checkbox-custom"></span>
 									<span class="label">Услуга 1</span>
 								</label>
 								<label>
-									<input class="checkbox" type="checkbox" name="checkbox-test">
+									<input class="checkbox" type="checkbox" disabled>
 									<span class="checkbox-custom"></span>
 									<span class="label">Услуга 1</span>
 								</label>
@@ -1017,7 +969,7 @@
 
 			<!-- ==================== 3 СЕКЦИЯ ЧЕКБОКСОВ =====================-->
 
-			<section class="section section_check">
+			<section class="section">
 				<div class="container">
 					<div class="row section">
 						<div class="col-xs-12">
@@ -1029,22 +981,22 @@
 								<div class="col-md-6">
 									<div class="service">
 										<label>
-											<input class="checkbox" type="checkbox" name="checkbox-test">
+											<input class="checkbox" type="checkbox" disabled>
 											<span class="checkbox-custom"></span>
 											<span class="label">Услуга 1</span>
 										</label>
 										<label>
-											<input class="checkbox" type="checkbox" name="checkbox-test">
+											<input class="checkbox" type="checkbox" disabled>
 											<span class="checkbox-custom"></span>
 											<span class="label">Услуга 1</span>
 										</label>
 										<label>
-											<input class="checkbox" type="checkbox" name="checkbox-test">
+											<input class="checkbox" type="checkbox" disabled>
 											<span class="checkbox-custom"></span>
 											<span class="label">Услуга 1</span>
 										</label>
 										<label>
-											<input class="checkbox" type="checkbox" name="checkbox-test">
+											<input class="checkbox" type="checkbox" disabled>
 											<span class="checkbox-custom"></span>
 											<span class="label">Услуга 1</span>
 										</label>
@@ -1053,22 +1005,22 @@
 								<div class="col-md-6">
 									<div class="service">
 										<label>
-											<input class="checkbox" type="checkbox" name="checkbox-test">
+											<input class="checkbox" type="checkbox" disabled>
 											<span class="checkbox-custom"></span>
 											<span class="label">Услуга 1</span>
 										</label>
 										<label>
-											<input class="checkbox" type="checkbox" name="checkbox-test">
+											<input class="checkbox" type="checkbox" disabled>
 											<span class="checkbox-custom"></span>
 											<span class="label">Услуга 1</span>
 										</label>
 										<label>
-											<input class="checkbox" type="checkbox" name="checkbox-test">
+											<input class="checkbox" type="checkbox" disabled>
 											<span class="checkbox-custom"></span>
 											<span class="label">Услуга 1</span>
 										</label>
 										<label>
-											<input class="checkbox" type="checkbox" name="checkbox-test">
+											<input class="checkbox" type="checkbox" disabled>
 											<span class="checkbox-custom"></span>
 											<span class="label">Услуга 1</span>
 										</label>
@@ -1082,22 +1034,22 @@
 								<div class="col-md-6">
 									<div class="service">
 										<label>
-											<input class="checkbox" type="checkbox" name="checkbox-test">
+											<input class="checkbox" type="checkbox" disabled checked>
 											<span class="checkbox-custom"></span>
 											<span class="label">Услуга 1</span>
 										</label>
 										<label>
-											<input class="checkbox" type="checkbox" name="checkbox-test">
+											<input class="checkbox" type="checkbox" disabled checked>
 											<span class="checkbox-custom"></span>
 											<span class="label">Услуга 1</span>
 										</label>
 										<label>
-											<input class="checkbox" type="checkbox" name="checkbox-test">
+											<input class="checkbox" type="checkbox" disabled checked>
 											<span class="checkbox-custom"></span>
 											<span class="label">Услуга 1</span>
 										</label>
 										<label>
-											<input class="checkbox" type="checkbox" name="checkbox-test">
+											<input class="checkbox" type="checkbox" disabled>
 											<span class="checkbox-custom"></span>
 											<span class="label">Услуга 1</span>
 										</label>
@@ -1106,22 +1058,22 @@
 								<div class="col-md-6">
 									<div class="service">
 										<label>
-											<input class="checkbox" type="checkbox" name="checkbox-test">
+											<input class="checkbox" type="checkbox" disabled>
 											<span class="checkbox-custom"></span>
 											<span class="label">Услуга 1</span>
 										</label>
 										<label>
-											<input class="checkbox" type="checkbox" name="checkbox-test">
+											<input class="checkbox" type="checkbox" disabled checked>
 											<span class="checkbox-custom"></span>
 											<span class="label">Услуга 1</span>
 										</label>
 										<label>
-											<input class="checkbox" type="checkbox" name="checkbox-test">
+											<input class="checkbox" type="checkbox" disabled>
 											<span class="checkbox-custom"></span>
 											<span class="label">Услуга 1</span>
 										</label>
 										<label>
-											<input class="checkbox" type="checkbox" name="checkbox-test">
+											<input class="checkbox" type="checkbox" disabled checked>
 											<span class="checkbox-custom"></span>
 											<span class="label">Услуга 1</span>
 										</label>
@@ -1133,22 +1085,22 @@
 						<div class="col-md-2 col-sm-6 col-xs-12">
 							<div class="service">
 								<label>
-									<input class="checkbox" type="checkbox" name="checkbox-test">
+									<input class="checkbox" type="checkbox" disabled>
 									<span class="checkbox-custom"></span>
 									<span class="label">Услуга 1</span>
 								</label>
 								<label>
-									<input class="checkbox" type="checkbox" name="checkbox-test">
+									<input class="checkbox" type="checkbox" disabled checked>
 									<span class="checkbox-custom"></span>
 									<span class="label">Услуга 1</span>
 								</label>
 								<label>
-									<input class="checkbox" type="checkbox" name="checkbox-test">
+									<input class="checkbox" type="checkbox" disabled>
 									<span class="checkbox-custom"></span>
 									<span class="label">Услуга 1</span>
 								</label>
 								<label>
-									<input class="checkbox" type="checkbox" name="checkbox-test">
+									<input class="checkbox" type="checkbox" disabled checked>
 									<span class="checkbox-custom"></span>
 									<span class="label">Услуга 1</span>
 								</label>
