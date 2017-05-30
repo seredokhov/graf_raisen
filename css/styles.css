@@ -121,6 +121,10 @@ select.form-control {
 .relative {
 	position: relative;
 }
+.overflow {
+	overflow: hidden;
+}
+
 /*   Кнопки  */
 .btn_custom {
 	font-family: 'Proxima Nova Semibold';
@@ -1339,13 +1343,17 @@ span.post {
 .transf_arr {
 	width: 100%;
 	overflow: visible;
+}
+.transfer_filter .transf_arr {
 	margin: 5px 0;
 }
 .transfer_form label {
 	margin: 5px 0;
-	font-size: 18px;
+	font-size: 16px;
 	color: #4b4b4b;
 	font-family: 'Proxima Nova Bold';
+	white-space: nowrap;
+	overflow: hidden;
 }
 .transfer_form .form-control {
 	height: 41px;
@@ -1367,6 +1375,7 @@ span.post {
 	border: 1px solid #cfcfcf;
 	border-bottom: none;
 	padding: 0 20px;
+	margin-top: 30px;
 }
 .transfer_header + .transfer_form {
 	padding-top: 0;
@@ -1377,6 +1386,14 @@ label.repeat {
 .transfer_form textarea {
 	resize: none;
 	min-height: 85px;
+}
+.book_btn_block {
+	float: right;
+	padding: 0 30px;
+	margin-bottom: 30px;
+}
+.book_btn_block .btn_filter {
+	width: 330px;
 }
 .pay_way {
 	width: 100%;
@@ -2668,7 +2685,18 @@ span.child-4 i {
 	top: 40%;
 	right: -15px;
 	color: #000;
-
+}
+.child_born > span {
+	display: block;
+	font-family: 'Proxima Nova Regular' !important;
+	margin-bottom: 20px;
+}
+.child_born .arrow {
+	width: auto;
+	margin-right: 10px;
+}
+.child_born .arrow select {
+	min-width: 80px;
 }
 
 /* ========= Календарь ==== */
@@ -3235,6 +3263,11 @@ div.ranges {
 		display: block;
 		text-align: center;
 		min-width: 100%;
+	}
+	.book_btn_block {
+		padding: 0;
+		width: 100%;
+		text-align: center;
 	}
 }
 @media (min-width: 1200px) {

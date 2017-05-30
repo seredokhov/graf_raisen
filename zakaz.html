@@ -145,7 +145,7 @@
 
 	<main>
 		<div id="wrapper">
-			<div class="section ">
+			<form class="section ">
 				<div class="container">
 					<div class="row">
 						<div class="col-lg-12">
@@ -170,7 +170,7 @@
 						</div>
 
 						<div class="col-md-4">
-							<div class="transfer_form">
+							<div class="transfer_form transfer_filter">
 								<div class="arrow transf_arr">
 									<select class="form-control">
 										<option>Аэропорт</option>
@@ -217,78 +217,96 @@
 								<button type="button" class="btn_custom btn_filter">Поиск</button>
 							</div>
 						</div>
-						<div class="col-md-4">
+						
+						<div class="col-md-8">
 							<div class="transfer_form">
-								<label for="date-time-arrival">Дата и время прибытия</label>
-								<div class="arrow transf_arr">
-									<input type="text" name="date-time-arrival" value="" class="form-control" id="date-time-arrival">
+								<div class="row">
+									<div class="col-md-6">
+										<label for="date-time-arrival">Дата и время прибытия</label>
+										<div class="arrow transf_arr">
+											<input type="text" name="date-time-arrival" value="" class="form-control" id="date-time-arrival">
+										</div>
+										<label for="reis-arrival">Номер рейса прибытия</label>
+										<input type="text" class="form-control" id="reis-arrival">
+										<label for="start-path">Маршрут:</label>
+										<input type="text" class="form-control" id="start-path">
+									</div>
+									<div class="col-md-6">
+										<label for="date-time-depar">Дата и время отправления</label>
+										<div class="arrow transf_arr">
+											<input type="text" name="date-time-depar" value="" class="form-control born" id="date-time-depar">
+										</div>
+										<label for="reis-depar">Номер рейся отправления</label>
+										<input type="text" class="form-control" id="reis-depar">
+										<label for="end-path">Маршрут:</label>
+										<input type="text" class="form-control" id="end-path">
+										<label class="repeat">
+											<input class="checkbox" type="checkbox" name="checkbox-test">
+											<span class="checkbox-custom"></span>
+											<span class="label">Использование данных</span>
+										</label>
+									</div>
 								</div>
-								<label for="reis-arrival">Номер рейса прибытия</label>
-								<input type="text" class="form-control" id="reis-arrival">
-								<label>Маршрут</label>
-								<input type="text" class="form-control">
-								<label for="date-time-depar">Дата и время отправления</label>
-								<div class="arrow transf_arr">
-									<input type="text" name="date-time-depar" value="" class="form-control born" id="date-time-depar">
-								</div>
-								<label for="reis-depar">Номер рейся отправления</label>
-								<input type="text" class="form-control" id="reis-depar">
-								<label>Маршрут</label>
-								<input type="text" class="form-control">
 							</div>
-						</div>
-						<div class="col-md-4">
+
+
 							<header class="transfer_header">$</header>
 							<div class="transfer_form">
-								<label for="sex">Пол</label>
-								<div class="arrow transf_arr">
-									<select class="form-control" id="sex">
-										<option>М</option>
-										<option>Ж</option>
-									</select>
+								<div class="row">
+									<div class="col-md-4">
+										<label for="sex">Пол</label>
+										<div class="arrow transf_arr">
+											<select class="form-control" id="sex">
+												<option>М</option>
+												<option>Ж</option>
+											</select>
+										</div>
+										<label for="city">Город</label>
+										<input type="text" class="form-control" id="city" required>
+										<label for="phone">Мобильный телефон</label>
+										<input type="text" class="form-control" id="phone">
+
+									</div>
+									<div class="col-md-4">
+										<label for="family">Фамилия</label>
+										<input type="text" class="form-control" id="family" required>
+										<label for="street">Улица</label>
+										<input type="text" class="form-control" id="street" >
+										<label for="email">E-mail</label>
+										<input type="email" class="form-control" id="email" required>
+
+									</div>
+									<div class="col-md-4">
+										<label for="name">Имя</label>
+										<input type="text" class="form-control" id="name" required>
+										<label for="hous_num">Номер дома</label>
+										<input type="text" class="form-control" id="hous_num">
+										<label for="date">Дата рождения</label>
+										<div class="arrow transf_arr">
+											<input type="text" name="date" value="" class="form-control born" id="date">
+										</div>
+									</div>
 								</div>
-								<label for="family">Фамилия</label>
-								<input type="text" class="form-control" id="family">
-								<label for="name">Имя</label>
-								<input type="text" class="form-control" id="name">
-								<label for="city">Город</label>
-								<input type="text" class="form-control" id="city">
-								<label for="street">Улица</label>
-								<input type="text" class="form-control" id="street">
-								<label for="hous_num">Номер дома</label>
-								<input type="text" class="form-control" id="hous_num">
-								<label for="phone">Мобильный телефон</label>
-								<input type="text" class="form-control" id="phone">
-								<label for="email">E-mail</label>
-								<input type="email" class="form-control" id="email">
-								<label for="date">Дата рождения</label>
-								<div class="arrow transf_arr">
-									<input type="text" name="date" value="" class="form-control born" id="date">
+								<div class="row">
+									<div class="col-md-4">
+										<label for="bag">Багаж</label>
+										<input type="text" class="form-control" id="bag" placeholder="Выбор багажа">
+									</div>
+									<div class="col-md-8">
+										<label for="more">Примечания</label>
+										<textarea class="form-control" id="more"></textarea>
+									</div>
 								</div>
-								<div class="arrow transf_arr">
-									<select class="form-control">
-										<option>В обе стороны</option>
-										<option>В одну сторону</option>
-									</select>
-								</div>
-								<label for="more">Примечания</label>
-								<textarea class="form-control" id="more"></textarea>
-								<label class="repeat">
-									<input class="checkbox" type="checkbox" name="checkbox-test">
-									<span class="checkbox-custom"></span>
-									<span class="label">Использование данных</span>
-								</label>
-								<button type="button" class="btn_custom btn_filter">Забронировать</button>
+							</div>
+							<div class="book_btn_block">
+								<button type="submit" class="btn_custom btn_filter">Забронировать</button>
 							</div>
 						</div>
+
 					</div>
 				</div>
-			</div>
-
+			</form>
 		</div>
-
-
-
 	</main>
 
 	<footer>
