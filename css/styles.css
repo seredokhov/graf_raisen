@@ -2694,9 +2694,11 @@ span.child-4 i {
 .child_born .arrow {
 	width: auto;
 	margin-right: 10px;
+	height: 30px;
 }
 .child_born .arrow select {
 	min-width: 80px;
+	height: 30px;
 }
 
 /* ========= Календарь ==== */
