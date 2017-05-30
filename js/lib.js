@@ -102,17 +102,21 @@ $(function() {
 
 /* Чекбоксы выпадающего меню  */
 
+
 $(function() {
+  var born = $('.children_born_block');
   var target = $('#human')
     , men = $('.fix input[name="man"]')
     , children = $('.fix input[name="child"]');
   children.click(function() {
     if ('on' === $(this).data('state')) {  
       $(this).data('state', 'off').removeAttr('checked');
+      born.hide();
     }
     else {
       children.data('state', 'off');
       $(this).data('state', 'on').attr('checked', 'checked');
+      born.show();
     }
   });
   men.add(children).click(function() {

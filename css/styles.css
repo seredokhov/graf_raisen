@@ -2686,19 +2686,22 @@ span.child-4 i {
 	right: -15px;
 	color: #000;
 }
-.child_born > span {
+.children_born_block > span {
 	display: block;
 	font-family: 'Proxima Nova Regular' !important;
 	margin-bottom: 20px;
 }
-.child_born .arrow {
+.children_born_block .arrow {
 	width: auto;
 	margin-right: 10px;
 	height: 30px;
 }
-.child_born .arrow select {
-	min-width: 80px;
+.children_born_block .arrow select {
+	min-width: 65px;
 	height: 30px;
+}
+.children_born_block {
+	display: none;
 }
 
 /* ========= Календарь ==== */
