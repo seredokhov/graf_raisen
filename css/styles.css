@@ -1109,7 +1109,7 @@ aside.left_bar header {
 	color: #4b4b4b;
 }
 aside.left_bar.slide > header {
-	padding: 15px 20px 15px 30px;
+	padding: 10px 20px 10px 30px;
 }
 aside.left_bar.slide > div {
 	display: none;
@@ -1168,7 +1168,7 @@ aside.left_bar ul li a,
 	font-size: 17px;
 	text-decoration: none;
 	display: block;
-	padding: 10px 20px;
+	padding: 0px 20px;
 }
 aside.left_bar ul li.active a {
 	color: #69b334;
