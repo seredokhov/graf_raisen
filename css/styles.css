@@ -1343,6 +1343,7 @@ span.post {
 .transf_arr {
 	width: 100%;
 	overflow: visible;
+	height: 30px;
 }
 .transfer_filter .transf_arr {
 	margin: 5px 0;
@@ -1356,7 +1357,7 @@ span.post {
 	overflow: hidden;
 }
 .transfer_form .form-control {
-	height: 41px;
+	height: 30px;
 	color: #7e7e7e;
 }
 .transfer_form input.born {
