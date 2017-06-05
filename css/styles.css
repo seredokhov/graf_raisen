@@ -1335,10 +1335,22 @@ span.post {
 	color: #9cce4f;
 	border-bottom: 6px solid #89c61c;
 }
+.transfer_cost {
+	color: #4b4b4b;
+	font-size: 19px;
+	text-align: right;
+}
+.transfer_cost span {
+	margin-left: 10px;
+	color: #81c31b;
+	font-family: 'Proxima Nova Extrabold';
+	font-size: 34px;
+}
 .transfer_form {
 	background: #f6f6f6;
 	border: 1px solid #cfcfcf;
 	padding: 15px 20px;
+	margin-bottom: 30px;
 }
 .transf_arr {
 	width: 100%;
@@ -1391,10 +1403,12 @@ label.repeat {
 .book_btn_block {
 	float: right;
 	padding: 0 30px;
-	margin-bottom: 30px;
+	margin-top: -15px;
+	margin-bottom: 20px;
 }
 .book_btn_block .btn_filter {
 	width: 330px;
+	margin: 0;
 }
 .pay_way {
 	width: 100%;
