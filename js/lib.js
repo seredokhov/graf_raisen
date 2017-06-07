@@ -100,7 +100,7 @@ $(function() {
 });
 
 
-/* Чекбоксы выпадающего меню  */
+/* Чекбоксы выпадающего меню  (добавить клонирование селектов) */
 
 
 $(function() {
@@ -112,11 +112,21 @@ $(function() {
     if ('on' === $(this).data('state')) {  
       $(this).data('state', 'off').removeAttr('checked');
       bornBlock.hide();
+      bornBlock.find('.child_data_born').not('.child_data_born:eq(0)').remove();
     }
     else {
       children.data('state', 'off');
       $(this).data('state', 'on').attr('checked', 'checked');
+      var coin = $(this).data('coin');
       bornBlock.show();
+      bornBlock.find('.child_data_born').not('.child_data_born:eq(0)').remove();
+      var num = 1;
+      for (i = 0; i < coin-1; i++) {
+        bornBlock.find('.child_data_born:eq(0)').clone().appendTo(bornBlock).attr("id", "child-" + ++num);
+      }
+      
+
+      //alert(a);
     }
   });
   men.add(children).click(function() {

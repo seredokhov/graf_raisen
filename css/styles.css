@@ -2411,7 +2411,6 @@ aside.sanatory_aside .service .label {
 	min-height: 170px;
 	margin: 14px;
 	overflow: hidden;
-	transition: all 0.3s linear;
 }
 .sanatory_main .excursion .flex .img_block {
 	height: 160px;
@@ -2420,9 +2419,6 @@ aside.sanatory_aside .service .label {
 	outline: 6px solid #fff;
 	outline-offset: -7px;
 	display: block;
-}
-.sanatory_main .excursion .flex > div:hover {
-	transform: scale(1.05);
 }
 .sanatory_main .excursion .flex .img_block img {
 	height: 160px;
