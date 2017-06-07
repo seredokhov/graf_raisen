@@ -1211,10 +1211,13 @@ aside.left_bar .service a {
 	color: #8c8c8c;
 	font-size: 13px;
 	line-height: 1.6;
+	font-family: 'PT Sans', sans-serif;
 }
 .about span,
 .about ul li span {
 	font-family: 'Proxima Nova Black';
+	font-family: 'PT Sans', sans-serif;
+	font-weight: bold;
 }
 .about h2 {
 	font-size: 26px;
