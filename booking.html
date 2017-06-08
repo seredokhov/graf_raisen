@@ -277,25 +277,25 @@
 									<fieldset>
 										<label for="num">Количество взрослых</label>
 										<div class="arrow num">
-											<select  class="form-control half" id="num">
-												<option value="">1</option>
-												<option value="">2</option>
-												<option value="">3</option>
-												<option value="">4</option>
-												<option value="">5</option>
+											<select  class="form-control half" id="change_humans">
+												<option value="1">1</option>
+												<option value="2">2</option>
+												<option value="3">3</option>
+												<option value="4">4</option>
+												<option value="5">5</option>
 											</select>
 										</div>
 									</fieldset>
 									<fieldset>
 										<label for="num2">Количество детей</label>
 										<div class="arrow num">
-											<select  class="form-control half" id="num2">
-												<option value="">0</option>
-												<option value="">1</option>
-												<option value="">2</option>
-												<option value="">3</option>
-												<option value="">4</option>
-												<option value="">5</option>
+											<select  class="form-control half" id="change_childrens">
+												<option value="0">0</option>
+												<option value="1">1</option>
+												<option value="2">2</option>
+												<option value="3">3</option>
+												<option value="4">4</option>
+												<option value="5">5</option>
 											</select>
 										</div>
 									</fieldset>
@@ -314,19 +314,37 @@
 						</div>
 					</div>
 					<div class="add_people">
-						<div class="clearfix">
-							<div class="col-sm-4">
-								<input class="form-control" type="text" placeholder="Фамилия">
-							</div>
-							<div class="col-sm-4">
-								<input class="form-control" type="text" placeholder="Имя">
-							</div>
-							<div class="col-sm-4">
-								<div class="arrow_new">
-									<input type="text" name="datefilter" class="form-control" placeholder="Дата рождения">
+
+						<div id="humans">
+							<div class="add_people_title">Взрослые:</div>
+							<div class="clearfix" id="human-1">
+								<div class="col-sm-4">
+									<input class="form-control" name="surname" type="text" placeholder="Фамилия">
+								</div>
+								<div class="col-sm-4">
+									<input class="form-control" name="name" type="text" placeholder="Имя">
+								</div>
+								<div class="col-sm-4">
+									<input type="text" name="date_born" class="form-control" placeholder="Дата рождения">
 								</div>
 							</div>
 						</div>
+
+						<div id="childrens">
+							<div class="add_people_title">Дети:</div>
+							<div class="clearfix" id="child-1">
+								<div class="col-sm-4">
+									<input class="form-control" type="text" placeholder="Фамилия">
+								</div>
+								<div class="col-sm-4">
+									<input class="form-control" type="text" placeholder="Имя">
+								</div>
+								<div class="col-sm-4">
+									<input type="text" name="date_born" class="form-control" placeholder="Дата рождения">
+								</div>
+							</div>
+						</div>
+
 						<div class="offer">
 							<input type='submit' form='excurs_form' class="btn_custom btn_offer" value="Забронировать">
 						</div>
@@ -437,6 +455,7 @@
 	<script type="text/javascript" src="js/daterangepicker.js"></script>
 	<script src="js/owl.carousel.js"></script>
 	<script src="js/lib.js"></script>
+	<script src="js/jquery.maskedinput.min.js"></script>
 	<script>
 		$(document).ready(function() {
 			$("#owl-demo").owlCarousel({

@@ -280,7 +280,7 @@ header .contact_links > a:hover span {
 	line-height: 44px;
 }
 .lang_btn {
-	border: 3px solid #fff;
+	border: 1px solid #fff;
 	cursor: pointer;
 }
 .lang_drop .dropdown-menu {
@@ -318,6 +318,7 @@ ul.dropdown-menu > li > a {
 	width: 26px;
 	border: 1px solid #ccc;
 	height: 18px;
+	margin-bottom: 10px;
 }
 .upper_head .dropdown-menu > li:hover img {
 	outline: 2px solid #6fb919;
@@ -1211,13 +1212,13 @@ aside.left_bar .service a {
 	color: #8c8c8c;
 	font-size: 13px;
 	line-height: 1.6;
-	font-family: 'PT Sans', sans-serif;
+	/*font-family: 'PT Sans', sans-serif;*/
 }
 .about span,
 .about ul li span {
 	font-family: 'Proxima Nova Black';
-	font-family: 'PT Sans', sans-serif;
-	font-weight: bold;
+	/*font-family: 'PT Sans', sans-serif;
+	font-weight: bold;*/
 }
 .about h2 {
 	font-size: 26px;
@@ -1777,6 +1778,7 @@ span.r_fb {
 	padding-left: 3px;
 	max-width: 453px;
 	margin: 0 auto;
+	padding-bottom: 20px;
 }
 .excurs_form label.rd {
 	margin-right: 20px;
@@ -1842,13 +1844,21 @@ fieldset .half:first-child {
 	float: right;
 	overflow: hidden;
 }
-.add_people > div:first-of-type {
+#childrens {
+	display: none;
+}
+#humans > .clearfix,
+#childrens > .clearfix {
 	border: 1px solid #d2d2d2;
 	background: #f6f6f6;
 	padding: 15px;
+	margin-bottom: 15px;
 }
-.add_people .arrow_new {
-	background: url(../images/caret.png) no-repeat 100% 50% #fff;
+.add_people_title {
+	color: #1e1e1e;
+	font-size: 16px;
+	font-weight: bold;
+	margin: 10px 0;
 }
 .arrow_new select,
 .arrow_new input {

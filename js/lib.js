@@ -124,9 +124,6 @@ $(function() {
       for (i = 0; i < coin-1; i++) {
         bornBlock.find('.child_data_born:eq(0)').clone().appendTo(bornBlock).attr("id", "child-" + ++num);
       }
-      
-
-      //alert(a);
     }
   });
   men.add(children).click(function() {
@@ -134,6 +131,48 @@ $(function() {
       + (children.filter(':checked').val() || ''));
   });
 });
+
+
+/*   Добавление количества человек в форму booking   */
+
+var changeHumans = $('#change_humans');
+var humans = $('#humans');
+changeHumans.change(function(){
+	var num = +changeHumans.val();
+	var clearf = humans.find('.clearfix');
+	clearf.not('.clearfix:eq(0)').remove();
+	$('input[name = "date_born"]').val('');
+	for (i  = 1; i < num; i++) {
+		var count = i;
+		humans.find('.clearfix:eq(0)').clone().appendTo(humans).attr("id", "human-" + ++count);
+	}
+});
+
+var changeChildrens = $('#change_childrens');
+var childrens = $('#childrens');
+changeChildrens.change(function(){
+	var num = +changeChildrens.val();
+	var clearf = childrens.find('.clearfix');
+	childrens.css('display', 'block');
+	if (num === 0) {
+		childrens.css('display', 'none');
+	}	
+	clearf.not('.clearfix:eq(0)').remove();
+	$('input[name = "date_born"]').val('');
+	for (i  = 1; i < num; i++) {
+		var count = i;
+		humans.find('.clearfix:eq(0)').clone().appendTo(childrens).attr("id", "child-" + ++count);
+	}
+});
+
+/*  Маска даты  */
+if ($('.add_people')) {
+	$(function(){
+		$('input[name = "date_born"]').mask("99/99/9999");
+	});
+}
+
+
 
 /*   Акордион  */
 $(function() {
@@ -269,48 +308,3 @@ if (document.querySelector('input[name^="date-time"]')) {
 		    }
 	});});
 };
-
-
-
-
-$(function() {
-
-  $('input[name="datefilter"]').daterangepicker({
-      autoUpdateInput: false,
-      singleDatePicker: true,
-      autoApply: true,
-      locale: {
-             "format": "DD. MM. YYYY  -  HH:mm ",
-             "daysOfWeek": [
-                 "Вс",
-                 "Пн",
-                 "Вт",
-                 "Ср",
-                 "Чт",
-                 "Пт",
-                 "Сб"
-             ],
-             "monthNames": [
-                 "Январь",
-                 "Февраль",
-                 "Март",
-                 "Апрель",
-                 "Май",
-                 "Июнь",
-                 "Июль",
-                 "Август",
-                 "Сентябрь",
-                 "Октябрь",
-                 "Ноябрь",
-                 "Декабрь"
-             ],
-             "firstDay": 1
-         }
-  });
-  $('input[name="datefilter"]').on('apply.daterangepicker', function(ev, picker) {
-      $(this).val(picker.startDate.format('MM.DD.YYYY'));
-  });
-  $('input[name="datefilter"]').on('cancel.daterangepicker', function(ev, picker) {
-      $(this).val('');
-  });
-});
