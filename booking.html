@@ -147,7 +147,7 @@
 
 	<main>
 		<div id="wrapper">
-			<section class="section">
+			<form action="saled.html" class="section">
 				<div class="container">
 					<div class="row">
 						<div class="col-lg-12">
@@ -184,8 +184,8 @@
 											<img src="images/img-4.jpg" alt="">
 										</div>
 										<div class="buttons">
-											<button class="prev">Назад</button>
-											<button class="next">Вперед</button>
+											<button type="button" class="prev">Назад</button>
+											<button type="button" class="next">Вперед</button>
 										</div>
 									</div>
 									<div class="social_round">
@@ -240,7 +240,7 @@
 
 							<div class="excurs_form">
 								<h3>Введите данные</h3>
-								<form action="saled.html" id="excurs_form">
+								<div id="excurs_form">
 									<label class="rd">
 										<span>mr</span>
 										<input class="radio" type="radio" name="radio-test" checked>
@@ -251,26 +251,21 @@
 										<input class="radio" type="radio" name="radio-test">
 										<span class="radio-custom"></span>
 									</label>
-								
 									<fieldset>
 										<input class="half form-control" type="text" placeholder="Фамилия">
-										<input class="half form-control" type="text" placeholder="Имя" required
->
+										<input class="half form-control" type="text" placeholder="Имя" required>
 									</fieldset>
 									<input type="text" class="form-control" placeholder="Улица, номер дома">
 									<fieldset>
-										<input class="half form-control" type="text" placeholder="Индекс" required
->
-										<input class="half form-control" type="text" placeholder="Город" required
->
+										<input class="half form-control" type="text" placeholder="Индекс" required>
+										<input class="half form-control" type="text" placeholder="Город" required>
 									</fieldset>
 									<fieldset>
 										<input class="half form-control" type="tel" pattern="[0-9]{5,10}" placeholder="Мобильный номер">
 										<input class="half form-control" type="tel" pattern="[0-9]{5,10}" placeholder="Домашний номер" >
 									</fieldset>
 									<fieldset>
-										<input class="half form-control" type="text" placeholder="Страна" required
->
+										<input class="half form-control" type="text" placeholder="Страна" required>
 										<input class="half form-control" type="email" placeholder="Емаил">
 									</fieldset>
 									<textarea class="form-control" name=" "  placeholder="Дополнительная информация"></textarea>
@@ -309,7 +304,7 @@
 											</select>
 										</div>
 									</fieldset>
-								</form>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -346,12 +341,11 @@
 						</div>
 
 						<div class="offer">
-							<input type='submit' form='excurs_form' class="btn_custom btn_offer" value="Забронировать">
+							<input type='submit' class="btn_custom btn_offer" value="Забронировать">
 						</div>
 					</div>
-					<div class="clearfix"></div>
 				</div>
-			</section>
+			</form>
 		</div>
 	</main>
 

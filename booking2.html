@@ -148,345 +148,352 @@
 
 	<main>
 		<div id="wrapper">
+			<form action="saled.html">
+				<section class="section">
+					<div class="container">
 
-			<section class="section">
-				<div class="container">
-
-					<div class="row">
-						<div class="col-lg-12">
-							<h1>Бронирование</h1>
+						<div class="row">
+							<div class="col-lg-12">
+								<h1>Бронирование</h1>
+							</div>
 						</div>
-					</div>
 
-					<div class="clearfix booking_content">
+						<div class="clearfix booking_content">
 
-						<!--  МАЛЕНЬКИЙ СЛАЙДЕР -->
+							<!--  МАЛЕНЬКИЙ СЛАЙДЕР -->
 
-						<div class="col-lg-4 excursion_column">
-							<div class="gallery">
-								<div class="small_slaider_block" >
-									<div class="relative">
-										<h2>
-											Экскурсия 1
-											<i class="fa fa-bath" aria-hidden="true"></i>
-										</h2>
-										<span>
-											ул. Горького 15 А, Колумбия, США
+							<div class="col-lg-4 excursion_column">
+								<div class="gallery">
+									<div class="small_slaider_block" >
+										<div class="relative">
+											<h2>
+												Экскурсия 1
+												<i class="fa fa-bath" aria-hidden="true"></i>
+											</h2>
+											<span>
+												ул. Горького 15 А, Колумбия, США
+											</span>
+											<span class="stars">
+												<i class="fa fa-star green"></i>
+												<i class="fa fa-star green"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+											</span>
+											<span class="print"><i class="fa fa-print" aria-hidden="true"></i></span>
+										</div>
+										<div class="relative">
+											<div class="photos">
+												<img src="images/img-1.jpg" alt="">
+												<img src="images/img-2.jpg" alt="">
+												<img src="images/img-3.jpg" alt="">
+												<img src="images/img-4.jpg" alt="">
+											</div>
+											<div class="buttons">
+												<button class="prev">Назад</button>
+												<button class="next">Вперед</button>
+											</div>
+										</div>
+										<div class="social_round">
+											<span class="r_g"><i class="fa fa-google-plus"></i></span>
+											<span class="r_twit"><i class="fa fa-twitter"></i></span>
+											<span class="r_ok"><i class="fa fa-odnoklassniki"></i></span>
+											<span class="r_fb"><i class="fa fa-facebook"></i></span>
+										</div>
+									</div>
+
+									<div class="small_galery">
+										<div class="showed">
+											<img src="images/img-1.jpg" alt="" data-num="0">
+										</div>
+										<div>
+											<img src="images/img-2.jpg" alt="" data-num="1">
+										</div >
+										<div>
+											<img src="images/img-3.jpg" alt="" data-num="2">
+										</div>
+										<div>
+											<img src="images/img-4.jpg" alt="" data-num="3">
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-lg-4 col-md-5">
+
+								<!--  ДОП ИНФО -->
+
+								<div class="more_info">
+									<h3>Заголовок описания</h3>
+									<span>Описание экскурсии</span>
+									<p>7 ночей проживания, 2-x разовое питание, 20 лечебных процедур, 2 осмотра доктора, питьевой курс</p>
+									<span>2-й взрослый</span>
+									<p>7 ночей проживания, 2-x разовое питание, 20 лечебных процедур, 2 осмотра доктора, питьевой курс</p>
+									<div class="data_exc">
+										<span >
+										Дата<br>экскурсии:
 										</span>
-										<span class="stars">
-											<i class="fa fa-star green"></i>
-											<i class="fa fa-star green"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-											<i class="fa fa-star"></i>
-										</span>
-										<span class="print"><i class="fa fa-print" aria-hidden="true"></i></span>
+										<data value=" ">
+										07.11.2016 -14.11.2016<br>(7 ночей)
+										</data>
 									</div>
-									<div class="relative">
-										<div class="photos">
-											<img src="images/img-1.jpg" alt="">
-											<img src="images/img-2.jpg" alt="">
-											<img src="images/img-3.jpg" alt="">
-											<img src="images/img-4.jpg" alt="">
-										</div>
-										<div class="buttons">
-											<button class="prev">Назад</button>
-											<button class="next">Вперед</button>
+									<div class="price_block">
+										<span class="">Итоговая цена:</span>
+										<span class="price">220 &euro;</span>
+									</div>
+									<div class="clearfix">
+										<label for="humans_change">Кол-во взрослых</label>
+										<div class="arrow num">
+											<select  class="form-control half" id="humans_change">
+												<option value="1">1</option>
+												<option value="2">2</option>
+												<option value="3">3</option>
+												<option value="4">4</option>
+												<option value="5">5</option>
+											</select>
 										</div>
 									</div>
-									<div class="social_round">
-										<span class="r_g"><i class="fa fa-google-plus"></i></span>
-										<span class="r_twit"><i class="fa fa-twitter"></i></span>
-										<span class="r_ok"><i class="fa fa-odnoklassniki"></i></span>
-										<span class="r_fb"><i class="fa fa-facebook"></i></span>
+									<div class="clearfix">
+										<label for="children_change">Кол-во детей</label>
+										<div class="arrow num">
+											<select  class="form-control half" id="children_change">
+												<option value="1">1</option>
+												<option value="2">2</option>
+												<option value="3">3</option>
+												<option value="4">4</option>
+												<option value="5">5</option>
+											</select>
+										</div>
 									</div>
 								</div>
+							</div>
 
-								<div class="small_galery">
-									<div class="showed">
-										<img src="images/img-1.jpg" alt="" data-num="0">
+
+							<div class="col-lg-4 col-md-7">
+
+								<!-- Дополнительные услуги-->
+
+								<div class="add_service more_info">
+									<h3>Дополнительные услуги</h3>
+									<div class ="service">
+										<span>Бесплатные услуги</span>
+										<label>
+											<input class="checkbox" type="checkbox" name="checkbox-test">
+											<span class="checkbox-custom"></span>
+											<span class="label">Услуга 1</span>
+										</label>
+										<label>
+											<input class="checkbox" type="checkbox" name="checkbox-test">
+											<span class="checkbox-custom"></span>
+											<span class="label">Услуга 2</span>
+										</label>
+										<label>
+											<input class="checkbox" type="checkbox" name="checkbox-test">
+											<span class="checkbox-custom"></span>
+											<span class="label">Услуга 3</span>
+										</label>
+										<label>
+											<input class="checkbox" type="checkbox" name="checkbox-test">
+											<span class="checkbox-custom"></span>
+											<span class="label">Услуга 4</span>
+										</label>
 									</div>
-									<div>
-										<img src="images/img-2.jpg" alt="" data-num="1">
-									</div >
-									<div>
-										<img src="images/img-3.jpg" alt="" data-num="2">
-									</div>
-									<div>
-										<img src="images/img-4.jpg" alt="" data-num="3">
+									<div class ="service">
+										<span>Платные услуги</span>
+										<label>
+											<input class="checkbox" type="checkbox" name="checkbox-test">
+											<span class="checkbox-custom"></span>
+											<span class="label">Услуга 1</span>
+										</label>
+										<label>
+											<input class="checkbox" type="checkbox" name="checkbox-test">
+											<span class="checkbox-custom"></span>
+											<span class="label">Услуга 2</span>
+										</label>
+										<label>
+											<input class="checkbox" type="checkbox" name="checkbox-test">
+											<span class="checkbox-custom"></span>
+											<span class="label">Услуга 3</span>
+										</label>
+										<label>
+											<input class="checkbox" type="checkbox" name="checkbox-test">
+											<span class="checkbox-custom"></span>
+											<span class="label">Услуга 4</span>
+										</label>
 									</div>
 								</div>
 							</div>
 						</div>
 
-						<div class="col-lg-4 col-md-5">
+					</div>
+				</section>
+				<section class="section">
+					<div class="container">
+						<div class="clearfix booking_content">
+							<div class="col-md-6">
+								<div class="excurs_form">
+									<h3>Введите данные</h3>
+									<div>
+										<label class="rd">
+											<span>mr</span>
+											<input class="radio" type="radio" name="radio-test" checked>
+											<span class="radio-custom"></span>
+										</label>
+										<label class="rd">
+											<span>mrs</span>
+											<input class="radio" type="radio" name="radio-test">
+											<span class="radio-custom"></span>
+										</label>
+									
+										<fieldset>
+											<input class="half form-control" type="text" placeholder="Фамилия">
+											<input class="half form-control" type="text" placeholder="Имя">
+										</fieldset>
+										<input type="text" class="form-control" placeholder="Улица, номер дома">
+										<fieldset>
+											<input class="half form-control" type="text" placeholder="Индекс">
+											<input class="half form-control" type="text" placeholder="Город">
+										</fieldset>
+										<fieldset>
+											<input class="half form-control" type="tel" pattern="[0-9]{5,10}" placeholder="Мобильный номер">
+											<input class="half form-control" type="tel" pattern="[0-9]{5,10}" placeholder="Домашний номер">
+										</fieldset>
+										<fieldset>
+											<input class="half form-control" type="text" placeholder="Страна">
+											<input class="half form-control" type="email" placeholder="Емаил">
+										</fieldset>
+										<textarea class="form-control" name=" "  placeholder="Дополнительная информация"></textarea>
+										<fieldset>
+											<label for="num">Укажите кол-во отдыхающих</label>
+											<div class="arrow num">
 
-							<!--  ДОП ИНФО -->
+												<select  class="form-control half" id="num">
+													<option value="">1</option>
+													<option value="">2</option>
+													<option value="">3</option>
+													<option value="">4</option>
+													<option value="">5</option>
+												</select>
 
-							<div class="more_info">
-								<h3>Заголовок описания</h3>
-								<span>Описание экскурсии</span>
-								<p>7 ночей проживания, 2-x разовое питание, 20 лечебных процедур, 2 осмотра доктора, питьевой курс</p>
-								<span>2-й взрослый</span>
-								<p>7 ночей проживания, 2-x разовое питание, 20 лечебных процедур, 2 осмотра доктора, питьевой курс</p>
-								<div class="data_exc">
-									<span >
-									Дата<br>экскурсии:
-									</span>
-									<data value=" ">
-									07.11.2016 -14.11.2016<br>(7 ночей)
-									</data>
-								</div>
-								<div class="price_block">
-									<span class="">Итоговая цена:</span>
-									<span class="price">220 &euro;</span>
+											</div>
+										</fieldset>
+										<fieldset>
+
+											<div class="arrow">
+												<select   class="half form-control">
+													<option selected>Трансфер</option>
+													<option value="">Текст 1</option>
+													<option value="">Текст 2</option>
+													<option value="">Текст 3</option>
+												</select>
+											</div>
+
+											<div class="arrow">
+												<select   class="half form-control">
+													<option selected>Страховка</option>
+													<option value="">Текст 1</option>
+													<option value="">Текст 2</option>
+													<option value="">Текст 3</option>
+												</select>
+											</div>
+										</fieldset>
+										<fieldset>
+											<label><span class="underline">Добавить человека</span>
+												<input class="checkbox" type="checkbox" name="checkbox-test" checked>
+												<span class="checkbox-custom"></span>
+												<span class="label">Использование данных</span>
+											</label>
+										</fieldset>
+									</div>
 								</div>
 							</div>
-						</div>
+							<div class="col-md-6">
+								<div class="excurs_form">
+									<h3>Введите данные</h3>
+									<div>
+										<label class="rd">
+											<span>mr</span>
+											<input class="radio" type="radio" name="radio-test" checked>
+											<span class="radio-custom"></span>
+										</label>
+										<label class="rd">
+											<span>mrs</span>
+											<input class="radio" type="radio" name="radio-test">
+											<span class="radio-custom"></span>
+										</label>
+									
+										<fieldset>
+											<input class="half form-control" type="text" placeholder="Фамилия">
+											<input class="half form-control" type="text" placeholder="Имя">
+										</fieldset>
+										<input type="text" class="form-control" placeholder="Улица, номер дома">
+										<fieldset>
+											<input class="half form-control" type="text" placeholder="Индекс">
+											<input class="half form-control" type="text" placeholder="Город">
+										</fieldset>
+										<fieldset>
+											<input class="half form-control" type="tel" pattern="[0-9]{5,10}" placeholder="Мобильный номер">
+											<input class="half form-control" type="tel" pattern="[0-9]{5,10}" placeholder="Домашний номер">
+										</fieldset>
+										<fieldset>
+											<input class="half form-control" type="text" placeholder="Страна">
+											<input class="half form-control" type="email" placeholder="Емаил">
+										</fieldset>
+										<textarea class="form-control" name=" "  placeholder="Дополнительная информация"></textarea>
+										<fieldset>
+											<label for="num2">Укажите кол-во отдыхающих</label>
+											<div class="arrow num">
+
+												<select  class="form-control half" id="num2">
+													<option value="">1</option>
+													<option value="">2</option>
+													<option value="">3</option>
+													<option value="">4</option>
+													<option value="">5</option>
+												</select>
+
+											</div>
 
 
-						<div class="col-lg-4 col-md-7">
+										</fieldset>
+										<fieldset>
 
-							<!-- Дополнительные услуги-->
+											<div class="arrow">
+												<select   class="half form-control">
+													<option selected>Трансфер</option>
+													<option value="">Текст 1</option>
+													<option value="">Текст 2</option>
+													<option value="">Текст 3</option>
+												</select>
+											</div>
 
-							<div class="add_service more_info">
-								<h3>Дополнительные услуги</h3>
-								<div class ="service">
-									<span>Бесплатные услуги</span>
-									<label>
-										<input class="checkbox" type="checkbox" name="checkbox-test">
-										<span class="checkbox-custom"></span>
-										<span class="label">Услуга 1</span>
-									</label>
-									<label>
-										<input class="checkbox" type="checkbox" name="checkbox-test">
-										<span class="checkbox-custom"></span>
-										<span class="label">Услуга 2</span>
-									</label>
-									<label>
-										<input class="checkbox" type="checkbox" name="checkbox-test">
-										<span class="checkbox-custom"></span>
-										<span class="label">Услуга 3</span>
-									</label>
-									<label>
-										<input class="checkbox" type="checkbox" name="checkbox-test">
-										<span class="checkbox-custom"></span>
-										<span class="label">Услуга 4</span>
-									</label>
+											<div class="arrow">
+												<select   class="half form-control">
+													<option selected>Страховка</option>
+													<option value="">Текст 1</option>
+													<option value="">Текст 2</option>
+													<option value="">Текст 3</option>
+												</select>
+											</div>
+										</fieldset>
+										<fieldset>
+
+											<label><span class="underline">Добавить человека</span>
+												<input class="checkbox" type="checkbox" name="checkbox-test" checked>
+												<span class="checkbox-custom"></span>
+												<span class="label">Использование данных</span>
+											</label>
+										</fieldset>
+									</div>
 								</div>
-								<div class ="service">
-									<span>Платные услуги</span>
-									<label>
-										<input class="checkbox" type="checkbox" name="checkbox-test">
-										<span class="checkbox-custom"></span>
-										<span class="label">Услуга 1</span>
-									</label>
-									<label>
-										<input class="checkbox" type="checkbox" name="checkbox-test">
-										<span class="checkbox-custom"></span>
-										<span class="label">Услуга 2</span>
-									</label>
-									<label>
-										<input class="checkbox" type="checkbox" name="checkbox-test">
-										<span class="checkbox-custom"></span>
-										<span class="label">Услуга 3</span>
-									</label>
-									<label>
-										<input class="checkbox" type="checkbox" name="checkbox-test">
-										<span class="checkbox-custom"></span>
-										<span class="label">Услуга 4</span>
-									</label>
-								</div>
-								<a href="saled.html" class="btn_custom btn_offer">Забронировать</a>
+							</div>
+							<div class="col-xs-12 text-center booking_offer">
+								<button type="submit" class="btn_custom btn_offer">Забронировать</button>
 							</div>
 						</div>
 					</div>
-
-				</div>
-			</section>
-
-			<section class="section">
-				<div class="container">
-					<div class="clearfix booking_content">
-						<div class="col-md-6 border-right">
-
-<!-- ==================== НИЖНИЙ БЛОК ФОРМЫ 1 =====================-->
-
-							<div class="excurs_form">
-								<h3>Введите данные</h3>
-								<form action="saled.html">
-									<label class="rd">
-										<span>mr</span>
-										<input class="radio" type="radio" name="radio-test" checked>
-										<span class="radio-custom"></span>
-									</label>
-									<label class="rd">
-										<span>mrs</span>
-										<input class="radio" type="radio" name="radio-test">
-										<span class="radio-custom"></span>
-									</label>
-								
-									<fieldset>
-										<input class="half form-control" type="text" placeholder="Фамилия">
-										<input class="half form-control" type="text" placeholder="Имя">
-									</fieldset>
-									<input type="text" class="form-control" placeholder="Улица, номер дома">
-									<fieldset>
-										<input class="half form-control" type="text" placeholder="Индекс">
-										<input class="half form-control" type="text" placeholder="Город">
-									</fieldset>
-									<fieldset>
-										<input class="half form-control" type="tel" pattern="[0-9]{5,10}" placeholder="Мобильный номер">
-										<input class="half form-control" type="tel" pattern="[0-9]{5,10}" placeholder="Домашний номер">
-									</fieldset>
-									<fieldset>
-										<input class="half form-control" type="text" placeholder="Страна">
-										<input class="half form-control" type="email" placeholder="Емаил">
-									</fieldset>
-									<textarea class="form-control" name=" "  placeholder="Дополнительная информация"></textarea>
-									<fieldset>
-										<label for="num">Укажите кол-во отдыхающих</label>
-										<div class="arrow num">
-
-											<select  class="form-control half" id="num">
-												<option value="">1</option>
-												<option value="">2</option>
-												<option value="">3</option>
-												<option value="">4</option>
-												<option value="">5</option>
-											</select>
-
-										</div>
-
-
-									</fieldset>
-									<fieldset>
-
-										<div class="arrow">
-											<select   class="half form-control">
-												<option selected>Трансфер</option>
-												<option value="">Текст 1</option>
-												<option value="">Текст 2</option>
-												<option value="">Текст 3</option>
-											</select>
-										</div>
-
-										<div class="arrow">
-											<select   class="half form-control">
-												<option selected>Страховка</option>
-												<option value="">Текст 1</option>
-												<option value="">Текст 2</option>
-												<option value="">Текст 3</option>
-											</select>
-										</div>
-									</fieldset>
-									<fieldset>
-
-									<label><span class="underline">Добавить человека</span>
-										<input class="checkbox" type="checkbox" name="checkbox-test" checked>
-										<span class="checkbox-custom"></span>
-										<span class="label">Использование данных</span>
-									</label>
-										
-
-									</fieldset>
-									<button type="submit" class="btn_custom btn_offer">Забронировать</button>
-
-								</form>
-							</div>
-
-						</div>
-						<div class="col-md-6">
-
-<!-- ==================== НИЖНИЙ БЛОК ФОРМЫ 2 =====================-->
-
-							<div class="excurs_form">
-								<h3>Введите данные</h3>
-								<form action="saled.html">
-									<label class="rd">
-										<span>mr</span>
-										<input class="radio" type="radio" name="radio-test" checked>
-										<span class="radio-custom"></span>
-									</label>
-									<label class="rd">
-										<span>mrs</span>
-										<input class="radio" type="radio" name="radio-test">
-										<span class="radio-custom"></span>
-									</label>
-								
-									<fieldset>
-										<input class="half form-control" type="text" placeholder="Фамилия">
-										<input class="half form-control" type="text" placeholder="Имя">
-									</fieldset>
-									<input type="text" class="form-control" placeholder="Улица, номер дома">
-									<fieldset>
-										<input class="half form-control" type="text" placeholder="Индекс">
-										<input class="half form-control" type="text" placeholder="Город">
-									</fieldset>
-									<fieldset>
-										<input class="half form-control" type="tel" pattern="[0-9]{5,10}" placeholder="Мобильный номер">
-										<input class="half form-control" type="tel" pattern="[0-9]{5,10}" placeholder="Домашний номер">
-									</fieldset>
-									<fieldset>
-										<input class="half form-control" type="text" placeholder="Страна">
-										<input class="half form-control" type="email" placeholder="Емаил">
-									</fieldset>
-									<textarea class="form-control" name=" "  placeholder="Дополнительная информация"></textarea>
-									<fieldset>
-										<label for="num2">Укажите кол-во отдыхающих</label>
-										<div class="arrow num">
-
-											<select  class="form-control half" id="num2">
-												<option value="">1</option>
-												<option value="">2</option>
-												<option value="">3</option>
-												<option value="">4</option>
-												<option value="">5</option>
-											</select>
-
-										</div>
-
-
-									</fieldset>
-									<fieldset>
-
-										<div class="arrow">
-											<select   class="half form-control">
-												<option selected>Трансфер</option>
-												<option value="">Текст 1</option>
-												<option value="">Текст 2</option>
-												<option value="">Текст 3</option>
-											</select>
-										</div>
-
-										<div class="arrow">
-											<select   class="half form-control">
-												<option selected>Страховка</option>
-												<option value="">Текст 1</option>
-												<option value="">Текст 2</option>
-												<option value="">Текст 3</option>
-											</select>
-										</div>
-									</fieldset>
-									<fieldset>
-
-									<label><span class="underline">Добавить человека</span>
-										<input class="checkbox" type="checkbox" name="checkbox-test" checked>
-										<span class="checkbox-custom"></span>
-										<span class="label">Использование данных</span>
-									</label>
-										
-
-									</fieldset>
-									<button type="submit" class="btn_custom btn_offer">Забронировать</button>
-
-								</form>
-							</div>
-
-						</div>
-					</div>
-				</div>
-			</section>
+				</section>
+			</form>
 	
 
 	<!-- ==================== 1 СЕКЦИЯ ЧЕКБОКСОВ =====================-->
@@ -1118,6 +1125,7 @@
 	<script type="text/javascript" src="js/daterangepicker.js"></script>
 	<script src="js/owl.carousel.js"></script>
 	<script src="js/lib.js"></script>
+	<script src="js/jquery.maskedinput.min.js"></script>
 	<script>
 		$(document).ready(function() {
 			$("#owl-demo").owlCarousel({
