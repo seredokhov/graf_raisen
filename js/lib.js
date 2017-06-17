@@ -146,6 +146,9 @@ changeHumans.change(function(){
 		var count = i;
 		humans.find('.clearfix:eq(0)').clone().appendTo(humans).attr("id", "human-" + ++count);
 	}
+	$(function(){
+		$('input[name = "date_born"]').mask("99/99/9999");
+	});
 });
 
 var changeChildrens = $('#change_childrens');
@@ -163,6 +166,9 @@ changeChildrens.change(function(){
 		var count = i;
 		humans.find('.clearfix:eq(0)').clone().appendTo(childrens).attr("id", "child-" + ++count);
 	}
+	$(function(){
+		$('input[name = "date_born"]').mask("99/99/9999");
+	});
 });
 
 /*  Маска даты  */
