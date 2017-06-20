@@ -2245,11 +2245,8 @@ ul.sort li.active a:after {
 }
 .thumbs_block .thumb,
 .tour_section .thumb {
-	min-height: 410px;
+	min-height: 390px;
 	margin: 20px auto;
-}
-.tour_section .thumb {
-	min-height: 360px;
 }
 .thumbs_block .thumb img,
 .tour_section .thumb img {

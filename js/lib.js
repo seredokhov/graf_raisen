@@ -309,4 +309,3 @@ if (document.querySelector('input[name^="date-time"]')) {
 		data.timePicker24Hour = true;
 		$('input[name^="date-time"]').daterangepicker(data);});
 };
-
