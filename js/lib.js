@@ -1,3 +1,15 @@
+/*  Слайдер   */
+
+$(function() {
+	$("#owl-demo").owlCarousel({
+		navigation : true,
+		navigationText : ["",""],
+		slideSpeed : 300,
+		paginationSpeed : 400,
+		singleItem:true
+	});
+});
+
 /*   Смена классов    */
 $(function() {
 	$("#side").click(function() {
@@ -102,7 +114,6 @@ $(function() {
 
 /* Чекбоксы выпадающего меню  (добавить клонирование селектов) */
 
-
 $(function() {
   var bornBlock = $('.children_born_block');
   var target = $('#human')
@@ -135,52 +146,73 @@ $(function() {
 
 /*   Добавление количества человек в форму booking   */
 
-var changeHumans = $('#change_humans');
-var humans = $('#humans');
-changeHumans.change(function(){
-	var num = +changeHumans.val();
-	var clearf = humans.find('.clearfix');
-	clearf.not('.clearfix:eq(0)').remove();
-	$('input[name = "date_born"]').val('');
-	for (i  = 1; i < num; i++) {
-		var count = i;
-		humans.find('.clearfix:eq(0)').clone().appendTo(humans).attr("id", "human-" + ++count);
-	}
-	$(function(){
-		$('input[name = "date_born"]').mask("99/99/9999");
+$(function() {
+	var changeHumans = $('#change_humans');
+	var humans = $('#humans');
+	var form = humans.find('.clearfix:eq(0)');
+
+	changeHumans.change(function(){
+		var num = +changeHumans.val();
+		var clearf = humans.find('.clearfix');
+
+		clearf.not('.clearfix:eq(0)').remove();
+		$('input[name = "date_born"]').val('');
+
+		for (i  = 1; i < num; i++) {
+			var count = i;
+			form.clone().appendTo(humans).attr("id", "human-" + ++count);
+		}
+
+		$(function(){
+			$('input[name = "date_born"]').mask("99/99/9999");
+		});
+	});
+
+	var changeChildrens = $('#change_childrens');
+	var childrens = $('#childrens');
+
+	changeChildrens.change(function(){
+		var num = +changeChildrens.val();
+		var clearf = childrens.find('.clearfix');
+		childrens.css('display', 'block');
+
+		if (num === 0) {
+			childrens.css('display', 'none');
+		}
+
+		clearf.remove();
+		$('input[name = "date_born"]').val('');
+
+		for (i  = 1; i <= num; i++) {
+			var count = i;
+			form.clone().appendTo(childrens).attr("id", "child-" + count);
+		}
+
+		$(function(){
+			$('input[name = "date_born"]').mask("99/99/9999");
+		});
 	});
 });
 
-var changeChildrens = $('#change_childrens');
-var childrens = $('#childrens');
-changeChildrens.change(function(){
-	var num = +changeChildrens.val();
-	var clearf = childrens.find('.clearfix');
-	childrens.css('display', 'block');
-	if (num === 0) {
-		childrens.css('display', 'none');
-	}	
-	clearf.not('.clearfix:eq(0)').remove();
-	$('input[name = "date_born"]').val('');
-	for (i  = 1; i < num; i++) {
-		var count = i;
-		humans.find('.clearfix:eq(0)').clone().appendTo(childrens).attr("id", "child-" + ++count);
+
+//   Маска даты
+$(function() {
+	if ($('.add_people')) {
+		$(function(){
+			$('input[name = "date_born"]').mask("99/99/9999");
+		});
 	}
-	$(function(){
-		$('input[name = "date_born"]').mask("99/99/9999");
-	});
 });
 
-/*  Маска даты  */
-if ($('.add_people')) {
-	$(function(){
-		$('input[name = "date_born"]').mask("99/99/9999");
-	});
-}
+//   Уточнение адреса 
+$(function() {
+	$('#humans, #childrens').on('change','.extract input' , function(e){
+		$(this).parent().parent().siblings('.extract_location').toggleClass('hidden');
+	})
+})
 
 
-
-/*   Акордион  */
+//	Акордион
 $(function() {
 	var acord = $('.left_bar.slide');
 	acord.click(function(){
@@ -189,57 +221,19 @@ $(function() {
 	})
 });
 
-/*   Календарь   */
 
-if (document.querySelector('input[name="daterange"]')) {
-	$(function() {
-	$('input[name="daterange"]').daterangepicker({
-	"buttonClasses": "btn btn-md",
-	"applyClass": "btn-primary",
-	"applyClass": "apply_btn",
-	 "locale": {
-	        "format": "DD.MM.YY",
-	        "separator": " - ",
-	        "applyLabel": "Применить",
-	        "cancelLabel": "Отмена",
-	        "fromLabel": "От",
-	        "toLabel": "До",
-	        "customRangeLabel": "Свой",
-	        "daysOfWeek": [
-	            "Вс",
-	            "Пн",
-	            "Вт",
-	            "Ср",
-	            "Чт",
-	            "Пт",
-	            "Сб"
-	        ],
-	        "monthNames": [
-	            "Январь",
-	            "Февраль",
-	            "Март",
-	            "Апрель",
-	            "Май",
-	            "Июнь",
-	            "Июль",
-	            "Август",
-	            "Сентябрь",
-	            "Октябрь",
-	            "Ноябрь",
-	            "Декабрь"
-	        ],
-	        "firstDay": 1
-	    }
-	});});
-}
+// Значение поля выбора даты filter1 по умолчанию (если нужно)
+// @param {string} x - значение
+/*
+$(function(){
+	$('.free_time').find('input').val(x);
+})
+*/
 
-if (document.querySelector('input[name="date"]')) {
-	$(function() {
-	$('input[name="date"]').daterangepicker({
-		"singleDatePicker": true,
-		"showDropdowns": true,
-		 "autoApply": true,
-		"startDate": "01. 01. 2000",
+
+/*   Календари   */
+
+var calendarData = {
 		 "locale": {
 		        "format": "DD. MM. YYYY",
 		        "separator": " - ",
@@ -273,44 +267,46 @@ if (document.querySelector('input[name="date"]')) {
 		        ],
 		        "firstDay": 1
 		    }
-	});});
+	}
+
+if (document.querySelector('input[name="daterange"]')) {
+	$(function() {
+		var data = calendarData;
+		data.buttonClasses = "btn btn-md";
+		data.applyClass = "btn-primary";
+		data.applyClass = "apply_btn";
+		data.locale.format = "DD. MM. YY";
+	$('input[name="daterange"]').daterangepicker(data);});
+}
+if (document.querySelector('input[name="custom_daterange"]')) {
+	$(function() {
+		var data = calendarData;
+		data.buttonClasses = "btn btn-md";
+		data.applyClass = "btn-primary";
+		data.applyClass = "apply_btn";
+		data.opens = "left";
+		data.locale.format = "DD. MM. YYYY";
+	$('input[name="custom_daterange"]').daterangepicker(data);});
+}
+
+if (document.querySelector('input[name="date"]')) {
+	$(function() {
+		var data = calendarData;
+		data.singleDatePicker = true;
+		data.showDropdowns = true;
+		data.autoApply = true;
+		data.startDate = "01. 01. 2000";
+		$('input[name="date"]').daterangepicker(data);});
 };
 
 if (document.querySelector('input[name^="date-time"]')) {
 	$(function() {
-	$('input[name^="date-time"]').daterangepicker({
-		"singleDatePicker": true,
-		"showDropdowns": true,
-		 "timePicker": true,
-		 "applyClass": "apply_btn",
-		 "timePicker24Hour": true,
-		 "locale": {
-		        "format": "DD. MM. YYYY  -  HH:mm ",
-		        "separator": " - ",
-		        "daysOfWeek": [
-		            "Вс",
-		            "Пн",
-		            "Вт",
-		            "Ср",
-		            "Чт",
-		            "Пт",
-		            "Сб"
-		        ],
-		        "monthNames": [
-		            "Январь",
-		            "Февраль",
-		            "Март",
-		            "Апрель",
-		            "Май",
-		            "Июнь",
-		            "Июль",
-		            "Август",
-		            "Сентябрь",
-		            "Октябрь",
-		            "Ноябрь",
-		            "Декабрь"
-		        ],
-		        "firstDay": 1
-		    }
-	});});
+		var data = calendarData;
+		data.singleDatePicker = true;
+		data.showDropdowns = true;
+		data.timePicker = true;
+		data.applyClass = "apply_btn";
+		data.timePicker24Hour = true;
+		$('input[name^="date-time"]').daterangepicker(data);});
 };
+

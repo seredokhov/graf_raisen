@@ -610,7 +610,8 @@ input[name^="date"]::-ms-clear {
 	.add_service .checkbox-custom,
 	div.row.section .checkbox-custom,
 	.transfer_form .checkbox-custom,
-	.fix .radio-custom {
+	.fix .radio-custom,
+	.extract .checkbox-custom {
 		width: 20px;
 		height: 20px;
 	}
@@ -1568,6 +1569,14 @@ label.repeat {
 	-ms-flex-wrap: wrap;
 	margin-bottom: 20px;
 }
+.offer_form {
+	border: 1px solid #c5c5c5;
+	background-color: #fff;
+}
+.offer_form .excurs_form {
+	max-width: 456px;
+	margin: 40px auto !important;
+}
 .booking_content .gallery {
 	width: 370px;
 	border-right: 1px solid #c5c5c5;
@@ -1900,6 +1909,14 @@ fieldset .half:first-child {
 	float: right;
 	overflow: hidden;
 }
+
+label.extract {
+	margin-top: 15px;
+}
+.extract_location {
+	padding: 0;
+	margin-top: 15px;
+}
 #childrens {
 	display: none;
 }
@@ -1914,7 +1931,7 @@ fieldset .half:first-child {
 	color: #1e1e1e;
 	font-size: 16px;
 	font-weight: bold;
-	margin: 10px 0;
+	margin-bottom: 10px;
 }
 .arrow_new select,
 .arrow_new input {
@@ -2587,6 +2604,16 @@ aside.sanatory_aside .service .label {
 	padding: 0;
 	font-size: 17px;
 	color: #8c8c8c;
+}
+.date_change_input {
+	border: 1px solid #6fb919;
+	width: 100%;
+	font-size: 20px;
+	font-family: 'PT Sans', sans-serif;
+	font-weight: bold;
+	color: #fff;
+	background: #6fb919;
+	text-align: center;
 }
 .free_time span {
 	font-size: 20px;

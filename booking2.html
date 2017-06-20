@@ -190,8 +190,8 @@
 												<img src="images/img-4.jpg" alt="">
 											</div>
 											<div class="buttons">
-												<button class="prev">Назад</button>
-												<button class="next">Вперед</button>
+												<button type="button" class="prev">Назад</button>
+												<button type="button" class="next">Вперед</button>
 											</div>
 										</div>
 										<div class="social_round">
@@ -244,7 +244,7 @@
 									<div class="clearfix">
 										<label for="humans_change">Кол-во взрослых</label>
 										<div class="arrow num">
-											<select  class="form-control half" id="humans_change">
+											<select  class="form-control half" id="change_humans">
 												<option value="1">1</option>
 												<option value="2">2</option>
 												<option value="3">3</option>
@@ -256,7 +256,7 @@
 									<div class="clearfix">
 										<label for="children_change">Кол-во детей</label>
 										<div class="arrow num">
-											<select  class="form-control half" id="children_change">
+											<select  class="form-control half" id="change_childrens">
 												<option value="1">1</option>
 												<option value="2">2</option>
 												<option value="3">3</option>
@@ -329,58 +329,43 @@
 				</section>
 				<section class="section">
 					<div class="container">
-						<div class="clearfix booking_content">
-							<div class="col-md-6">
+						<div class="clearfix">
+							<div class="col-md-6 offer_form">
 								<div class="excurs_form">
 									<h3>Введите данные</h3>
 									<div>
 										<label class="rd">
 											<span>mr</span>
-											<input class="radio" type="radio" name="radio-test" checked>
+											<input class="radio" type="radio" name="sex" val="male" checked>
 											<span class="radio-custom"></span>
 										</label>
 										<label class="rd">
 											<span>mrs</span>
-											<input class="radio" type="radio" name="radio-test">
+											<input class="radio" type="radio" name="sex" val="female">
 											<span class="radio-custom"></span>
 										</label>
 									
 										<fieldset>
-											<input class="half form-control" type="text" placeholder="Фамилия">
-											<input class="half form-control" type="text" placeholder="Имя">
+											<input class="half form-control" type="text" name="offer_surnme" placeholder="Фамилия">
+											<input class="half form-control" type="text" name="offer_name" placeholder="Имя">
 										</fieldset>
-										<input type="text" class="form-control" placeholder="Улица, номер дома">
+										<input type="text" class="form-control" name="offer_adress" placeholder="Улица, номер дома">
 										<fieldset>
-											<input class="half form-control" type="text" placeholder="Индекс">
-											<input class="half form-control" type="text" placeholder="Город">
-										</fieldset>
-										<fieldset>
-											<input class="half form-control" type="tel" pattern="[0-9]{5,10}" placeholder="Мобильный номер">
-											<input class="half form-control" type="tel" pattern="[0-9]{5,10}" placeholder="Домашний номер">
+											<input class="half form-control" type="text" name="offer_index" placeholder="Индекс">
+											<input class="half form-control" type="text" name="offer_city" placeholder="Город">
 										</fieldset>
 										<fieldset>
-											<input class="half form-control" type="text" placeholder="Страна">
-											<input class="half form-control" type="email" placeholder="Емаил">
-										</fieldset>
-										<textarea class="form-control" name=" "  placeholder="Дополнительная информация"></textarea>
-										<fieldset>
-											<label for="num">Укажите кол-во отдыхающих</label>
-											<div class="arrow num">
-
-												<select  class="form-control half" id="num">
-													<option value="">1</option>
-													<option value="">2</option>
-													<option value="">3</option>
-													<option value="">4</option>
-													<option value="">5</option>
-												</select>
-
-											</div>
+											<input class="half form-control" type="tel" pattern="[0-9]{5,10}" name="offer_mobile_phone" placeholder="Мобильный номер">
+											<input class="half form-control" type="tel" pattern="[0-9]{5,10}" name="offer_home_phone" placeholder="Домашний номер">
 										</fieldset>
 										<fieldset>
-
+											<input class="half form-control" type="text" name="offer_country" placeholder="Страна">
+											<input class="half form-control" type="email" name="offer_email" placeholder="Емаил">
+										</fieldset>
+										<textarea class="form-control" name="offer_more_info"  placeholder="Дополнительная информация"></textarea>
+										<fieldset>
 											<div class="arrow">
-												<select   class="half form-control">
+												<select class="half form-control" name="offer_transfer">
 													<option selected>Трансфер</option>
 													<option value="">Текст 1</option>
 													<option value="">Текст 2</option>
@@ -389,104 +374,62 @@
 											</div>
 
 											<div class="arrow">
-												<select   class="half form-control">
+												<select class="half form-control" name="offer_save">
 													<option selected>Страховка</option>
 													<option value="">Текст 1</option>
 													<option value="">Текст 2</option>
 													<option value="">Текст 3</option>
 												</select>
 											</div>
-										</fieldset>
-										<fieldset>
-											<label><span class="underline">Добавить человека</span>
-												<input class="checkbox" type="checkbox" name="checkbox-test" checked>
-												<span class="checkbox-custom"></span>
-												<span class="label">Использование данных</span>
-											</label>
 										</fieldset>
 									</div>
 								</div>
 							</div>
 							<div class="col-md-6">
-								<div class="excurs_form">
-									<h3>Введите данные</h3>
-									<div>
-										<label class="rd">
-											<span>mr</span>
-											<input class="radio" type="radio" name="radio-test" checked>
-											<span class="radio-custom"></span>
-										</label>
-										<label class="rd">
-											<span>mrs</span>
-											<input class="radio" type="radio" name="radio-test">
-											<span class="radio-custom"></span>
-										</label>
-									
-										<fieldset>
-											<input class="half form-control" type="text" placeholder="Фамилия">
-											<input class="half form-control" type="text" placeholder="Имя">
-										</fieldset>
-										<input type="text" class="form-control" placeholder="Улица, номер дома">
-										<fieldset>
-											<input class="half form-control" type="text" placeholder="Индекс">
-											<input class="half form-control" type="text" placeholder="Город">
-										</fieldset>
-										<fieldset>
-											<input class="half form-control" type="tel" pattern="[0-9]{5,10}" placeholder="Мобильный номер">
-											<input class="half form-control" type="tel" pattern="[0-9]{5,10}" placeholder="Домашний номер">
-										</fieldset>
-										<fieldset>
-											<input class="half form-control" type="text" placeholder="Страна">
-											<input class="half form-control" type="email" placeholder="Емаил">
-										</fieldset>
-										<textarea class="form-control" name=" "  placeholder="Дополнительная информация"></textarea>
-										<fieldset>
-											<label for="num2">Укажите кол-во отдыхающих</label>
-											<div class="arrow num">
+								<div>
+									<div id="humans">
+										<div class="add_people_title">Взрослые:</div>
+										<div class="clearfix" id="human-1">
+											<div class="col-sm-4">
+												<input class="form-control" name="surname" type="text" placeholder="Фамилия">
+											</div>
+											<div class="col-sm-4">
+												<input class="form-control" name="name" type="text" placeholder="Имя">
+											</div>
+											<div class="col-sm-4">
+												<input type="text" name="date_born" class="form-control" placeholder="Дата рождения">
+											</div>
 
-												<select  class="form-control half" id="num2">
-													<option value="">1</option>
-													<option value="">2</option>
-													<option value="">3</option>
-													<option value="">4</option>
-													<option value="">5</option>
-												</select>
-
+											<div class="col-xs-12">
+												<label class="extract">
+													<input class="checkbox" type="checkbox">
+													<span class="checkbox-custom"></span>
+													<span class="label">Уточнить адрес</span>
+												</label>
 											</div>
 
 
-										</fieldset>
-										<fieldset>
 
-											<div class="arrow">
-												<select   class="half form-control">
-													<option selected>Трансфер</option>
-													<option value="">Текст 1</option>
-													<option value="">Текст 2</option>
-													<option value="">Текст 3</option>
-												</select>
+											<div class="col-xs-12 extract_location hidden">
+
+
+												<div class="col-md-4">
+													<input class="form-control" name="extract_city" type="text" placeholder="Уточните город">
+												</div>
+												<div class="col-md-8">
+													<input class="form-control" name="extract_adress" type="text" placeholder="Уточните дом и улицу">
+												</div>
 											</div>
-
-											<div class="arrow">
-												<select   class="half form-control">
-													<option selected>Страховка</option>
-													<option value="">Текст 1</option>
-													<option value="">Текст 2</option>
-													<option value="">Текст 3</option>
-												</select>
-											</div>
-										</fieldset>
-										<fieldset>
-
-											<label><span class="underline">Добавить человека</span>
-												<input class="checkbox" type="checkbox" name="checkbox-test" checked>
-												<span class="checkbox-custom"></span>
-												<span class="label">Использование данных</span>
-											</label>
-										</fieldset>
+										</div>
 									</div>
+
+									<div id="childrens">
+										<div class="add_people_title">Дети:</div>
+									</div>
+
 								</div>
 							</div>
+
 							<div class="col-xs-12 text-center booking_offer">
 								<button type="submit" class="btn_custom btn_offer">Забронировать</button>
 							</div>
@@ -1126,24 +1069,5 @@
 	<script src="js/owl.carousel.js"></script>
 	<script src="js/lib.js"></script>
 	<script src="js/jquery.maskedinput.min.js"></script>
-	<script>
-		$(document).ready(function() {
-			$("#owl-demo").owlCarousel({
-				navigation : true,
-				navigationText : ["",""],
-				slideSpeed : 300,
-				paginationSpeed : 400,
-				singleItem:true
-		 
-		      // "singleItem:true" is a shortcut for:
-		      // items : 1, 
-		      // itemsDesktop : false,
-		      // itemsDesktopSmall : false,
-		      // itemsTablet: false,
-		      // itemsMobile : false
-			});
-		});
-	</script>
-
 </body>
 </html>

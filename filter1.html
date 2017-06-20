@@ -607,8 +607,10 @@
 									</div>
 								</div>
 								<div class="free_time">
-									<div class="col-md-8">Свободные номера в санатории с: <span>01.01.2017 - 15.01.2017</span></div>
-									<a href="#" class="btn_custom">Изменить дату</a>
+									<div class="col-md-6">Выберите дату отдыха:</div>
+									<div class="col-md-6">
+										<input type="text" class="date_change_input" name="custom_daterange">
+									</div>
 								</div>
 								<div class="hot_thumb clearfix">
 									<div class="img_block">
@@ -1542,16 +1544,5 @@
 	<script src="js/owl.carousel.js"></script>
 	<script src="js/lib.js"></script>
 	<script src="js/jquery.maskedinput.min.js"></script>
-	<script>
-		$(document).ready(function() {
-			$("#owl-demo").owlCarousel({
-				navigation : true,
-				navigationText : ["",""],
-				slideSpeed : 300,
-				paginationSpeed : 400,
-				singleItem:true
-			});
-		});
-	</script>
 </body>
 </html>
