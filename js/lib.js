@@ -149,23 +149,23 @@ $(function() {
 $(function() {
 	var changeHumans = $('#change_humans');
 	var humans = $('#humans');
-	var form = humans.find('.clearfix:eq(0)');
+	var template = humans.find('.clearfix:eq(0)');
+	var forms = humans.find('input[type="text"]');
 
 	changeHumans.change(function(){
 		var num = +changeHumans.val();
 		var clearf = humans.find('.clearfix');
 
+		forms.val('');
 		clearf.not('.clearfix:eq(0)').remove();
-		$('input[name = "date_born"]').val('');
+		template.find('input[type="checkbox"]').prop('checked', false);
+		template.find('.extract_location').addClass('hidden');
 
 		for (i  = 1; i < num; i++) {
 			var count = i;
-			form.clone().appendTo(humans).attr("id", "human-" + ++count);
+			template.clone().appendTo(humans).attr("id", "human-" + ++count);
 		}
-
-		$(function(){
-			$('input[name = "date_born"]').mask("99/99/9999");
-		});
+		showMask()
 	});
 
 	var changeChildrens = $('#change_childrens');
@@ -176,33 +176,35 @@ $(function() {
 		var clearf = childrens.find('.clearfix');
 		childrens.css('display', 'block');
 
+		forms.val('');
 		if (num === 0) {
 			childrens.css('display', 'none');
 		}
 
 		clearf.remove();
-		$('input[name = "date_born"]').val('');
+		template.find('input[type="checkbox"]').prop('checked', false);
+		template.find('.extract_location').addClass('hidden');
 
 		for (i  = 1; i <= num; i++) {
 			var count = i;
-			form.clone().appendTo(childrens).attr("id", "child-" + count);
+			template.clone().appendTo(childrens).attr("id", "child-" + count);
 		}
-
-		$(function(){
-			$('input[name = "date_born"]').mask("99/99/9999");
-		});
+		showMask();
 	});
 });
 
 
 //   Маска даты
-$(function() {
-	if ($('.add_people')) {
-		$(function(){
-			$('input[name = "date_born"]').mask("99/99/9999");
-		});
-	}
-});
+
+function showMask() {
+	$(function(){
+		$('input[name = "date_born"]').mask("99/99/9999");
+	});
+}
+if( $('.add_people') ) {
+	showMask();
+}
+
 
 //   Уточнение адреса 
 $(function() {

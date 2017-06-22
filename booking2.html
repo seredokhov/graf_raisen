@@ -257,6 +257,7 @@
 										<label for="children_change">Кол-во детей</label>
 										<div class="arrow num">
 											<select  class="form-control half" id="change_childrens">
+												<option value="0">0</option>
 												<option value="1">1</option>
 												<option value="2">2</option>
 												<option value="3">3</option>
@@ -344,23 +345,22 @@
 											<input class="radio" type="radio" name="sex" val="female">
 											<span class="radio-custom"></span>
 										</label>
-									
 										<fieldset>
-											<input class="half form-control" type="text" name="offer_surnme" placeholder="Фамилия">
-											<input class="half form-control" type="text" name="offer_name" placeholder="Имя">
+											<input class="half form-control" type="text" name="offer_surnme" placeholder="Фамилия" required>
+											<input class="half form-control" type="text" name="offer_name" placeholder="Имя" required>
 										</fieldset>
-										<input type="text" class="form-control" name="offer_adress" placeholder="Улица, номер дома">
+										<input type="text" class="form-control" name="offer_adress" placeholder="Улица, номер дома" required>
 										<fieldset>
-											<input class="half form-control" type="text" name="offer_index" placeholder="Индекс">
-											<input class="half form-control" type="text" name="offer_city" placeholder="Город">
-										</fieldset>
-										<fieldset>
-											<input class="half form-control" type="tel" pattern="[0-9]{5,10}" name="offer_mobile_phone" placeholder="Мобильный номер">
-											<input class="half form-control" type="tel" pattern="[0-9]{5,10}" name="offer_home_phone" placeholder="Домашний номер">
+											<input class="half form-control" type="text" name="offer_index" placeholder="Индекс" >
+											<input class="half form-control" type="text" name="offer_city" placeholder="Город" >
 										</fieldset>
 										<fieldset>
-											<input class="half form-control" type="text" name="offer_country" placeholder="Страна">
-											<input class="half form-control" type="email" name="offer_email" placeholder="Емаил">
+											<input class="half form-control" type="tel" pattern="[0-9]*" name="offer_mobile_phone" placeholder="Мобильный номер">
+											<input class="half form-control" type="tel" pattern="[0-9]*" name="offer_home_phone" placeholder="Домашний номер">
+										</fieldset>
+										<fieldset>
+											<input class="half form-control" type="text" name="offer_country" placeholder="Страна" required>
+											<input class="half form-control" type="email" name="offer_email" placeholder="Емаил" required>
 										</fieldset>
 										<textarea class="form-control" name="offer_more_info"  placeholder="Дополнительная информация"></textarea>
 										<fieldset>
